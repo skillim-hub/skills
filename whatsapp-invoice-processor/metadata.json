@@ -1,0 +1,63 @@
+{
+  "version": "0.4.0",
+  "category": "business-automation",
+  "slug": "whatsapp-invoice-processor",
+  "display_name": {
+    "en": "WhatsApp Invoice Processor",
+    "he": "מעבד חשבוניות מ-WhatsApp"
+  },
+  "display_description": {
+    "en": "Process invoice photos sent through WhatsApp, extract vendor, amount, VAT, and document identifiers, then return a receipt confirmation in chat.",
+    "he": "עיבוד תמונות חשבוניות שנשלחות ב-WhatsApp, חילוץ ספק, סכום, מע״מ ומזהי מסמך, ושליחת אישור קליטה בצ׳אט."
+  },
+  "supported_agents": [
+    "coding-agent",
+    "chat-agent",
+    "automation-agent"
+  ],
+  "locales": [
+    "en",
+    "he-IL"
+  ],
+  "tags": [
+    "accounts-payable",
+    "automation",
+    "bookkeeping",
+    "cli",
+    "consumer-records",
+    "expense-management",
+    "freelancers",
+    "hebrew",
+    "hebrew-ocr",
+    "invoice-allocation-number",
+    "invoices",
+    "israel",
+    "ocr",
+    "receipts",
+    "small-business",
+    "tax-invoice",
+    "vat",
+    "whatsapp"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "client": "whatsapp_invoice_processor/client.py",
+    "client_compat": "scripts/whatsapp_invoice_processor_client.py",
+    "cli": "scripts/whatsapp-invoice-processor-cli.py",
+    "tests": "scripts/test_whatsapp_invoice_processor_client.py"
+  },
+  "requirements": {
+    "python": ">=3.10",
+    "runtime_dependencies": [
+      "typer>=0.12",
+      "click>=8.1"
+    ],
+    "development_dependencies": [
+      "pytest>=8.0",
+      "pytest-asyncio>=0.23",
+      "typer>=0.12",
+      "click>=8.1"
+    ]
+  }
+}

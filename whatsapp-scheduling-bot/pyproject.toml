@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whatsapp-scheduling-bot"
+version = "2.2.0"
+description = "Hebrew WhatsApp appointment scheduling helper for Israeli small businesses."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["typer>=0.9"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pytest-asyncio>=0.21", "ruff>=0.5", "mypy>=1.8"]
+
+[project.scripts]
+whatsapp-scheduling-bot = "whatsapp_scheduling_bot.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["whatsapp_scheduling_bot*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+asyncio_mode = "auto"
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "2.2.0"
+
+[tool.mypy]
+python_version = "2.2.0"
+ignore_missing_imports = true
+warn_unused_ignores = true

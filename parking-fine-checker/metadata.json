@@ -1,0 +1,46 @@
+{
+  "slug": "parking-fine-checker",
+  "name": "Parking Fine Checker",
+  "version": "2.2.0",
+  "description": "Neutral operational guide and tools for Israeli parking, traffic, and toll fine workflows.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "accounting",
+    "appeals",
+    "collections",
+    "fleet-management",
+    "freelancers",
+    "hebrew",
+    "israel",
+    "municipalities",
+    "official-portals",
+    "parking",
+    "receipts",
+    "road-6",
+    "small-business",
+    "toll-roads",
+    "traffic-fines",
+    "vat-18",
+    "web-validated"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "parking_fine_checker/cli.py",
+    "client": "parking_fine_checker/client.py"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ],
+  "license": "MIT"
+}

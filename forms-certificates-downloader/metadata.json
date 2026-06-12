@@ -1,0 +1,70 @@
+{
+  "name": "forms-certificates-downloader",
+  "slug": "forms-certificates-downloader",
+  "version": "2.2.0",
+  "category": "government-services",
+  "license": "MIT",
+  "display_name": {
+    "en": "Forms & Certificates Downloader",
+    "he": "הורדת טפסים ואישורים"
+  },
+  "display_description": {
+    "en": "Locate, download, and version-track public Israeli government forms and certificates from official public portals. Designed for small businesses, freelancers, bookkeepers, payroll teams, and consumers. Keeps SHA-256 manifests and avoids private authenticated workflows.",
+    "he": "איתור, הורדה ומעקב גרסאות עבור טפסים ואישורים ציבוריים של רשויות בישראל. מתאים לעסקים קטנים, עצמאים, מנהלי חשבונות, חשבי שכר וצרכנים. כולל מאגר SHA-256 ואינו מבצע פעולות באזורים אישיים."
+  },
+  "tags": {
+    "en": [
+      "israel",
+      "government",
+      "forms",
+      "certificates",
+      "gov-il",
+      "tax-authority",
+      "national-insurance",
+      "small-business",
+      "freelancers",
+      "bookkeeping",
+      "payroll",
+      "version-tracking",
+      "sha256",
+      "public-documents",
+      "hebrew",
+      "cli",
+      "python",
+      "manifest",
+      "web-validated",
+      "vat-18",
+      "gov-il-services",
+      "corporations-authority",
+      "bituach-leumi-certificates"
+    ],
+    "he": [
+      "ישראל",
+      "ממשלה",
+      "טפסים",
+      "אישורים",
+      "רשות-המסים",
+      "ביטוח-לאומי",
+      "עסקים-קטנים",
+      "עצמאים",
+      "הנהלת-חשבונות",
+      "שכר",
+      "מעקב-גרסאות",
+      "מסמכים-ציבוריים",
+      "עברית",
+      "מאגר",
+      "שורת-פקודה",
+      "אימות-מקורות",
+      "מעמ-18",
+      "שירותים-ממשלתיים",
+      "רשות-התאגידים",
+      "אישורי-ביטוח-לאומי"
+    ]
+  },
+  "entrypoints": {
+    "package": "forms_certificates_downloader",
+    "client": "forms_certificates_downloader.client",
+    "cli": "forms_certificates_downloader.cli:main",
+    "registry": "data/portal-registry.json"
+  }
+}

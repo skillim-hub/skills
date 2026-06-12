@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pension-fund-tracker"
+version = "1.2.0"
+description = "Information-only tracking of Israeli pension fund returns and fees from official public data."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["typer>=0.12", "rich>=13.7"]
+keywords = ["israel", "pension", "pensia-net", "finance", "fees", "returns", "ckan", "data-gov-il"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.23", "ruff>=0.5", "mypy>=1.10"]
+
+[project.scripts]
+pension-fund-tracker = "pension_fund_tracker.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

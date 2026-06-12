@@ -1,0 +1,72 @@
+{
+  "name": "labor-law-advisor",
+  "display_name": {
+    "en": "Labor-Law Advisor",
+    "he": "יועץ דיני עבודה"
+  },
+  "version": "2.2.0",
+  "category": "legal-tech",
+  "jurisdiction": "IL",
+  "locale": [
+    "en-IL",
+    "he-IL"
+  ],
+  "last_reviewed": "2026-06-02",
+  "license": "MIT",
+  "tags": {
+    "en": [
+      "israel",
+      "labor-law",
+      "employment-law",
+      "minimum-wage",
+      "overtime",
+      "severance",
+      "pitzuim",
+      "parental-rights",
+      "pregnancy-rights",
+      "histadrut",
+      "collective-agreements",
+      "extension-orders",
+      "pension",
+      "vacation",
+      "sick-leave",
+      "small-business",
+      "freelancer",
+      "consumer",
+      "vat",
+      "official-sources",
+      "verification"
+    ],
+    "he": [
+      "ישראל",
+      "דיני-עבודה",
+      "שכר-מינימום",
+      "שעות-נוספות",
+      "פיצויי-פיטורים",
+      "זכויות-הורות",
+      "היריון",
+      "הסתדרות",
+      "הסכמים-קיבוציים",
+      "צווי-הרחבה",
+      "פנסיה",
+      "חופשה",
+      "מחלה",
+      "עסקים-קטנים",
+      "עצמאים",
+      "צרכנים",
+      "מעמ",
+      "מקורות-רשמיים",
+      "אימות"
+    ]
+  },
+  "description": {
+    "en": "Practical Israeli labor-law guidance for minimum wage, overtime, severance, parental rights, Histadrut and collective agreement checks, and payroll compliance.",
+    "he": "הכוונה מעשית בדיני עבודה בישראל לשכר מינימום, שעות נוספות, פיצויים, זכויות הורות, הסתדרות, הסכמים קיבוציים וציות שכר."
+  },
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "scripts/labor-law-advisor-cli.py",
+    "client": "scripts/labor_law_advisor_client.py"
+  }
+}

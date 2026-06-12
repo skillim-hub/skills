@@ -1,0 +1,59 @@
+{
+  "slug": "red-alert-shelter-finder",
+  "name": "Red-Alert & Shelter Finder",
+  "version": "1.4.0",
+  "description": "Check current Israeli Home Front Command alert payloads through configurable sources and find nearest public shelters from configured municipal or national shelter datasets.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "async",
+    "audit",
+    "business-continuity",
+    "cli",
+    "configurable-endpoint",
+    "consumers",
+    "csv",
+    "emergency-preparedness",
+    "freelancers",
+    "geojson",
+    "hebrew",
+    "hebrew-qa",
+    "home-front-command",
+    "home-front-command-app",
+    "installable-package",
+    "israel",
+    "miklat",
+    "municipal-shelters",
+    "official-sources",
+    "privacy",
+    "production",
+    "protected-space",
+    "public-shelters",
+    "pytest-asyncio",
+    "python",
+    "rocket-alerts",
+    "sandbox",
+    "small-business",
+    "vat-18",
+    "watch-workflow",
+    "web-validated"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "client_module": "red_alert_shelter_finder.client",
+    "cli_module": "red_alert_shelter_finder.cli",
+    "client_script": "scripts/red_alert_shelter_finder_client.py",
+    "cli_script": "scripts/red_alert_shelter_finder_cli.py"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md"
+  ],
+  "license": "MIT"
+}

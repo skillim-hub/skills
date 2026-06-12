@@ -1,0 +1,81 @@
+{
+  "name": "Regulatory Update Notifier",
+  "slug": "regulatory-update-notifier",
+  "version": "2.2.0",
+  "description": "Monitor and summarize Israeli legal and regulatory changes relevant to small businesses, freelancers, consumers, and industry-specific operations.",
+  "display_name": {
+    "en": "Regulatory Update Notifier",
+    "he": "מודיע עדכוני רגולציה בישראל"
+  },
+  "display_description": {
+    "en": "Monitor and summarize Israeli legal and regulatory changes from Knesset materials, Reshumot, authority guidance, public consultations, and regulator publications for small businesses, freelancers, and consumers.",
+    "he": "ניטור וסיכום שינויי חקיקה ורגולציה בישראל מתוך הכנסת, רשומות, הנחיות רשויות, טיוטות להערות הציבור ופרסומי רגולטורים לעסקים קטנים, עצמאים וצרכנים."
+  },
+  "tags": {
+    "en": [
+      "israel",
+      "regulatory-monitoring",
+      "knesset",
+      "reshumot",
+      "small-business",
+      "freelancers",
+      "consumer-rights",
+      "tax",
+      "privacy",
+      "labor",
+      "ecommerce",
+      "public-consultations",
+      "legal-updates",
+      "compliance",
+      "government-sources",
+      "hebrew",
+      "cli",
+      "python-client",
+      "web-validation",
+      "official-sources",
+      "tazkirim"
+    ],
+    "he": [
+      "ישראל",
+      "רגולציה",
+      "כנסת",
+      "רשומות",
+      "עסקים-קטנים",
+      "עצמאים",
+      "צרכנות",
+      "מסים",
+      "פרטיות",
+      "דיני-עבודה",
+      "מסחר-מקוון",
+      "הערות-הציבור",
+      "ציות",
+      "מקורות-ממשלתיים",
+      "עברית",
+      "אימות-מקורות",
+      "מקורות-רשמיים",
+      "תזכירים"
+    ]
+  },
+  "source_types": [
+    "odata",
+    "rss",
+    "atom",
+    "html",
+    "json",
+    "pdf",
+    "manual"
+  ],
+  "languages": [
+    "en",
+    "he"
+  ],
+  "localization": {
+    "currency": "₪",
+    "hebrew_date_format": "DD/MM/YYYY",
+    "jurisdiction": "Israel"
+  },
+  "entry_points": {
+    "python_module": "regulatory_update_notifier",
+    "cli": "regulatory-update-notifier"
+  }
+}

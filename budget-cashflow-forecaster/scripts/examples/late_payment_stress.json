@@ -1,0 +1,58 @@
+{
+  "opening_balance": 18000,
+  "start_month": "2026-01",
+  "months": 5,
+  "cash_in": [
+    {
+      "date": "2026-01-10",
+      "amount": 23600,
+      "description": "Client A",
+      "category": "revenue",
+      "taxable": true,
+      "gross": true
+    },
+    {
+      "date": "2026-03-25",
+      "amount": 23600,
+      "description": "Client B delayed",
+      "category": "revenue",
+      "taxable": true,
+      "gross": true
+    }
+  ],
+  "cash_out": [
+    {
+      "date": "2026-01-01",
+      "amount": 4500,
+      "description": "Rent",
+      "category": "rent"
+    },
+    {
+      "date": "2026-01-20",
+      "amount": 9000,
+      "description": "Owner draw",
+      "category": "owner_draw"
+    },
+    {
+      "date": "2026-02-01",
+      "amount": 4500,
+      "description": "Rent",
+      "category": "rent"
+    },
+    {
+      "date": "2026-02-20",
+      "amount": 9000,
+      "description": "Owner draw",
+      "category": "owner_draw"
+    }
+  ],
+  "tax_profile": {
+    "vat_rate": 0.18,
+    "vat_cadence": "monthly",
+    "income_tax_advance_rate": 0.08,
+    "bituach_leumi_rate": 0.18,
+    "reviewed_on": "2026-06-02",
+    "source_note": "Flat Bituach Leumi planning rate uses 2026 full combined self-employed rate as conservative approximation; verify bracketed calculation."
+  },
+  "buffer": 12000
+}

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "employee-onboarding-guide"
+version = "2.2.0"
+description = "Neutral Israeli employee onboarding guide and local CLI helper."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "typer>=0.9"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4",
+  "pytest-asyncio>=0.23",
+  "ruff>=0.4"
+]
+
+[project.scripts]
+employee-onboarding-guide = "employee_onboarding_guide_cli:app"
+
+[tool.setuptools]
+package-dir = {"" = "scripts"}
+py-modules = ["employee_onboarding_guide_client", "employee_onboarding_guide_cli"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"

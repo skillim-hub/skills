@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inventory-catalog-manager"
+version = "0.3.0"
+description = "Structured catalog, SKU, VAT, and stock helper for Israeli small-business inventory workflows."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "typer>=0.9",
+  "click>=8.0"
+]
+keywords = ["inventory", "catalog", "vat", "israel", "sku", "stock", "hebrew", "csv"]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-asyncio>=0.21"
+]
+
+[project.scripts]
+inventory-catalog-manager = "inventory_catalog_manager_cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.setuptools]
+package-dir = {"" = "scripts"}
+py-modules = ["inventory_catalog_manager_client", "inventory_catalog_manager_cli"]

@@ -1,0 +1,85 @@
+{
+  "name": "privacy-compliance-checker",
+  "version": "2.2.0",
+  "category": "privacy-compliance",
+  "license": "MIT",
+  "display_name": {
+    "en": "Privacy-Compliance Checker",
+    "he": "בודק ציות פרטיות"
+  },
+  "display_description": {
+    "en": "Neutral privacy compliance guidance and local tooling for Israeli small businesses, freelancers, consumers, and lightweight cloud-service workflows. Covers Israeli privacy law, data-security regulations, Privacy Protection Authority expectations, GDPR touchpoints, direct marketing, transfers, breach triage, retention, processor contracts, rights handling, and production readiness.",
+    "he": "הנחיות ניטרליות וכלי מקומי לבדיקת ציות פרטיות לעסקים קטנים, עצמאים, צרכנים ושירותי תוכנה בענן בישראל. כולל חוק הגנת הפרטיות, תקנות אבטחת מידע, ציפיות הרשות להגנת הפרטיות, נקודות GDPR, דיוור ישיר, העברות מידע, אירועי אבטחה, שמירה, ספקים, זכויות ומוכנות לסביבת ייצור."
+  },
+  "tags": {
+    "en": [
+      "privacy",
+      "compliance",
+      "data-protection",
+      "israel",
+      "israeli-law",
+      "privacy-protection-law",
+      "data-security-regulations",
+      "gdpr",
+      "small-business",
+      "freelancers",
+      "consumer-rights",
+      "direct-marketing",
+      "cross-border-transfer",
+      "breach-response",
+      "retention",
+      "processor-contracts",
+      "dpo",
+      "privacy-authority",
+      "cli",
+      "pytest"
+    ],
+    "he": [
+      "פרטיות",
+      "ציות",
+      "הגנת-מידע",
+      "ישראל",
+      "חוק-הגנת-הפרטיות",
+      "תקנות-אבטחת-מידע",
+      "GDPR",
+      "עסקים-קטנים",
+      "עצמאים",
+      "זכויות-צרכנים",
+      "דיוור-ישיר",
+      "העברה-לחוץ-לארץ",
+      "אירוע-אבטחה",
+      "שמירת-מידע",
+      "ספקי-עיבוד",
+      "ממונה-הגנת-פרטיות",
+      "הרשות-להגנת-הפרטיות",
+      "כלי-שורת-פקודה",
+      "בדיקות"
+    ]
+  },
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "privacy_compliance_checker.cli:main",
+    "client": "privacy_compliance_checker.client"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ],
+  "supported_languages": [
+    "en",
+    "he"
+  ],
+  "localization": {
+    "he": {
+      "currency": "₪",
+      "date_format": "DD/MM/YYYY"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "hebrew-translation-assistant",
+  "version": "2.2.0",
+  "license": "MIT",
+  "category": "translation",
+  "tags": {
+    "en": [
+      "hebrew",
+      "english",
+      "translation",
+      "israel",
+      "localization",
+      "small-business",
+      "freelancer",
+      "consumer",
+      "register",
+      "idioms",
+      "rtl",
+      "vat",
+      "tax",
+      "invoices",
+      "customer-support",
+      "privacy",
+      "accessibility",
+      "ecommerce",
+      "legal-sensitive",
+      "accounting"
+    ],
+    "he": [
+      "עברית",
+      "אנגלית",
+      "תרגום",
+      "ישראל",
+      "לוקליזציה",
+      "עסקים קטנים",
+      "עצמאים",
+      "צרכנות",
+      "משלב",
+      "ביטויים",
+      "כיווניות",
+      "מע״מ",
+      "חשבוניות",
+      "שירות לקוחות",
+      "פרטיות",
+      "נגישות",
+      "מסחר מקוון"
+    ]
+  },
+  "display_name": {
+    "en": "Hebrew Translation Assistant",
+    "he": "עוזר תרגום עברית-אנגלית"
+  },
+  "display_description": {
+    "en": "Assist Hebrew-English translation and adaptation for Israeli small businesses, freelancers, and consumers with register control, idiom handling, terminology checks, and localized ₪ and DD/MM/YYYY formatting.",
+    "he": "סיוע בתרגום ובהתאמה בין עברית לאנגלית לעסקים קטנים, עצמאים וצרכנים בישראל, כולל שליטה במשלב, טיפול בביטויים, בדיקת מונחים ולוקליזציה של ₪ ותאריכי DD/MM/YYYY."
+  },
+  "compatibility": {
+    "python": ">=3.10",
+    "network": "Not required for local helper scripts",
+    "rtl": "Supports right-to-left review guidance and bidirectional text checks"
+  }
+}

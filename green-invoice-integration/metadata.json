@@ -1,0 +1,64 @@
+{
+  "name": "green-invoice-integration",
+  "slug": "green-invoice-integration",
+  "version": "3.0.0",
+  "license": "MIT",
+  "category": "accounting",
+  "tags": {
+    "en": [
+      "green-invoice",
+      "morning",
+      "israel",
+      "invoice",
+      "receipt",
+      "vat",
+      "hashbonit-mas",
+      "cheshbonit-mas-kabala",
+      "customers",
+      "payments",
+      "payment-links",
+      "webhooks",
+      "small-business",
+      "freelancers",
+      "api"
+    ],
+    "he": [
+      "חשבונית-ירוקה",
+      "מורנינג",
+      "ישראל",
+      "חשבונית",
+      "קבלה",
+      "מע״מ",
+      "חשבונית-מס",
+      "חשבונית-מס-קבלה",
+      "לקוחות",
+      "תשלומים",
+      "לינק-תשלום",
+      "וובהוקים",
+      "עסקים-קטנים",
+      "עצמאים",
+      "api"
+    ]
+  },
+  "display_name": {
+    "en": "Green Invoice Integration",
+    "he": "אינטגרציית Green Invoice"
+  },
+  "display_description": {
+    "en": "Full Green Invoice API integration for Israeli document creation, customer management, payment-link request preparation, webhook handling, and document type mapping with tests and CLI tooling.",
+    "he": "אינטגרציית API מלאה ל-Green Invoice להפקת מסמכים, ניהול לקוחות, הכנת בקשות ללינק תשלום, טיפול ב-webhooks ומיפוי סוגי מסמכים בישראל, כולל בדיקות וכלי CLI."
+  },
+  "runtime": {
+    "python": ">=3.10",
+    "dependencies": [
+      "httpx",
+      "typer"
+    ],
+    "dev_dependencies": [
+      "pytest",
+      "respx",
+      "ruff",
+      "mypy"
+    ]
+  }
+}

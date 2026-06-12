@@ -1,0 +1,48 @@
+{
+  "slug": "driving-license-booker",
+  "name": "Driving Test & License Renewal Booker",
+  "version": "1.3.0",
+  "description": "Neutral workflow skill for Israeli driving-license renewal, Licensing Bureau appointment preparation, and practical driving-test coordination.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "israel",
+    "transport",
+    "driving-license",
+    "license-renewal",
+    "misrad-harishui",
+    "licensing-authority",
+    "appointments",
+    "small-business",
+    "freelancers",
+    "consumer-services",
+    "workflow",
+    "cli",
+    "compliance",
+    "hebrew",
+    "gov-il",
+    "practical-driving-test",
+    "web-validated",
+    "govisit",
+    "ecom-gov-il",
+    "vat"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "scripts/driving_license_booker_cli.py",
+    "client": "scripts/driving_license_booker_client.py"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ]
+}

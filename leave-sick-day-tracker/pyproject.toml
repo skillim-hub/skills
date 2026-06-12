@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leave-sick-day-tracker"
+version = "1.2.0"
+description = "Local Israeli leave and sick-day tracker with CLI tooling."
+requires-python = ">=3.10"
+dependencies = [
+  "click>=8.1"
+]
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.scripts]
+leave-sick-day-tracker = "leave_sick_day_tracker.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["leave_sick_day_tracker*"]
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib -q"
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+pythonpath = ["."]

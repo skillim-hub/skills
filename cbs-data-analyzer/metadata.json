@@ -1,0 +1,84 @@
+{
+  "name": "cbs-data-analyzer",
+  "slug": "cbs-data-analyzer",
+  "version": "2.2.0",
+  "category": "government-data",
+  "license": "MIT",
+  "languages": [
+    "en",
+    "he"
+  ],
+  "tags": {
+    "en": [
+      "israel",
+      "central-bureau-of-statistics",
+      "cbs",
+      "statistics",
+      "consumer-price-index",
+      "cpi",
+      "indexation",
+      "rent",
+      "small-business",
+      "freelancers",
+      "market-analysis",
+      "housing-prices",
+      "population",
+      "wages",
+      "labour-market",
+      "data-gov-il",
+      "open-data",
+      "web-validated",
+      "official-statistics",
+      "vat-context"
+    ],
+    "he": [
+      "ישראל",
+      "הלמ״ס",
+      "למ״ס",
+      "סטטיסטיקה",
+      "מדד-המחירים-לצרכן",
+      "הצמדה-למדד",
+      "שכר-דירה",
+      "עסקים-קטנים",
+      "עצמאים",
+      "ניתוח-שוק",
+      "מחירי-דירות",
+      "אוכלוסייה",
+      "שכר",
+      "שוק-העבודה",
+      "מידע-ממשלתי",
+      "אימות-מקורות",
+      "סטטיסטיקה-רשמית",
+      "הקשר-מע״מ"
+    ]
+  },
+  "display_name": {
+    "en": "CBS Data Analyzer",
+    "he": "מנתח נתוני הלמ״ס"
+  },
+  "display_description": {
+    "en": "Fetch and interpret Israeli Central Bureau of Statistics data for CPI, indexation, housing, population, wages, labour-market context, and small-business market analysis.",
+    "he": "שליפה וניתוח של נתוני הלמ״ס עבור מדד המחירים לצרכן, הצמדה למדד, דיור, אוכלוסייה, שכר, שוק העבודה וניתוח שוק לעסקים קטנים."
+  },
+  "entrypoints": {
+    "client": "scripts/cbs_data_analyzer_client.py",
+    "cli": "scripts/cbs_data_analyzer_cli.py"
+  },
+  "capabilities": [
+    "cbs-price-index-catalog-search",
+    "cbs-price-index-series-fetch",
+    "sync-client",
+    "async-client",
+    "indexation-calculator",
+    "data-gov-il-lamas-search",
+    "market-brief-helper",
+    "offline-tests",
+    "web-verification-log",
+    "documented-cbs-query-parameters"
+  ],
+  "data_sources": [
+    "https://api.cbs.gov.il/index",
+    "https://www.cbs.gov.il",
+    "https://data.gov.il"
+  ]
+}

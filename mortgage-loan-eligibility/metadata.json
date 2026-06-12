@@ -1,0 +1,46 @@
+{
+  "name": "Mortgage & Loan Eligibility Checker",
+  "slug": "mortgage-loan-eligibility",
+  "version": "2.2.0",
+  "description": "Calculate preliminary Israeli mortgage eligibility, monthly payments, LTV, DSR, and remediation steps for consumers, freelancers, and small businesses.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "bank-of-israel",
+    "cli",
+    "compliance-checklist",
+    "consumer-finance",
+    "debt-service-ratio",
+    "directive-329",
+    "directive-451",
+    "dsr",
+    "eligibility",
+    "freelancers",
+    "hebrew",
+    "israel",
+    "israeli-mortgage",
+    "loan",
+    "loan-to-value",
+    "ltv",
+    "monthly-payment",
+    "mortgage",
+    "payment-to-income",
+    "pti",
+    "pytest",
+    "pytest-asyncio",
+    "small-business",
+    "typer",
+    "vat-2026",
+    "web-validated"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "client": "scripts/mortgage_loan_eligibility_client.py",
+    "cli": "scripts/mortgage-loan-eligibility-cli.py",
+    "importable_cli": "scripts/mortgage_loan_eligibility_cli.py"
+  },
+  "license": "MIT"
+}

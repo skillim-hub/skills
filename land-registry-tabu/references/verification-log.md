@@ -1,0 +1,46 @@
+# Web Verification Log
+
+Access date: 04/06/2026
+
+This log records two-pass web validation for the package. Pass 1 used official or primary sources where available. Pass 2 repeated each check with a different query or different source where possible.
+
+| Check | Status | Pass 1 source | Pass 2 source | Finding / correction |
+|---|---|---|---|---|
+| Current Israeli VAT rate | ✓✓ | Tax Authority VAT history<br>https://www.gov.il/he/pages/vat-history<br>Snippet: "1.1.25 עלה המע״מ ל-18%" | Knesset press release<br>https://main.knesset.gov.il/EN/News/PressReleases/Pages/press12324w.aspx<br>Snippet: "VAT rate will be increased by one percentage point, effective January 1, 2025" | Confirmed 18% from 01/01/2025; no package tax calculation depends on this. |
+| VAT terminology | ✓✓ | Israel Tax Authority glossary<br>https://www.gov.il/en/pages/taxes-glossary<br>Snippet: "uniform rate of 18% starting from January 1, 2025" | Tax Authority interpretation notice<br>https://www.gov.il/BlobFolder/dynamiccollectorresultitem/represent-info-051224-2/he/vat_represent-info-051224-2.pdf<br>Snippet: "01/01/2025 ... יחויב מע״מ בשיעור של 18%" | Confirmed English/Hebrew VAT terminology and date. |
+| Tabu extract purpose and contents | ✓✓ | Gov.il Hebrew land registration extract service<br>https://www.gov.il/he/service/land_registration_extract<br>Snippet: "מסמך רשמי המכיל מידע משפטי על נכס כפי שרשום בפנקסי המקרקעין" | Gov.il English land registration extract service<br>https://www.gov.il/en/service/land_registration_extract<br>Snippet: "Use this service to produce a land registry extract (Tabu)." | Confirmed the skill scope: official extract contains legal property information. |
+| Ownership, encumbrances, mortgages, attachments in extract | ✓✓ | Gov.il Hebrew land registration extract service<br>https://www.gov.il/he/service/land_registration_extract<br>Snippet: "בעלים רשומים. שעבודים, משכנתאות, עיקולים, צווים שיפוטיים ועוד" | Ministry of Housing registration-status service<br>https://www.gov.il/he/service/real-estate-registration-status<br>Snippet: "הפקת נסח רישום (נסח טאבו) - מתבצעת באופן מקוון" | Confirmed rights and encumbrance language; no correction required. |
+| Digital extract legal status | ✓✓ | Gov.il English extract service<br>https://www.gov.il/en/service/land_registration_extract<br>Snippet: "digitally signed land registry extract with the same legal status" | Land Registry and Settlement landing page<br>https://www.gov.il/en/departments/land_registration/govil-landing-page<br>Snippet: "digitally signed land registry extract with the same legal status" | Confirmed digitally signed extract legal-status wording. |
+| Payment and current price wording | ✓✓ | Gov.il Hebrew extract service<br>https://www.gov.il/he/service/land_registration_extract<br>Snippet: "משלמים לפי המחיר המעודכן באתר התשלומים הממשלתי" | Government payment page for fees<br>https://www.gov.il/he/pages/payment_fees<br>Snippet: "יש לפנות ללשכה הרלוונטית ... בצירוף אישור על תשלום האגרה" | Confirmed package must not hard-code extract fees; kept fees configurable. |
+| 2026 land-registry fee update exists | ✓✓ | Gov.il fee update page<br>https://www.gov.il/he/pages/fees-2026<br>Snippet: "יעודכנו תעריפי האגרות בעד שירותים הניתנים ברשות" | Gov.il extract payment wording<br>https://www.gov.il/he/service/land_registration_extract<br>Snippet: "לפי המחיר המעודכן באתר התשלומים הממשלתי" | Confirmed fee amounts may change; no fixed official fee added. |
+| Caveat terminology and scope | ✓✓ | Gov.il caveat service<br>https://www.gov.il/he/service/caveat_filling<br>Snippet: "שירות זה מאפשר לרשום או לבטל הערת אזהרה" | Gov.il Ministry of Justice services list<br>https://www.gov.il/en/services/department/86842de6-987b-42d4-b9c2-cbd7d0619534<br>Snippet: "Apply to register or cancel a caveat" | Confirmed Hebrew/English caveat terms. |
+| Mortgage registration terminology | ✓✓ | Gov.il mortgage registration service<br>https://www.gov.il/he/service/mortgage_registration<br>Snippet: "שירות זה מאפשר רישום משכנתה על בעלי זכות הרשומה בפנקסי המקרקעין" | Gov.il Ministry of Justice services list<br>https://www.gov.il/en/services/department/86842de6-987b-42d4-b9c2-cbd7d0619534<br>Snippet: "Produce a land registry extract (Tabu)" | Confirmed mortgage term; no correction required. |
+| Tabu-Net notification service | ✓✓ | Gov.il Tabu-Net service<br>https://www.gov.il/he/service/property-activity-messages<br>Snippet: "לקבל התראות בזמן אמת למייל או לנייד על פעולות רישום" | Gov.il online land-registry services page<br>https://www.gov.il/he/pages/tabu-online-services<br>Snippet: "טאבו-נט: קבלת התראות על פעילות בנכס" | Confirmed notification terminology; no webhook event names are published in package. |
+| Land Law reference | ✓✓ | Gov.il Land Law page<br>https://www.gov.il/he/pages/chok_hamekarkein_moch<br>Snippet: "חוק המקרקעין, תשכ״ט–1969 ועדכוניו" | Knesset historical law PDF<br>https://fs.knesset.gov.il/6/law/6_lsr_208977.PDF<br>Snippet: "הפנקסים המתנהלים בלשכה יהיו פתוחים לעיון הציבור" | Confirmed legal anchor for land registry references. |
+| Land regulations reference | ✓✓ | Gov.il land registry laws and regulations<br>https://www.gov.il/he/pages/laws_and_regulations_land_registry<br>Snippet: "תקנות המקרקעין (ניהול ורישום),תשע''ב-2011" | Gov.il land registry procedures<br>https://www.gov.il/he/pages/legal-info-1<br>Snippet: "הוראות תקנות המקרקעין (ניהול ורישום), תשע״ב- 2011" | Confirmed regulation name; no correction required. |
+| Israel Land Authority / non-Tabu distinction | ✓✓ | ILA property information page<br>https://www.gov.il/en/service/property-information<br>Snippet: "property registered in the Land Registry Office (Tabu) – Contact the Land Registry Office" | ILA authorization of rights page<br>https://www.gov.il/en/service/rights-approval-request<br>Snippet: "do not constitute authorization of uses that are not regulated" | Confirmed separation between Tabu extract, ILA rights information, and permitted use. |
+| Housing Ministry registration-status limitation | ✓✓ | Housing Ministry gov.il service<br>https://www.gov.il/he/service/real-estate-registration-status<br>Snippet: "המידע הוא אנונימי" | Housing registration-status portal<br>https://al-harishum.moch.gov.il/<br>Snippet: "המידע המוצג אינו נסח רישום מאושר או העתק רישום" | Confirmed package should not treat registration-status lookup as official extract. |
+| Privacy law reference | ✓✓ | Privacy Protection Authority guide<br>https://www.gov.il/he/pages/guide_tikon13_professional<br>Snippet: "דגשים ודוגמאות מעשיות ליישום דרישות החוק" | Gov.il unofficial English translation PDF<br>https://www.gov.il/BlobFolder/legalinfo/legislation/en/ProtectionofPrivacyLaw57411981unofficialtranslatio.pdf<br>Snippet: "Protection of Privacy Law, 5741 – 1981" | Confirmed privacy-law anchor for ID masking and data minimization. |
+| Electronic Signature Law reference | ✓✓ | Registrar of Certification Authorities<br>https://www.gov.il/en/pages/certification_authorities<br>Snippet: "implementation of the Electronic Signature Law 5761-2001" | Government procurement dictionary<br>https://mr.gov.il/ilgstorefront/en/dictionary<br>Snippet: "Electronic Signature Act, 5761 - 2001" | Confirmed electronic-signature terminology. |
+| Company and corporate-charge review | ✓✓ | Registrar of Companies service<br>https://www.gov.il/en/service/company_registration<br>Snippet: "Registration and removal of charges" | Corporations Authority mortgage registration<br>https://www.gov.il/en/service/mortgage_registration<br>Snippet: "written protocol or decision of the corporation" | Confirmed corporate-ownership follow-up checks. |
+| Government data/API catalog | ✗→✓ | data.gov.il search<br>https://data.gov.il/<br>Snippet: "דוגמאות לצריכת API" | api.gov.il/data.gov.il targeted searches<br>https://data.gov.il/<br>Snippet: "שאילתה עם דפדוף" | No specific official public Tabu JSON API endpoint confirmed; package wording corrected to adapter-only. |
+| Official API hosts and endpoint paths | ✗→✓ | Gov.il extract service<br>https://www.gov.il/he/service/land_registration_extract<br>Snippet: "נכנסים לאתר מקרקעין ברשת" | data/API catalog searches<br>https://data.gov.il/<br>Snippet: "דוגמאות לצריכת API" | No official API host/path verified; example `/tabu/...` paths remain explicitly internal adapter placeholders. |
+| Webhook event names | ✗→✓ | Gov.il Tabu-Net service<br>https://www.gov.il/he/service/property-activity-messages<br>Snippet: "התראות בזמן אמת למייל או לנייד" | Gov.il online services list<br>https://www.gov.il/he/pages/tabu-online-services<br>Snippet: "טאבו-נט: קבלת התראות על פעילות בנכס" | No official webhook event names confirmed; package avoids naming any official webhook events. |
+
+## Summary
+
+| Metric | Count |
+|---|---:|
+| Total checks | 20 |
+| Double-confirmed ✓✓ | 17 |
+| Corrected in pass 2 ✗→✓ | 3 |
+| Final ✗ | 0 |
+
+## Package corrections from this pass
+
+- Bumped package version to 2.2.0.
+- Added this web verification log.
+- Clarified that public official Tabu JSON endpoint hosts, endpoint paths, and webhook event names were not confirmed.
+- Kept `/tabu/parcel`, `/tabu/address`, and `/tabu/extract-orders` as internal adapter examples only.
+- Kept official fees configurable and did not hard-code extract fees.
+- Kept VAT information in the verification log because the package does not perform VAT calculation.

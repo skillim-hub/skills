@@ -1,0 +1,51 @@
+{
+  "name": "customer-feedback-collector",
+  "version": "1.3.0",
+  "description": {
+    "en": "Collect Hebrew customer feedback, testimonials, and public reviews for Israeli small businesses and freelancers through WhatsApp, email, and SMS, with practical integration patterns for Israeli rating platforms and compliance guardrails.",
+    "he": "איסוף משוב, המלצות וחוות דעת בעברית לעסקים קטנים ולעצמאים בישראל דרך WhatsApp, דוא״ל ו-SMS, כולל שילוב מעשי עם פלטפורמות דירוג רלוונטיות וכללי ציות."
+  },
+  "license": "MIT",
+  "tags": [
+    "cli",
+    "consumer-protection",
+    "csat",
+    "customer-feedback",
+    "email",
+    "freelancers",
+    "google-business-profile",
+    "google-reviews",
+    "hebrew",
+    "israel",
+    "israeli-business",
+    "localization",
+    "marketing-compliance",
+    "nps",
+    "privacy",
+    "privacy-by-design",
+    "python-client",
+    "reviews",
+    "rtl",
+    "service-recovery",
+    "small-business",
+    "sms",
+    "testimonials",
+    "whatsapp"
+  ],
+  "supported_agents": [
+    "claude-code",
+    "cursor",
+    "windsurf",
+    "github-copilot",
+    "openclaw"
+  ],
+  "entrypoints": {
+    "skill": "SKILL.md",
+    "hebrew_skill": "SKILL_HE.md",
+    "package": "customer_feedback_collector",
+    "cli": "customer_feedback_collector.cli:APP",
+    "client": "customer_feedback_collector.client",
+    "script_cli": "scripts/customer_feedback_collector_cli.py",
+    "script_client": "scripts/customer_feedback_collector_client.py"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "recurring-invoicing",
+  "name": "Recurring Invoicing Automation",
+  "version": "1.2.0",
+  "description": "Subscription billing and recurring invoice workflow helpers for Israeli VAT and SHAAM allocation-number compliance.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "israel",
+    "vat",
+    "maam",
+    "shaam",
+    "invoice-allocation",
+    "recurring-billing",
+    "subscriptions",
+    "small-business",
+    "freelancers",
+    "bookkeeping",
+    "tax-invoice",
+    "credit-note",
+    "cli",
+    "pytest",
+    "async-python",
+    "web-validated",
+    "effective-date-thresholds",
+    "israel-invoices-2026"
+  ],
+  "license": "MIT",
+  "entrypoints": {
+    "skill": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "python_package": "recurring_invoicing",
+    "cli": "recurring-invoicing"
+  }
+}

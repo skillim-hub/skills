@@ -1,0 +1,70 @@
+{
+  "slug": "brand-reputation-monitor",
+  "name": "Brand Reputation Monitor",
+  "version": "2.2.0",
+  "description": "Monitor Hebrew and mixed Hebrew-English brand mentions from permitted exports; classify sentiment, topics, risk, and response actions for Israeli small businesses, freelancers, and consumer-facing teams.",
+  "license": "MIT",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "DD-MM-YYYY",
+    "DD/MM/YYYY",
+    "brand-reputation",
+    "branding-audit",
+    "cli",
+    "consumer-complaints",
+    "customer-service",
+    "facebook",
+    "freelancers",
+    "hebrew",
+    "hebrew-qa",
+    "installable-package",
+    "israel",
+    "israel-2026",
+    "news-comments",
+    "official-sources",
+    "privacy",
+    "pytest",
+    "risk-triage",
+    "sentiment-analysis",
+    "small-business",
+    "social-listening",
+    "tiktok",
+    "vat-18",
+    "verification-log",
+    "web-validated",
+    "x-twitter",
+    "₪"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "package": "brand_reputation_monitor",
+    "client": "scripts/brand_reputation_monitor_client.py",
+    "cli": "scripts/brand-reputation-monitor-cli.py",
+    "tests": "scripts/test_brand_reputation_monitor_client.py"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/migration-checklist.md",
+    "references/test-scenarios.md",
+    "references/troubleshooting.md",
+    "references/verification-log.md",
+    "references/workflow-guide.md"
+  ],
+  "requirements": {
+    "python": ">=3.10",
+    "runtime": [
+      "typer>=0.9"
+    ],
+    "development": [
+      "pytest>=7.0",
+      "pytest-asyncio>=0.21",
+      "ruff>=0.4"
+    ]
+  }
+}

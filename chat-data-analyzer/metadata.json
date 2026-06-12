@@ -1,0 +1,68 @@
+{
+  "name": "chat-data-analyzer",
+  "version": "2.2.0",
+  "category": "analytics",
+  "license": "MIT",
+  "display_name": {
+    "en": "Chat Data Analyzer",
+    "he": "מנתח נתוני צ׳אט"
+  },
+  "display_description": {
+    "en": "Analyze Hebrew and mixed-language customer chats using local Hebrew text normalization, sentiment scoring, intent classification, drop-off detection, unresolved-conversation flags, privacy risk flags, and operational trend summaries for Israeli small businesses, freelancers, and consumer-facing teams.",
+    "he": "ניתוח שיחות לקוחות בעברית ובשילוב עברית-אנגלית באמצעות נרמול טקסט מקומי, סנטימנט, סיווג כוונות, זיהוי נטישות, שיחות פתוחות, סיכוני פרטיות ומגמות תפעוליות לעסקים קטנים, עצמאים וצוותי שירות בישראל."
+  },
+  "tags": {
+    "en": [
+      "appointments",
+      "chat-analytics",
+      "cli",
+      "consumer-service",
+      "customer-chat",
+      "customer-support",
+      "freelancers",
+      "hebrew-nlp",
+      "intent-classification",
+      "invoices",
+      "israel",
+      "israeli-small-business",
+      "privacy-aware",
+      "privacy-risk",
+      "pytest",
+      "refunds",
+      "sentiment-analysis",
+      "service-quality",
+      "small-business",
+      "support-qa",
+      "trend-analysis",
+      "whatsapp-business"
+    ],
+    "he": [
+      "איכות-שירות",
+      "בקרת-איכות",
+      "החזרים",
+      "וואטסאפ-עסקי",
+      "חשבוניות",
+      "ישראל",
+      "כוונות",
+      "מגמות",
+      "ניתוח-סנטימנט",
+      "ניתוח-צאט",
+      "ניתוח-שיחות",
+      "סיווג-כוונות",
+      "סנטימנט",
+      "עברית",
+      "עיבוד-עברית",
+      "עסקים-קטנים",
+      "עצמאים",
+      "פרטיות",
+      "צרכנות",
+      "שירות-לקוחות",
+      "תורים"
+    ]
+  },
+  "entrypoints": {
+    "client": "chat_data_analyzer_client.py",
+    "cli": "chat_data_analyzer_cli.py",
+    "script_cli": "scripts/chat-data-analyzer-cli.py"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "benefit-perk-planner",
+  "name": "Benefit & Perk Planner",
+  "version": "2.2.0",
+  "description": "Design practical Israeli benefit and perk packages for small businesses, freelancers, employees, and consumers, including meal benefits, Keren Hishtalmut, pension workflows, wellness, equipment, and migration planning.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "benefits",
+    "perks",
+    "israel",
+    "small-business",
+    "freelancer",
+    "consumer",
+    "employee",
+    "payroll",
+    "pension",
+    "keren-hishtalmut",
+    "meal-vouchers",
+    "cibus",
+    "tenbis",
+    "sodexo",
+    "wellness",
+    "hr",
+    "compensation",
+    "budgeting",
+    "migration",
+    "hebrew"
+  ],
+  "license": "MIT",
+  "entrypoint": "SKILL.md",
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ],
+  "scripts": [
+    "scripts/benefit_perk_planner_client.py",
+    "scripts/benefit_perk_planner_cli.py",
+    "scripts/benefit-perk-planner-cli.py"
+  ]
+}

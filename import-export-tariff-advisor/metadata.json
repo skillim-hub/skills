@@ -1,0 +1,50 @@
+{
+  "name": "Import/Export Tariff Advisor",
+  "slug": "import-export-tariff-advisor",
+  "version": "2.2.0",
+  "description": "Estimate Israeli customs duty, purchase tax, VAT, and landed cost for imports using tariff-code workflows and official-source verification.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "israel",
+    "customs",
+    "tariff",
+    "import",
+    "export",
+    "vat",
+    "purchase-tax",
+    "meches",
+    "maam",
+    "small-business",
+    "freelancer",
+    "consumer-import",
+    "landed-cost",
+    "customs-valuation",
+    "trade-compliance",
+    "hebrew",
+    "web-validated",
+    "customs-book",
+    "shaar-olami",
+    "free-import-order"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "scripts/import-export-tariff-advisor-cli.py",
+    "client": "scripts/import_export_tariff_advisor_client.py",
+    "package": "import_export_tariff_advisor"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ],
+  "license": "MIT"
+}

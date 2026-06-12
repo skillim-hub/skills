@@ -1,0 +1,49 @@
+{
+  "name": "Event & Webinar Promoter",
+  "slug": "event-webinar-promoter",
+  "version": "2.2.0",
+  "description": "Plan and promote events and webinars for Israeli audiences with timezone-aware scheduling, Hebrew copy, compliance checks, channel plans, and campaign workflows.",
+  "license": "MIT",
+  "locales": [
+    "en",
+    "he-IL"
+  ],
+  "tags": [
+    "accessibility",
+    "anti-spam",
+    "asia-jerusalem",
+    "campaign-planning",
+    "checklists",
+    "cli",
+    "click-cli",
+    "copywriting",
+    "events",
+    "freelancers",
+    "hebrew",
+    "hebrew-localization",
+    "installable-package",
+    "israel",
+    "israeli-regulation",
+    "marketing",
+    "privacy",
+    "pytest",
+    "small-business",
+    "timezone",
+    "utm",
+    "vat-18",
+    "wcag-2-aa",
+    "web-validated",
+    "webinars"
+  ],
+  "entrypoints": {
+    "guide": "SKILL.md",
+    "hebrew_guide": "SKILL_HE.md",
+    "cli": "event_webinar_promoter.cli:main",
+    "client": "event_webinar_promoter.client:EventWebinarPromoterClient",
+    "script_client": "scripts/event_webinar_promoter_client.py"
+  },
+  "python": {
+    "requires": ">=3.11",
+    "dev_requirements": "requirements-dev.txt"
+  }
+}

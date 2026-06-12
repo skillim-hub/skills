@@ -1,0 +1,29 @@
+{
+  "access_date": "2026-06-01",
+  "regulatory_year": 2026,
+  "currency": "ILS",
+  "monthly": {
+    "average_wage_national_insurance_law_section_2": 13769,
+    "reduced_rate_income_threshold": 7703,
+    "maximum_income_subject_to_contributions": 51910,
+    "minimum_income_for_self_employed_contributions": 3442,
+    "form_6101": "דין וחשבון רב שנתי (6101)"
+  },
+  "rates": {
+    "national_insurance_reduced": 0.0447,
+    "national_insurance_regular": 0.1283,
+    "health_insurance_reduced": 0.0323,
+    "health_insurance_regular": 0.0517,
+    "combined_reduced": 0.077,
+    "combined_regular": 0.18,
+    "deductible_national_insurance_share_for_basis": 0.52,
+    "vat_standard_from_2025_01_01": 0.18
+  },
+  "israel_invoices": {
+    "allocation_threshold_before_vat_2026_01_01": 10000,
+    "allocation_threshold_before_vat_2026_06_01": 5000,
+    "sandbox_approval_endpoint_path": "https://openapi.taxes.gov.il/shaam/tsandbox/Invoices/v1/Approval",
+    "production_invoice_endpoint_family": "https://api.taxes.gov.il/shaam/production/Invoices (see official API documentation; do not hard-code without current swagger)",
+    "oauth_long_time_token_sandbox": "https://openapi.taxes.gov.il/shaam/tsandbox/longtimetoken/oauth2/authorize"
+  }
+}

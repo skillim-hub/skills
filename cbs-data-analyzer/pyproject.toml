@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cbs-data-analyzer"
+version = "2.2.0"
+description = "Client and CLI helpers for Israeli CBS data analysis workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "httpx>=0.24",
+  "typer>=0.9",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7",
+  "pytest-asyncio>=0.21",
+  "ruff>=0.4",
+  "mypy>=1.8",
+]
+
+[project.scripts]
+cbs-data-analyzer = "cbs_data_analyzer_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "scripts"}
+py-modules = ["cbs_data_analyzer_client", "cbs_data_analyzer_cli"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+pythonpath = ["scripts"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

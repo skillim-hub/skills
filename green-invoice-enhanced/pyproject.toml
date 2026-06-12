@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "green-invoice-api-skill"
+version = "1.5.0"
+description = "Neutral Green Invoice API reference with Python client, CLI examples, and tests"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+  "httpx>=0.27",
+  "click>=8.1"
+]
+
+[tool.setuptools]
+py-modules = ["green_invoice_client"]
+package-dir = {"" = "scripts"}

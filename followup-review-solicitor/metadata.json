@@ -1,0 +1,51 @@
+{
+  "name": "followup-review-solicitor",
+  "version": "0.4.0",
+  "category": "business-automation",
+  "display_name": {
+    "en": "Follow-Up & Review Solicitor",
+    "he": "מבקש חוות דעת והודעות המשך"
+  },
+  "display_description": {
+    "en": "Sends follow-up messages and review requests in Hebrew at optimal times for Israeli audiences.",
+    "he": "שולח הודעות המשך ובקשות לחוות דעת בעברית, בתזמון מתאים לקהל ישראלי."
+  },
+  "license": "MIT",
+  "supported_agents": [
+    "coding-agent",
+    "chat-agent",
+    "automation-agent"
+  ],
+  "tags": [
+    "hebrew",
+    "israel",
+    "small-business",
+    "freelancer",
+    "customer-follow-up",
+    "review-request",
+    "whatsapp",
+    "sms",
+    "email",
+    "crm",
+    "consent",
+    "opt-out",
+    "privacy",
+    "payment-reminder",
+    "appointment-reminder",
+    "service-recovery",
+    "google-business-profile",
+    "localization",
+    "ils",
+    "dd/mm/yyyy",
+    "web-validated",
+    "vat-18",
+    "google-business-profile-api",
+    "whatsapp-cloud-api"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "client": "followup_review_solicitor",
+    "cli": "scripts/followup-review-solicitor-cli.py"
+  }
+}

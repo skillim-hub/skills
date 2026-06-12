@@ -1,0 +1,27 @@
+{
+  "document_type": "credit_note",
+  "document_number": "CN-2026-0007",
+  "issue_date": "20/06/2026",
+  "issuer": {
+    "name": "יעל כהן ייעוץ",
+    "tax_id": "123456789",
+    "status": "morshe"
+  },
+  "customer": {
+    "name": "חברת לקוח בע\"מ",
+    "tax_id": "515555555",
+    "customer_type": "business"
+  },
+  "currency": "ILS",
+  "original_document_number": "INV-2026-0042",
+  "original_allocation_number": "123456789012345",
+  "credit_reason": "הנחה בדיעבד עקב חיוב יתר",
+  "lines": [
+    {
+      "description": "זיכוי בגין חיוב יתר",
+      "quantity": "1",
+      "unit": "זיכוי",
+      "unit_price": "500.00"
+    }
+  ]
+}

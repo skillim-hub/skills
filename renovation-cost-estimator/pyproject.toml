@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "renovation-cost-estimator"
+version = "2.2.0"
+description = "Israeli renovation cost estimator with CLI, typed client, examples, and tests."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["renovation", "construction", "israel", "cost-estimation", "vat", "hebrew"]
+dependencies = ["typer>=0.9"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-asyncio>=0.21", "ruff>=0.1", "mypy>=1.6"]
+
+[project.scripts]
+renovation-cost-estimator = "renovation_cost_estimator.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["renovation_cost_estimator*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+warn_unused_configs = true

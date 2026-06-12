@@ -1,0 +1,55 @@
+{
+  "slug": "trademark-patent-helper",
+  "name": "Trademark & Patent Filing Helper",
+  "version": "2.2.0",
+  "description": "Bilingual Israeli trademark and patent filing preparation helper for small businesses, freelancers, startups, importers, creators, and consumers working with the Israel Patent Office.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "jurisdiction": "IL",
+  "tags": [
+    "2026-validation",
+    "async-client",
+    "branding-audit",
+    "cli",
+    "filing-checklist",
+    "freelancers",
+    "hebrew",
+    "hebrew-qa",
+    "intellectual-property",
+    "israel",
+    "israeli-patent-office",
+    "legal-operations",
+    "local-records",
+    "madrid-protocol",
+    "nice-classification",
+    "office-action",
+    "official-sources",
+    "patent",
+    "pct",
+    "prior-art-search",
+    "pytest",
+    "small-business",
+    "startups",
+    "trademark",
+    "web-validated",
+    "רשות-הפטנטים"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "trademark_patent_helper.cli:cli",
+    "client": "trademark_patent_helper.client:FilingHelperClient"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/document-workflows.md",
+    "references/migration-checklist.md",
+    "references/test-scenarios.md",
+    "references/troubleshooting.md",
+    "references/verification-log.md",
+    "references/workflow-guide.md"
+  ],
+  "license": "MIT"
+}

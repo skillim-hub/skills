@@ -1,0 +1,35 @@
+{
+  "name": "Tax-Law Explainer",
+  "slug": "tax-law-explainer",
+  "version": "2.2.0",
+  "description": "Bilingual operational explainer for Israeli small businesses, freelancers, and consumers covering the Income Tax Ordinance, VAT Law, and Real Estate Taxation Law.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "license": "MIT",
+  "minimum_python": "3.10",
+  "tags": [
+    "israel",
+    "tax",
+    "income-tax",
+    "vat",
+    "real-estate-taxation",
+    "freelancers",
+    "small-business",
+    "consumers",
+    "hebrew",
+    "compliance",
+    "decision-trees",
+    "cli",
+    "pytest"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "client": "scripts/tax_law_explainer_client.py",
+    "cli": "scripts/tax-law-explainer-cli.py",
+    "package": "tax_law_explainer",
+    "verification_log": "references/verification-log.md"
+  }
+}

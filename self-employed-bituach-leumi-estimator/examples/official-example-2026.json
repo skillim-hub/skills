@@ -1,0 +1,8 @@
+{
+  "command": "python -m scripts.cli --monthly-income 12000 --months 3 --year 2026",
+  "expected_official_example": {
+    "gross_income": 36000,
+    "contribution_basis_about": 34690,
+    "total_contributions_about": 3864
+  }
+}

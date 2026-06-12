@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bank-transaction-categorizer"
+version = "2.2.0"
+description = "Offline-first categorization of Israeli bank statement transactions."
+requires-python = ">=3.10"
+dependencies = [
+  "typer>=0.9"
+]
+license = { text = "MIT" }
+readme = "README.md"
+keywords = ["banking", "israel", "bookkeeping", "csv", "hebrew", "transactions"]
+
+[project.scripts]
+bank-transaction-categorizer = "bank_transaction_categorizer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bank_transaction_categorizer*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"

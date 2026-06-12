@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "budget-cashflow-forecaster"
+version = "2.2.0"
+description = "Local-first Israeli budget and cash-flow forecasting helper"
+requires-python = ">=3.10"
+dependencies = ["click>=8.1.0"]
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.21"]
+
+[project.scripts]
+budget-cashflow-forecaster = "budget_cashflow_forecaster.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["budget_cashflow_forecaster*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"

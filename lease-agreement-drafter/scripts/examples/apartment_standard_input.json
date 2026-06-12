@@ -1,0 +1,7 @@
+{
+  "landlord": {"name": "דנה כהן", "id_number": "123456789"},
+  "tenant": {"name": "נועם לוי", "id_number": "987654321"},
+  "property": {"property_type": "apartment", "address": "הרצל 10", "city": "חיפה", "rooms": 3},
+  "terms": {"start_date": "01/08/2026", "end_date": "31/07/2027", "monthly_rent_ils": 5200, "security_deposit_ils": 10400},
+  "language": "he"
+}

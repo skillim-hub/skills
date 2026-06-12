@@ -1,0 +1,40 @@
+{
+  "name": "Installment Calculator (Tashlumim)",
+  "slug": "installment-calculator",
+  "version": "1.2.0",
+  "description": "Calculate Israeli installment plans with interest, fees, schedules, APR-style cost, refund estimates, and consumer-facing disclosure checks.",
+  "license": "MIT",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "installments",
+    "tashlumim",
+    "israel",
+    "small-business",
+    "freelancer",
+    "consumer-credit",
+    "payment-schedule",
+    "interest",
+    "fees",
+    "apr",
+    "vat",
+    "refunds",
+    "checkout",
+    "invoices",
+    "disclosure",
+    "hebrew",
+    "web-validated",
+    "vat-18",
+    "cancellation-fee-cap",
+    "israel-invoice"
+  ],
+  "entrypoints": {
+    "english_guide": "SKILL.md",
+    "hebrew_guide": "SKILL_HE.md",
+    "cli": "scripts/installment-calculator-cli.py",
+    "client": "scripts/installment_calculator_client.py",
+    "package": "installment_calculator"
+  }
+}

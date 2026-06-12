@@ -1,0 +1,52 @@
+{
+  "name": "Employee Onboarding Guide",
+  "slug": "employee-onboarding-guide",
+  "version": "2.2.0",
+  "description": "Prepare neutral Israeli employee onboarding checklists, training materials, document requests, and payroll handoffs covering Form 101, National Insurance, health insurance contributions, pension intake, written terms, and first-month training.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "israel",
+    "employee-onboarding",
+    "payroll",
+    "human-resources",
+    "form-101",
+    "tax",
+    "bituach-leumi",
+    "health-insurance",
+    "pension",
+    "small-business",
+    "freelancers",
+    "employment-terms",
+    "timekeeping",
+    "hebrew",
+    "compliance",
+    "training-materials",
+    "cli",
+    "local-workflows",
+    "web-validated",
+    "vat",
+    "national-insurance-rates",
+    "official-sources"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "scripts/employee-onboarding-guide-cli.py",
+    "client": "scripts/employee_onboarding_guide_client.py"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ],
+  "license": "MIT",
+  "updated": "2026-06-04"
+}

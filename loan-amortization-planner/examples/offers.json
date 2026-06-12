@@ -1,0 +1,30 @@
+{
+  "scenarios": [
+    {
+      "name": "fixed 6.4",
+      "principal": "300000",
+      "term_months": 60,
+      "start_date": "01/07/2026",
+      "rate_type": "fixed",
+      "annual_interest_rate": "0.064"
+    },
+    {
+      "name": "prime plus 1.2",
+      "principal": "300000",
+      "term_months": 60,
+      "start_date": "01/07/2026",
+      "rate_type": "prime",
+      "prime_rate": "0.0525",
+      "prime_margin": "0.012"
+    },
+    {
+      "name": "cpi 3.9",
+      "principal": "300000",
+      "term_months": 60,
+      "start_date": "01/07/2026",
+      "rate_type": "cpi",
+      "annual_interest_rate": "0.039",
+      "annual_cpi_rate": "0.025"
+    }
+  ]
+}

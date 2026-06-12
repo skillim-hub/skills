@@ -1,0 +1,102 @@
+{
+  "schema_version": 2,
+  "sources": [
+    {
+      "name": "tax-authority-gov-il",
+      "authority": "Israel Tax Authority",
+      "index_url": "https://www.gov.il/he/departments/israel_tax_authority",
+      "base_url": "https://www.gov.il",
+      "portal_type": "public-index",
+      "language": "he",
+      "tags": [
+        "tax",
+        "vat",
+        "income-tax",
+        "certificates",
+        "forms"
+      ],
+      "notes": "Current public Tax Authority department page. Use public discovery only; authenticated filing and private certificates remain manual."
+    },
+    {
+      "name": "tax-authority-public-forms",
+      "authority": "Israel Tax Authority",
+      "index_url": "https://www.gov.il/he/departments/topics/income_tax_israel_tax_authority",
+      "base_url": "https://www.gov.il",
+      "portal_type": "public-index",
+      "language": "he",
+      "tags": [
+        "tax",
+        "income-tax",
+        "forms",
+        "tofes",
+        "freelancer",
+        "annual-report"
+      ],
+      "notes": "Current public income-tax topic page. Use focused queries such as 1301, 106, 1214, or the Hebrew form name."
+    },
+    {
+      "name": "bituach-leumi-forms",
+      "authority": "National Insurance Institute",
+      "index_url": "https://www.btl.gov.il/טפסים%20ואישורים/forms/Pages/default.aspx",
+      "base_url": "https://www.btl.gov.il",
+      "portal_type": "public-index",
+      "language": "he",
+      "tags": [
+        "national-insurance",
+        "benefits",
+        "forms",
+        "consumer",
+        "employers"
+      ],
+      "notes": "Public National Insurance forms. Some forms can be filled online, but automated submission is out of scope."
+    },
+    {
+      "name": "bituach-leumi-certificates",
+      "authority": "National Insurance Institute",
+      "index_url": "https://www.btl.gov.il/טפסים%20ואישורים/אישורים/Pages/default.aspx",
+      "base_url": "https://www.btl.gov.il",
+      "portal_type": "public-index",
+      "language": "he",
+      "tags": [
+        "national-insurance",
+        "certificates",
+        "benefits",
+        "consumer"
+      ],
+      "notes": "Public certificate information page. Certificates that require the personal service site remain manual."
+    },
+    {
+      "name": "gov-il-services",
+      "authority": "Government Services Portal",
+      "index_url": "https://www.gov.il/he/services",
+      "base_url": "https://www.gov.il",
+      "portal_type": "public-index",
+      "language": "he",
+      "tags": [
+        "gov-il",
+        "services",
+        "ministries",
+        "public-index",
+        "certificates"
+      ],
+      "notes": "General services and information page. Use a query and a small limit to avoid broad discovery."
+    },
+    {
+      "name": "corporations-authority",
+      "authority": "Corporations Authority",
+      "index_url": "https://www.gov.il/he/departments/israeli_corporations_authority",
+      "base_url": "https://www.gov.il",
+      "portal_type": "public-index",
+      "language": "he",
+      "tags": [
+        "companies",
+        "amuta",
+        "registrar",
+        "forms",
+        "small-business",
+        "nonprofits"
+      ],
+      "notes": "Current public Corporations Authority department page. Authenticated filings and paid company-file review remain manual."
+    }
+  ]
+}

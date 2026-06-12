@@ -1,0 +1,48 @@
+{
+  "slug": "emergency-contact-first-aid",
+  "name": "Emergency Contact and First-Aid Info",
+  "version": "2.2.0",
+  "description": "Local bilingual emergency contact and first-aid profile toolkit for Israeli small businesses, freelancers, households, and consumers.",
+  "locale": [
+    "en-IL",
+    "he-IL"
+  ],
+  "tags": [
+    "emergency",
+    "first-aid",
+    "israel",
+    "mda",
+    "hatzalah",
+    "small-business",
+    "freelancer",
+    "consumer",
+    "privacy",
+    "safety",
+    "aed",
+    "cpr",
+    "hebrew",
+    "cli",
+    "python-package",
+    "json-schema",
+    "local-first",
+    "workflow",
+    "pytest",
+    "web-validated",
+    "mda-verified",
+    "hatzalah-verified",
+    "vat-verified",
+    "verification-log"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "module": "src/emergency_contact_first_aid",
+    "client_script": "scripts/emergency_contact_first_aid_client.py",
+    "cli_script": "scripts/emergency_contact_first_aid_cli.py",
+    "console_command": "emergency-contact-first-aid"
+  },
+  "requirements": {
+    "python": ">=3.10",
+    "dev_dependencies_file": "requirements-dev.txt"
+  }
+}

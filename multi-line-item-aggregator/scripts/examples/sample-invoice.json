@@ -1,0 +1,22 @@
+{
+  "id": "SAMPLE-2026-0001",
+  "environment": "sandbox",
+  "lines": [
+    {
+      "sku": "CONSULT",
+      "description": "Consulting hour",
+      "quantity": "3.5",
+      "unit_price": "250",
+      "vat_rate": "18%",
+      "discount_type": "percent",
+      "discount_value": "10"
+    },
+    {
+      "sku": "DELIVERY",
+      "description": "Courier delivery",
+      "quantity": "1",
+      "unit_price": "39.90",
+      "vat_rate": "18%"
+    }
+  ]
+}

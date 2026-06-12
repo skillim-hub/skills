@@ -1,0 +1,44 @@
+{
+  "name": "Meal and Grocery Planner",
+  "slug": "meal-grocery-planner",
+  "version": "1.3.0",
+  "description": "Neutral Israeli meal planning and grocery basket helper for consumers, freelancers, and small businesses.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "meal-planning",
+    "grocery",
+    "israel",
+    "supermarkets",
+    "shufersal",
+    "rami-levy",
+    "victory",
+    "yochananof",
+    "recipes",
+    "budgeting",
+    "small-business",
+    "freelancers",
+    "hebrew",
+    "shopping-list",
+    "price-comparison",
+    "allergens",
+    "kosher",
+    "cli",
+    "python",
+    "web-validated",
+    "price-transparency",
+    "vat",
+    "consumer-protection",
+    "israeli-regulation"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "client": "meal_grocery_planner.client:MealGroceryPlannerClient",
+    "cli": "meal_grocery_planner.cli:app"
+  },
+  "license": "MIT",
+  "python": ">=3.10"
+}

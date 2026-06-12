@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arnona-payment-reminder"
+version = "2.2.0"
+description = "Reminder plans and payment instructions for Israeli municipal Arnona bills"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "click>=8.0"
+]
+
+[project.scripts]
+arnona-payment-reminder = "arnona_payment_reminder.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["arnona_payment_reminder*"]
+
+[tool.setuptools.package-data]
+arnona_payment_reminder = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+asyncio_mode = "strict"
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

@@ -1,0 +1,73 @@
+{
+  "version": "1.2.0",
+  "category": "business-operations",
+  "slug": "referral-program-manager",
+  "display_name": {
+    "en": "Referral Program Manager",
+    "he": "מנהל תוכניות הפניה"
+  },
+  "display_description": {
+    "en": "Sets up and tracks customer referral programs with Israeli payment-gateway integration for reward payouts.",
+    "he": "הקמה, ניהול ומעקב אחר תוכניות הפניה ללקוחות עם התאמה לשערי תשלום ותהליכי תגמול בישראל."
+  },
+  "supported_agents": [
+    "coding-agent",
+    "chat-agent",
+    "automation-agent"
+  ],
+  "tags": [
+    "referrals",
+    "friend-brings-friend",
+    "israel",
+    "small-business",
+    "freelancers",
+    "consumers",
+    "payments",
+    "payment-gateways",
+    "rewards",
+    "loyalty",
+    "fraud-review",
+    "vat",
+    "bookkeeping",
+    "privacy",
+    "consumer-protection",
+    "spam-law",
+    "hebrew",
+    "installable-python-package",
+    "cli-json-output",
+    "hebrew-localization",
+    "audit-report",
+    "web-validated",
+    "official-source-verification",
+    "vat-18-2025",
+    "grow-payments",
+    "yabandpay"
+  ],
+  "locale": {
+    "country": "IL",
+    "currency": "ILS",
+    "date_format": "DD/MM/YYYY",
+    "languages": [
+      "en",
+      "he"
+    ]
+  },
+  "capabilities": [
+    "design referral rules",
+    "track referral lifecycle",
+    "prepare reward payouts",
+    "export ledgers",
+    "score fraud signals",
+    "support Israeli gateway adapter patterns",
+    "normal package imports with referral_program_manager",
+    "environment-aware runnable examples"
+  ],
+  "verification": {
+    "access_date": "2026-06-03",
+    "log": "references/verification-log.md",
+    "total_checks": 19,
+    "double_confirmed": 14,
+    "corrected": 5,
+    "final_unconfirmed": 0
+  }
+}

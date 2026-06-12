@@ -1,0 +1,59 @@
+{
+  "version": "0.4.0",
+  "category": "business",
+  "name": "inventory-catalog-manager",
+  "display_name": {
+    "en": "Inventory & Catalog Manager",
+    "he": "מנהל מלאי וקטלוג"
+  },
+  "display_description": {
+    "en": "Manage item catalogs with SKUs, prices, VAT rates, and stock levels for Israeli small businesses.",
+    "he": "ניהול קטלוג פריטים עם מק״טים, מחירים, שיעורי מע״מ ורמות מלאי לעסקים קטנים בישראל."
+  },
+  "supported_agents": [
+    "coding-agent",
+    "chat-agent",
+    "automation-agent"
+  ],
+  "license": "MIT",
+  "locale": [
+    "en-IL",
+    "he-IL"
+  ],
+  "tags": [
+    "accounting",
+    "async",
+    "audit-log",
+    "bank-of-israel",
+    "catalog",
+    "cli",
+    "consumer-price-display",
+    "csv",
+    "ecommerce",
+    "freelancer",
+    "hebrew",
+    "ils",
+    "inventory",
+    "invoice-israel",
+    "israel",
+    "israeli-small-business",
+    "migration",
+    "official-sources",
+    "pos",
+    "price-list",
+    "pytest",
+    "reorder-point",
+    "retail",
+    "services",
+    "sku",
+    "small-business",
+    "stock",
+    "stock-count",
+    "typed-python",
+    "typer",
+    "vat",
+    "vat-exclusive",
+    "vat-inclusive",
+    "web-validated"
+  ]
+}

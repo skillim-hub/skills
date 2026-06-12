@@ -1,0 +1,60 @@
+{
+  "name": "pension-fund-tracker",
+  "version": "1.2.0",
+  "category": "finance",
+  "license": "MIT",
+  "display_name": {
+    "en": "Pension Fund Performance Tracker",
+    "he": "מעקב ביצועי קרנות פנסיה"
+  },
+  "display_description": {
+    "en": "Tracks Israeli pension fund returns and fees for information-only comparisons using Pensia Net and official Israeli public data.",
+    "he": "מעקב מידע אחר תשואות ודמי ניהול בקרנות פנסיה בישראל על בסיס נתוני פנסיה נט ומקורות רשמיים בישראל."
+  },
+  "tags": [
+    "async-client",
+    "capital-market-authority",
+    "ckan",
+    "cli",
+    "consumer-finance",
+    "csv",
+    "data-gov-il",
+    "data-quality",
+    "fee-impact",
+    "fees",
+    "freelancers",
+    "hebrew",
+    "information-only",
+    "israel",
+    "json",
+    "ministry-of-finance",
+    "payroll",
+    "pensia-net",
+    "pension",
+    "pension-funds",
+    "python-package",
+    "returns",
+    "small-business"
+  ],
+  "supported_agents": [
+    "coding-agent",
+    "chat-agent",
+    "automation-agent"
+  ],
+  "entrypoints": {
+    "package": "src/pension_fund_tracker",
+    "client": "scripts/pension_fund_tracker_client.py",
+    "cli": "scripts/pension-fund-tracker-cli.py",
+    "console_script": "pension-fund-tracker"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ]
+}

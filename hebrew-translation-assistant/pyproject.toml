@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hebrew-translation-assistant"
+version = "2.2.0"
+description = "Hebrew-English translation assistant for Israeli business, freelance, and consumer contexts."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["typer>=0.9"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23", "ruff>=0.5"]
+
+[project.scripts]
+hebrew-translation-assistant = "hebrew_translation_assistant.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["hebrew_translation_assistant*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+asyncio_mode = "auto"
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

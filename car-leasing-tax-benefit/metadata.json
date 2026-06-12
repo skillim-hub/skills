@@ -1,0 +1,39 @@
+{
+  "slug": "car-leasing-tax-benefit",
+  "name": "Car Leasing Tax Benefit Calculator",
+  "version": "2.2.0",
+  "description": "Calculate Israeli Shovi Rechev imputed benefit for company cars by tax year, vehicle category, official price, availability period, and marginal tax-rate assumptions.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "2026-tax-tables",
+    "accounting",
+    "car-leasing",
+    "cli",
+    "company-car",
+    "electric-vehicle",
+    "freelancer",
+    "hybrid-vehicle",
+    "israel",
+    "payroll",
+    "price-ceiling",
+    "pytest",
+    "shovi-rechev",
+    "small-business",
+    "tax",
+    "vat-reference",
+    "web-validated"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "package": "car_leasing_tax_benefit",
+    "client": "scripts/car_leasing_tax_benefit_client.py",
+    "cli": "scripts/car_leasing_tax_benefit_cli.py",
+    "table": "data/tax_authority_tables.json"
+  },
+  "license": "MIT",
+  "updated": "01/06/2026"
+}

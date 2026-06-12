@@ -1,0 +1,58 @@
+{
+  "version": "1.2.0",
+  "category": "business-operations",
+  "slug": "leave-sick-day-tracker",
+  "display_name": {
+    "en": "Annual Leave & Sick-Day Tracker",
+    "he": "מעקב ימי חופשה ומחלה"
+  },
+  "display_description": {
+    "en": "Track Israeli employee annual leave, sick days, miluim, birth and parenthood leave, and mourning days with local CSV workflows, CLI tooling, and audit checks.",
+    "he": "מעקב יתרות חופשה, מחלה, שירות מילואים, תקופת לידה והורות וימי אבל לעסקים בישראל באמצעות קבצי CSV, כלי שורת פקודה ובדיקות ביקורת."
+  },
+  "license": "MIT",
+  "supported_agents": [
+    "coding-agent",
+    "chat-agent",
+    "automation-agent"
+  ],
+  "tags": [
+    "annual-leave",
+    "audit",
+    "cli",
+    "compliance",
+    "consumer-rights",
+    "csv",
+    "employment",
+    "freelancers",
+    "he-il",
+    "hebrew",
+    "hr-operations",
+    "installable-package",
+    "israel",
+    "israeli-labor-law-2026",
+    "miluim",
+    "mourning-days",
+    "birth-and-parenthood-leave",
+    "parental-leave",
+    "payroll",
+    "pytest",
+    "sick-days",
+    "small-business",
+    "verification-log",
+    "web-validated"
+  ],
+  "locales": [
+    "en",
+    "he-IL"
+  ],
+  "inputs": [
+    "employees.csv",
+    "events.csv"
+  ],
+  "outputs": [
+    "balance-summary.csv",
+    "warnings",
+    "audit-notes"
+  ]
+}

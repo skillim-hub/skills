@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "savings-goal-planner"
+version = "2.2.0"
+description = "Israeli savings-goal planning helper with CLI, tests, and bilingual skill guides."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "click>=8.0"
+]
+
+[project.scripts]
+savings-goal-planner = "savings_goal_planner.cli:main"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-asyncio>=0.23",
+  "mypy>=1.8",
+  "ruff>=0.4"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["savings_goal_planner*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.mypy]
+python_version = "3.10"
+warn_unused_configs = true
+ignore_missing_imports = true

@@ -1,0 +1,35 @@
+[project]
+name = "bituach-leumi-payment-scheduler"
+version = "2.2.0"
+description = "Local scheduler for Israeli National Insurance payment due dates, reminders, and exports."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+  "click>=8.1"
+]
+keywords = [
+  "bituach-leumi",
+  "national-insurance",
+  "israel",
+  "payments",
+  "self-employed",
+  "employer",
+  "form-102"
+]
+
+[project.scripts]
+bituach-leumi-payment-scheduler = "bituach_leumi_payment_scheduler.cli:cli"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["bituach_leumi_payment_scheduler*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+pythonpath = ["."]
+addopts = "-q"

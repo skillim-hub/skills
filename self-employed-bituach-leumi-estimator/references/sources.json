@@ -1,0 +1,80 @@
+[
+  {
+    "id": "btl-rates-he",
+    "url": "https://www.btl.gov.il/Insurance/National%20Insurance/type_list/Self_Employed/Pages/rates.aspx",
+    "access_date": "2026-06-01",
+    "role": "primary Hebrew NII rates for self-employed workers"
+  },
+  {
+    "id": "btl-rates-en",
+    "url": "https://www.btl.gov.il/English%20Homepage/Insurance/Ratesandamount/Pages/Selfemployedperson.aspx",
+    "access_date": "2026-06-01",
+    "role": "second-pass English NII rates"
+  },
+  {
+    "id": "btl-method-he",
+    "url": "https://www.btl.gov.il/Insurance/National%20Insurance/type_list/Self_Employed/Pages/hishov.dmey.bituach.aspx",
+    "access_date": "2026-06-01",
+    "role": "primary Hebrew NII calculation method"
+  },
+  {
+    "id": "btl-method-en",
+    "url": "https://www.btl.gov.il/English%20Homepage/Insurance/National%20Insurance/Detailsoftypes/SelfEmployedPerson/Pages/Methodofcalculation.aspx",
+    "access_date": "2026-06-01",
+    "role": "second-pass English calculation method"
+  },
+  {
+    "id": "btl-definition-he",
+    "url": "https://www.btl.gov.il/Insurance/National%20Insurance/type_list/Self_Employed/Pages/default.aspx",
+    "access_date": "2026-06-01",
+    "role": "self-employed status definition"
+  },
+  {
+    "id": "btl-calculator-he",
+    "url": "https://www.btl.gov.il/Simulators/BituahCalc/Pages/Insurance_NotSachir.aspx",
+    "access_date": "2026-06-01",
+    "role": "official calculator page"
+  },
+  {
+    "id": "btl-form-6101",
+    "url": "https://www.btl.gov.il/טפסים%20ואישורים/forms/insurance_forms/Pages/6101%20-%20%20דין%20וחשבון%20רב%20שנתי.aspx",
+    "access_date": "2026-06-01",
+    "role": "official form 6101 page"
+  },
+  {
+    "id": "tax-vat-history",
+    "url": "https://www.gov.il/he/pages/vat-history",
+    "access_date": "2026-06-01",
+    "role": "Tax Authority VAT history"
+  },
+  {
+    "id": "tax-vat-rate-amounts",
+    "url": "https://www.gov.il/en/pages/vat-rate-amount-new",
+    "access_date": "2026-06-01",
+    "role": "Tax Authority VAT rates and amounts"
+  },
+  {
+    "id": "israel-invoices-2026-threshold-jan",
+    "url": "https://www.gov.il/he/pages/sa311225-1",
+    "access_date": "2026-06-01",
+    "role": "Israel Invoices threshold from 2026-01-01"
+  },
+  {
+    "id": "israel-invoices-2026-threshold-jun",
+    "url": "https://www.gov.il/he/pages/pa240525-1",
+    "access_date": "2026-06-01",
+    "role": "Israel Invoices threshold from 2026-06-01"
+  },
+  {
+    "id": "tax-api-catalog",
+    "url": "https://govextra.gov.il/taxes/innovation/home/api/",
+    "access_date": "2026-06-01",
+    "role": "Tax Authority API catalog"
+  },
+  {
+    "id": "tax-api-invoices-v2",
+    "url": "https://www.gov.il/BlobFolder/generalpage/hor-software-other/he/vat_software-houses-180724.pdf",
+    "access_date": "2026-06-01",
+    "role": "Israel Invoices API description v2.0"
+  }
+]

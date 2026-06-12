@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meal-grocery-planner"
+version = "1.3.0"
+description = "Israeli meal planning and grocery basket helper"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["typer>=0.9"]
+
+[project.scripts]
+meal-grocery-planner = "meal_grocery_planner.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["meal_grocery_planner*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["scripts"]

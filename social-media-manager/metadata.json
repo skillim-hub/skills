@@ -1,0 +1,59 @@
+{
+  "name": "social-media-manager",
+  "version": "2.1.0",
+  "category": "marketing-operations",
+  "display_name": {
+    "en": "Social-Media Manager",
+    "he": "מנהל רשתות חברתיות"
+  },
+  "display_description": {
+    "en": "Plan, validate, and schedule organic social posts for Facebook, Instagram, TikTok, and LinkedIn with Hebrew-friendly RTL, emoji handling, Israeli timezone, and compliance-aware workflows.",
+    "he": "תכנון, בדיקה ותזמון של פוסטים אורגניים לפייסבוק, אינסטגרם, טיקטוק ולינקדאין עם תמיכה בעברית, כיווניות, אימוג׳י, שעון ישראל ובדיקות ציות."
+  },
+  "license": "MIT",
+  "tags": {
+    "en": [
+      "social-media",
+      "scheduling",
+      "content-calendar",
+      "hebrew",
+      "rtl",
+      "emoji",
+      "israel",
+      "facebook",
+      "instagram",
+      "tiktok",
+      "linkedin",
+      "small-business",
+      "freelancers",
+      "consumer-marketing",
+      "compliance",
+      "timezone"
+    ],
+    "he": [
+      "רשתות-חברתיות",
+      "תזמון",
+      "לוח-תוכן",
+      "עברית",
+      "כיווניות",
+      "אימוג׳י",
+      "ישראל",
+      "פייסבוק",
+      "אינסטגרם",
+      "טיקטוק",
+      "לינקדאין",
+      "עסקים-קטנים",
+      "פרילנסרים",
+      "שיווק-לצרכנים",
+      "ציות",
+      "שעון-ישראל"
+    ]
+  },
+  "entrypoints": {
+    "skill": "SKILL.md",
+    "skill_he": "SKILL_HE.md",
+    "client": "scripts/social_media_manager_client.py",
+    "cli": "scripts/social-media-manager-cli.py",
+    "verification_log": "references/verification-log.md"
+  }
+}

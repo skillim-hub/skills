@@ -1,0 +1,99 @@
+{
+  "access_date": "2026-06-01",
+  "status_summary": {
+    "total_checks": 21,
+    "double_confirmed": 19,
+    "corrected_in_pass_2": 2,
+    "final_unconfirmed": 0
+  },
+  "official_sources": [
+    {
+      "name": "VAT amounts and rates",
+      "url": "https://www.gov.il/en/pages/vat-rate-amount-new",
+      "purpose": "Official VAT rates and amounts page"
+    },
+    {
+      "name": "Tax Terminology",
+      "url": "https://www.gov.il/en/pages/taxes-glossary",
+      "purpose": "English official VAT terminology and 18% rate statement"
+    },
+    {
+      "name": "Report 126/856 upload service",
+      "url": "https://www.gov.il/he/service/report126",
+      "purpose": "Annual report upload service for 126 and 856"
+    },
+    {
+      "name": "Submission Confirmation System (Form 126/856)",
+      "url": "https://www.gov.il/he/service/serving-approval-system",
+      "purpose": "Separate confirmation workflow after transmission"
+    },
+    {
+      "name": "Logical tests for reports 126 and 856",
+      "url": "https://www.gov.il/he/service/logical-tests-for-reports-126-856",
+      "purpose": "Official pre-submission simulator"
+    },
+    {
+      "name": "Withholding-tax and bookkeeping confirmations",
+      "url": "https://www.gov.il/he/service/itc-gmishurim",
+      "purpose": "Supplier certificate/rate lookup service"
+    },
+    {
+      "name": "Form 806 annual certificate",
+      "url": "https://www.gov.il/he/service/itc806",
+      "purpose": "Annual certificate of tax deducted at source"
+    },
+    {
+      "name": "Income Tax instruction 02/2026",
+      "url": "https://www.gov.il/BlobFolder/policy/inst-02-2026/he/IncomeTax_inst-02-2026.pdf",
+      "purpose": "2026 withholding-tax certificate validity and process"
+    },
+    {
+      "name": "Form 856 file structure 2017-2025",
+      "url": "https://www.gov.il/BlobFolder/service/report126/he/Service_Pages_Income_tax_annual-report-2026_856-2017-2025.pdf",
+      "purpose": "Official file structure reference"
+    },
+    {
+      "name": "Tax Authority API services",
+      "url": "https://govextra.gov.il/taxes/innovation/home/api/",
+      "purpose": "Tax Authority API service index"
+    },
+    {
+      "name": "Deductions reporting/payment API 04/2025",
+      "url": "https://www.gov.il/BlobFolder/generalpage/hor-software-other/he/IncomeTax_software-houses-150525-1.pdf",
+      "purpose": "API for SHAAM-connected representatives"
+    }
+  ],
+  "secondary_sources": [
+    {
+      "name": "PwC Israel Corporate Other Taxes",
+      "url": "https://taxsummaries.pwc.com/israel/corporate/other-taxes",
+      "purpose": "Second-pass VAT confirmation, reviewed 2026-01-01"
+    },
+    {
+      "name": "PwC Israel Corporate Withholding Taxes",
+      "url": "https://taxsummaries.pwc.com/israel/corporate/withholding-taxes",
+      "purpose": "Second-pass general WHT certificate context"
+    },
+    {
+      "name": "Oracle Israel Withholding Tax Reports",
+      "url": "https://docs.oracle.com/en/cloud/saas/financials/26b/faugf/withholding-tax-reports-for-israel.html",
+      "purpose": "Second-pass Form 856 ERP workflow description"
+    },
+    {
+      "name": "Herzog VAT update",
+      "url": "https://herzoglaw.co.il/en/news-and-insights/vat-updates-for-2025-vat-rate-increase-israel-invoices-reform-and-the-economic-plan-bill/",
+      "purpose": "Second-pass VAT effective-date confirmation"
+    },
+    {
+      "name": "Efraty CPA instruction mirror",
+      "url": "https://www.efraty.com/הוראת-ביצוע-מס-הכנסה-מס-02-2026-רשות-המסים-אי/",
+      "purpose": "Second-pass 2026 certificate validity mirror"
+    }
+  ],
+  "webhook_event_names": [],
+  "api_posture": {
+    "annual_856_auto_filing_endpoint_confirmed": false,
+    "deductions_reporting_payment_api_for_shaam_representatives_confirmed": true,
+    "do_not_hardcode_endpoint_paths": true
+  }
+}

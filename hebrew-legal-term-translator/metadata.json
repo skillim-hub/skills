@@ -1,0 +1,67 @@
+{
+  "name": "hebrew-legal-term-translator",
+  "version": "2.2.0",
+  "category": "legal-information",
+  "license": "MIT",
+  "display_name": {
+    "en": "Hebrew Legal-Term Translator",
+    "he": "מתרגם מונחים משפטיים בעברית"
+  },
+  "display_description": {
+    "en": "Explains Israeli Hebrew legal terms for non-Hebrew speakers, small businesses, freelancers, and consumers. Provides plain-language meaning, context triage, and citations to Israeli law and regulator sources for verification.",
+    "he": "מסביר מונחים משפטיים בעברית ישראלית לדוברי שפות אחרות, לעסקים קטנים, לעצמאים ולצרכנים. כולל הסבר פשוט, תיעדוף לפי הקשר והפניות למקורות דין ורשויות בישראל לצורך אימות."
+  },
+  "tags": {
+    "en": [
+      "hebrew",
+      "israel",
+      "legal-terms",
+      "translation",
+      "plain-language",
+      "small-business",
+      "freelancer",
+      "consumer-protection",
+      "vat",
+      "tax",
+      "contracts",
+      "employment",
+      "privacy",
+      "debt",
+      "small-claims",
+      "enforcement",
+      "compliance",
+      "legal-information"
+    ],
+    "he": [
+      "עברית",
+      "ישראל",
+      "מונחים-משפטיים",
+      "תרגום",
+      "שפה-פשוטה",
+      "עסקים-קטנים",
+      "עצמאים",
+      "צרכנות",
+      "מע״מ",
+      "מסים",
+      "חוזים",
+      "דיני-עבודה",
+      "פרטיות",
+      "חובות",
+      "תביעות-קטנות",
+      "הוצאה-לפועל",
+      "ציות"
+    ]
+  },
+  "supported_languages": [
+    "en",
+    "he"
+  ],
+  "supported_jurisdiction": "Israel",
+  "entrypoints": {
+    "skill_en": "SKILL.md",
+    "skill_he": "SKILL_HE.md",
+    "package": "hebrew_legal_term_translator",
+    "client": "scripts/hebrew_legal_term_translator_client.py",
+    "cli": "scripts/hebrew-legal-term-translator-cli.py"
+  }
+}

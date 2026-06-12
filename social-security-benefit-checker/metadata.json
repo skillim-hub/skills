@@ -1,0 +1,57 @@
+{
+  "slug": "social-security-benefit-checker",
+  "name": "Social Security Benefit Checker",
+  "version": "2.2.0",
+  "description": "Offline-first preliminary checker for Israeli National Insurance allowances and benefits.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "license": "MIT",
+  "tags": [
+    "2026-rates",
+    "bituach-leumi",
+    "child-allowance",
+    "cli",
+    "consumers",
+    "eligibility",
+    "freelancers",
+    "general-disability",
+    "hebrew",
+    "income-supplement",
+    "israel",
+    "national-insurance",
+    "official-sources",
+    "offline-first",
+    "python",
+    "small-business",
+    "social-security",
+    "unemployment",
+    "verification-log",
+    "web-validated"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "social-security-benefit-checker",
+    "python_package": "social_security_benefit_checker"
+  },
+  "requirements": {
+    "python": ">=3.10",
+    "runtime": [
+      "typer>=0.9"
+    ],
+    "development": [
+      "pytest>=7.0",
+      "pytest-asyncio>=0.20",
+      "ruff>=0.4",
+      "mypy>=1.0"
+    ]
+  },
+  "benefits": [
+    "unemployment",
+    "general_disability",
+    "child_allowance",
+    "income_supplement"
+  ]
+}

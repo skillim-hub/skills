@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transliteration-helper"
+version = "1.2.0"
+description = "Local Hebrew-to-Latin transliteration helper for passport-aware Israeli names."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+  "click>=8.0"
+]
+keywords = [
+  "hebrew",
+  "transliteration",
+  "israel",
+  "passport",
+  "names",
+  "cli",
+  "localization",
+  "small-business",
+  "freelancer",
+  "data-quality"
+]
+
+[project.scripts]
+transliteration-helper = "transliteration_helper_cli:main"
+
+[tool.setuptools]
+py-modules = ["transliteration_helper_client", "transliteration_helper_cli"]
+package-dir = {"" = "scripts"}
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q --import-mode=importlib"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

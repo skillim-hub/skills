@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "influencer-collaboration-helper"
+version = "2.2.0"
+description = "Offline-first helper for Israeli influencer collaboration workflows."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "typer>=0.9"
+]
+keywords = ["influencer", "israel", "hebrew", "marketing", "cli"]
+
+[project.scripts]
+influencer-collaboration = "influencer_collaboration_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "scripts"}
+py-modules = [
+  "influencer_collaboration_client",
+  "influencer_collaboration_cli"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+asyncio_mode = "auto"

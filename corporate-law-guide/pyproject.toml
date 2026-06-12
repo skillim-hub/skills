@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "corporate-law-guide"
+version = "2.2.0"
+description = "Neutral bilingual helper for Israeli corporate-law workflows"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["israel", "corporate-law", "companies-registrar", "shareholder-agreements"]
+dependencies = []
+
+[project.optional-dependencies]
+cli = ["typer>=0.9"]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.21", "typer>=0.9"]
+
+[project.scripts]
+corporate-law-guide = "corporate_law_guide.cli:main"
+
+[tool.setuptools]
+packages = ["corporate_law_guide"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"

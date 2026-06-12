@@ -1,0 +1,18 @@
+[
+  {
+    "supplier_tax_id": "123456789",
+    "rate_percent": "7.50",
+    "valid_from": "2026-01-01",
+    "valid_to": "2027-03-31",
+    "source": "Israel Tax Authority certificate/service snapshot",
+    "certificate_reference": "example-ita-cert-001"
+  },
+  {
+    "supplier_tax_id": "000123456",
+    "rate_percent": "0.00",
+    "valid_from": "2026-01-01",
+    "valid_to": "2027-03-31",
+    "source": "Israel Tax Authority certificate/service snapshot",
+    "certificate_reference": "example-ita-cert-002"
+  }
+]

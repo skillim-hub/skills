@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chat-data-analyzer"
+version = "2.2.0"
+description = "Analyze Hebrew and mixed-language customer chats with local text analysis, sentiment scoring, intent classification, privacy risk flags, and operational trends."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "click>=8.1"
+]
+keywords = [
+    "chat analytics",
+    "hebrew nlp",
+    "sentiment analysis",
+    "intent classification",
+    "customer support",
+    "israel",
+    "small business",
+    "privacy",
+    "service quality"
+]
+
+[project.scripts]
+chat-data-analyzer = "chat_data_analyzer_cli:cli"
+
+[tool.setuptools]
+py-modules = ["chat_data_analyzer_client", "chat_data_analyzer_cli"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"

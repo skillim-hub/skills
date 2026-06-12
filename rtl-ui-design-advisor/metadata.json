@@ -1,0 +1,51 @@
+{
+  "slug": "rtl-ui-design-advisor",
+  "name": "RTL UI Design Advisor",
+  "version": "2.2.0",
+  "description": "Practical guidance and static checks for right-to-left Hebrew and Arabic interfaces in HTML, CSS, React, and Tailwind.",
+  "language": "en",
+  "entrypoint": "SKILL.md",
+  "license": "MIT",
+  "tags": [
+    "rtl",
+    "right-to-left",
+    "hebrew",
+    "arabic",
+    "israel",
+    "israeli-localization",
+    "accessibility",
+    "bidirectional-text",
+    "bidi",
+    "css-logical-properties",
+    "html-dir",
+    "react",
+    "tailwind",
+    "forms",
+    "qa",
+    "migration",
+    "small-business",
+    "freelancers",
+    "ecommerce",
+    "invoices",
+    "ils",
+    "dates",
+    "verification",
+    "web-validated",
+    "vat-18",
+    "official-sources"
+  ],
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ],
+  "scripts": [
+    "scripts/rtl_ui_design_advisor_client.py",
+    "scripts/rtl_ui_design_advisor_cli.py"
+  ]
+}

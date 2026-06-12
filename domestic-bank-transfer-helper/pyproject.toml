@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "domestic-bank-transfer-helper"
+version = "1.2.0"
+description = "Validate and prepare Israeli domestic bank-transfer form data for MASAV and Zahav workflows."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["click>=8.1"]
+
+[project.scripts]
+domestic-bank-transfer-helper = "domestic_bank_transfer_helper_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "scripts"}
+py-modules = [
+  "domestic_bank_transfer_helper_client",
+  "domestic_bank_transfer_helper_cli"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"

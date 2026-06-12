@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "appointment-reminder-noshow"
+version = "0.3.0"
+description = "Appointment reminder and no-show tracking utilities for Israeli service businesses."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = [
+  "click>=8.1"
+]
+keywords = ["appointments", "reminders", "no-show", "whatsapp", "sms", "hebrew", "israel"]
+
+[project.scripts]
+appointment-reminder-noshow = "appointment_reminder_noshow_cli:cli"
+
+[tool.setuptools]
+py-modules = ["appointment_reminder_noshow_client", "appointment_reminder_noshow_cli"]
+package-dir = {"" = "scripts"}
+
+[tool.pytest.ini_options]
+pythonpath = ["scripts"]
+testpaths = ["scripts"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120

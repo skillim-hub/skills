@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "skill": "disaster-preparedness-guide",
+  "generated_at": "2026-06-04T00:00:00Z",
+  "notes": [
+    "Offline preparedness guide. Verify live instructions against official Israeli authorities.",
+    "Official current instructions override this guide."
+  ],
+  "public_reference_domains": [
+    "Home Front Command / פיקוד העורף",
+    "Israel Police 100",
+    "MDA 101",
+    "Fire and Rescue 102",
+    "Municipality 106",
+    "Civil defense, planning/building, accessibility, privacy, hazardous materials, business licensing, workplace safety, and tax/accounting domains"
+  ]
+}

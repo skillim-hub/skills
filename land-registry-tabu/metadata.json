@@ -1,0 +1,49 @@
+{
+  "name": "Land Registry Data Fetcher (Tabu)",
+  "slug": "land-registry-tabu",
+  "version": "2.2.0",
+  "description": "Retrieve and structure Israeli Tabu land registry information about ownership, encumbrances, rights, parcels, and due-diligence signals for small businesses, freelancers, and consumers.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "israel",
+    "tabu",
+    "land-registry",
+    "real-estate",
+    "property",
+    "ownership",
+    "encumbrances",
+    "rights",
+    "due-diligence",
+    "small-business",
+    "freelancer",
+    "consumer",
+    "hebrew",
+    "cli",
+    "api-client",
+    "gov-il",
+    "mortgage",
+    "caveat",
+    "lien",
+    "lease",
+    "easement",
+    "parcel",
+    "web-validated",
+    "official-sources",
+    "verification-log"
+  ],
+  "entrypoint": "SKILL.md",
+  "license": "MIT",
+  "compatibility": {
+    "python": ">=3.10",
+    "interfaces": [
+      "skill",
+      "cli",
+      "sync-client",
+      "async-client",
+      "installable-package"
+    ]
+  }
+}

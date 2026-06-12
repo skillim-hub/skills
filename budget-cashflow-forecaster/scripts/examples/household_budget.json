@@ -1,0 +1,52 @@
+{
+  "opening_balance": 12000,
+  "start_month": "2026-01",
+  "months": 4,
+  "cash_in": [
+    {
+      "date": "2026-01-10",
+      "amount": 14500,
+      "description": "Salary",
+      "category": "salary",
+      "taxable": false
+    },
+    {
+      "date": "2026-02-10",
+      "amount": 14500,
+      "description": "Salary",
+      "category": "salary",
+      "taxable": false
+    },
+    {
+      "date": "2026-03-10",
+      "amount": 14500,
+      "description": "Salary",
+      "category": "salary",
+      "taxable": false
+    }
+  ],
+  "cash_out": [
+    {
+      "date": "2026-01-01",
+      "amount": 5200,
+      "description": "Rent",
+      "category": "housing"
+    },
+    {
+      "date": "2026-01-15",
+      "amount": 6800,
+      "description": "Credit card",
+      "category": "credit_card"
+    },
+    {
+      "date": "2026-02-01",
+      "amount": 5200,
+      "description": "Rent",
+      "category": "housing"
+    }
+  ],
+  "tax_profile": {
+    "vat_cadence": "none"
+  },
+  "buffer": 7000
+}

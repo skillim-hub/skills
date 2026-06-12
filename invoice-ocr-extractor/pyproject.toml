@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invoice-ocr-extractor"
+version = "2.2.0"
+description = "Extract structured expense-entry data from Hebrew and English invoice OCR text."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["click>=8.1"]
+keywords = ["invoice", "ocr", "hebrew", "israel", "vat", "bookkeeping"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.21"]
+
+[project.scripts]
+invoice-ocr-extractor = "invoice_ocr_extractor.cli:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+norecursedirs = [".git", ".venv", "build", "dist"]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"

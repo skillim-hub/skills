@@ -1,0 +1,1 @@
+"""Green Invoice integration scripts."""

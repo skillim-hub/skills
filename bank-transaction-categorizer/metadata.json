@@ -1,0 +1,49 @@
+{
+  "slug": "bank-transaction-categorizer",
+  "name": "Bank Transaction Categorizer",
+  "version": "2.2.0",
+  "description": "Offline-first categorization of Israeli bank statement transactions for small businesses, freelancers, and consumers.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "license": "MIT",
+  "tags": [
+    "bank-hapoalim",
+    "bank-leumi",
+    "banking",
+    "bit",
+    "bookkeeping",
+    "budgeting",
+    "cal",
+    "categorization",
+    "cli",
+    "csv",
+    "discount-bank",
+    "freelancers",
+    "hebrew",
+    "isracard",
+    "israel",
+    "israeli-banking",
+    "max",
+    "mizrahi-tefahot",
+    "offline-first",
+    "open-banking",
+    "paybox",
+    "privacy",
+    "python-package",
+    "regulatory-reference",
+    "small-business",
+    "tax-review",
+    "transactions",
+    "vat",
+    "vat-18",
+    "web-validated"
+  ],
+  "entrypoints": {
+    "guide": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "cli": "scripts/bank-transaction-categorizer-cli.py",
+    "client": "bank_transaction_categorizer/client.py"
+  }
+}

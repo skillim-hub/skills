@@ -1,0 +1,88 @@
+{
+  "version": "2.2.0",
+  "category": "localization",
+  "slug": "event-scheduler-invitation",
+  "locale": "he-IL",
+  "currency": "ILS",
+  "date_format": "DD/MM/YYYY",
+  "display_name": {
+    "en": "Event Scheduler & Invitation Manager",
+    "he": "מנהל אירועים והזמנות בישראל"
+  },
+  "display_description": {
+    "en": "Plan Israeli lifecycle events with Hebrew RSVP management, venue logistics, vendor coordination, privacy-aware guest handling, and localized budgeting for weddings, bar/bat mitzvah, brit milah, family celebrations, and small-business events.",
+    "he": "תכנון אירועי חיים בישראל עם אישורי הגעה בעברית, תפעול אולם, ספקים, פרטיות, תקציב בשקלים והושבה לחתונות, בר/בת מצווה, ברית מילה, אירועי משפחה ואירועי עסקים קטנים."
+  },
+  "tags": {
+    "en": [
+      "israel",
+      "event-planning",
+      "rsvp",
+      "hebrew",
+      "wedding",
+      "bar-mitzvah",
+      "bat-mitzvah",
+      "brit-milah",
+      "venue-logistics",
+      "guest-management",
+      "small-business",
+      "privacy",
+      "accessibility",
+      "vendors",
+      "calendar",
+      "lifecycle-events",
+      "seating-plan",
+      "transport",
+      "budgeting",
+      "cli",
+      "python-package",
+      "web-validated",
+      "tax-documentation",
+      "acum",
+      "invoice-allocation"
+    ],
+    "he": [
+      "ישראל",
+      "תכנון-אירועים",
+      "אישורי-הגעה",
+      "עברית",
+      "חתונה",
+      "בר-מצווה",
+      "בת-מצווה",
+      "ברית-מילה",
+      "אולם-אירועים",
+      "ניהול-מוזמנים",
+      "עסקים-קטנים",
+      "פרטיות",
+      "נגישות",
+      "ספקים",
+      "אירועי-חיים",
+      "סידורי-הושבה",
+      "הסעות",
+      "תקציב",
+      "כלי-שורת-פקודה",
+      "אימות-מקורות",
+      "מסמכי-מס",
+      "אקום",
+      "חשבוניות-ישראל"
+    ]
+  },
+  "supported_event_types": [
+    "wedding",
+    "bar_mitzvah",
+    "bat_mitzvah",
+    "brit_milah",
+    "naming_ceremony",
+    "family_event",
+    "community_event",
+    "customer_event"
+  ],
+  "requirements": {
+    "python": ">=3.10",
+    "dev": [
+      "pytest>=8.0",
+      "pytest-asyncio>=0.23",
+      "typer>=0.12"
+    ]
+  }
+}

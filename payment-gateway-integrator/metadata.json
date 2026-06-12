@@ -1,0 +1,100 @@
+{
+  "name": "payment-gateway-integrator",
+  "version": "2.2.0",
+  "category": "payments",
+  "display_name": {
+    "en": "Payment Gateway Integrator",
+    "he": "שילוב שערי תשלום"
+  },
+  "display_description": {
+    "en": "Unifies Cardcom, Tranzila, Pelecard, and Grow (formerly Meshulam, with legacy Meshulam contracts where applicable) under a neutral Israeli payment-orchestration API for checkout, installments, refunds, webhooks, fallback routing, reconciliation, and migration.",
+    "he": "איחוד Cardcom, Tranzila, Pelecard ו-Grow (לשעבר Meshulam, כולל חוזים ותיקים לפי הצורך) תחת ממשק תזמור תשלומים ישראלי לניהול דפי סליקה, תשלומים, החזרים, קריאות חוזרות, ניתוב חלופי, התאמות ומעבר ספק."
+  },
+  "license": "MIT",
+  "tags": {
+    "en": [
+      "payments",
+      "payment-gateway",
+      "israel",
+      "cardcom",
+      "tranzila",
+      "meshulam",
+      "pelecard",
+      "grow",
+      "shva",
+      "credit-cards",
+      "installments",
+      "refunds",
+      "webhooks",
+      "tokenization",
+      "reconciliation",
+      "small-business",
+      "freelancers",
+      "consumer-protection",
+      "vat",
+      "pci-dss",
+      "vat-18-2026",
+      "grow-payments",
+      "meshulam-legacy",
+      "web-validated",
+      "ashrait-emv"
+    ],
+    "he": [
+      "תשלומים",
+      "סליקה",
+      "שער-תשלום",
+      "ישראל",
+      "קארדקום",
+      "טרנזילה",
+      "משולם",
+      "פלאקארד",
+      "גרו",
+      "שבא",
+      "כרטיסי-אשראי",
+      "החזרים",
+      "קריאות-חוזרות",
+      "אסימון-תשלום",
+      "התאמות",
+      "עסקים-קטנים",
+      "עצמאים",
+      "הגנת-הצרכן",
+      "מע״מ",
+      "מעמ-18-2026",
+      "גרו-פיימנטס",
+      "משולם-ישן",
+      "אימות-רשת",
+      "אשראית-emv"
+    ]
+  },
+  "supported_languages": [
+    "en",
+    "he"
+  ],
+  "python": {
+    "requires": ">=3.10",
+    "package": "payment_gateway_integrator",
+    "client": "scripts/payment_gateway_integrator_client.py",
+    "cli": "scripts/payment_gateway_integrator_cli.py",
+    "tests": "scripts/test_payment_gateway_integrator_client.py"
+  },
+  "gateways": [
+    "cardcom",
+    "tranzila",
+    "meshulam",
+    "pelecard",
+    "grow"
+  ],
+  "capabilities": [
+    "hosted_checkout",
+    "tokenization",
+    "token_charge",
+    "refund",
+    "partial_refund",
+    "installments",
+    "authorize",
+    "capture",
+    "webhooks",
+    "reconciliation",
+    "fallback_routing"
+  ]
+}

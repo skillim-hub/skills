@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mortgage-loan-eligibility"
+version = "2.2.0"
+description = "Preliminary Israeli mortgage eligibility, LTV, DSR, and payment calculator"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "typer>=0.9"
+]
+keywords = [
+  "mortgage",
+  "Israel",
+  "LTV",
+  "DSR",
+  "loan",
+  "eligibility",
+  "Hebrew",
+  "small-business",
+  "freelancer"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-asyncio>=0.21",
+  "ruff>=0.4"
+]
+
+[project.scripts]
+mortgage-loan-eligibility = "mortgage_loan_eligibility_cli:main"
+
+[tool.setuptools]
+py-modules = ["mortgage_loan_eligibility_client", "mortgage_loan_eligibility_cli"]
+
+[tool.setuptools.package-dir]
+"" = "scripts"
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

@@ -1,0 +1,42 @@
+{
+  "slug": "loan-amortization-planner",
+  "name": "Loan Amortization Planner",
+  "version": "2.2.0",
+  "description": "Calculate repayment schedules and compare Israeli fixed-rate, prime-linked, and CPI-linked loan scenarios for small businesses, freelancers, and consumers.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "loan",
+    "amortization",
+    "israel",
+    "small-business",
+    "freelancer",
+    "consumer-credit",
+    "prime-rate",
+    "cpi-linked",
+    "fixed-rate",
+    "cash-flow",
+    "repayment-schedule",
+    "balloon-payment",
+    "grace-period",
+    "early-repayment",
+    "financial-planning"
+  ],
+  "entrypoints": {
+    "english_guide": "SKILL.md",
+    "hebrew_guide": "SKILL_HE.md",
+    "python_package": "loan_amortization_planner",
+    "cli": "loan_amortization_planner.cli",
+    "client": "loan_amortization_planner.client",
+    "script_cli": "scripts/loan_amortization_planner_cli.py",
+    "script_client": "scripts/loan_amortization_planner_client.py"
+  },
+  "verified": {
+    "access_date": "2026-06-02",
+    "vat_rate_standard": "18%",
+    "bank_of_israel_rate": "3.75%",
+    "implied_prime_rate": "5.25%"
+  }
+}

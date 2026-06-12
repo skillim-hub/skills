@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loan-amortization-planner"
+version = "2.2.0"
+description = "Offline Israeli loan amortization planner for fixed, prime-linked, and CPI-linked scenarios."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "typer>=0.12,<1.0"
+]
+keywords = [
+  "loan",
+  "amortization",
+  "israel",
+  "prime",
+  "cpi",
+  "small-business",
+  "freelancer",
+  "cash-flow"
+]
+
+[project.scripts]
+loan-amortization-planner = "loan_amortization_planner.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["loan_amortization_planner*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+asyncio_mode = "auto"

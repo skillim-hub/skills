@@ -1,0 +1,88 @@
+{
+  "name": "tax-return-filing-assistant",
+  "version": "2.2.0",
+  "category": "tax-and-finance",
+  "license": "MIT",
+  "languages": [
+    "en",
+    "he"
+  ],
+  "tags": {
+    "en": [
+      "israel",
+      "income-tax",
+      "tax-return",
+      "form-1301",
+      "form-135",
+      "form-126",
+      "form-856",
+      "form-6111",
+      "small-business",
+      "freelancer",
+      "employer-reporting",
+      "supplier-withholding",
+      "deadline-reminders",
+      "field-help",
+      "cli-profile-store",
+      "offline-preparation",
+      "hebrew-guidance",
+      "web-validated",
+      "deadline-overrides",
+      "vat-18"
+    ],
+    "he": [
+      "ישראל",
+      "מס-הכנסה",
+      "דוח-שנתי",
+      "טופס-1301",
+      "טופס-135",
+      "טופס-126",
+      "טופס-856",
+      "טופס-6111",
+      "עצמאים",
+      "עסקים-קטנים",
+      "מעסיקים",
+      "ניכוי-במקור",
+      "תזכורות-מועד",
+      "עזרה-בשדות",
+      "שמירה-מקומית",
+      "הכנה-לא-מקוונת",
+      "הדרכה-עברית",
+      "אימות-מקורות",
+      "עדכוני-מועד",
+      "מעמ-18"
+    ]
+  },
+  "forms": [
+    "1301",
+    "135",
+    "126",
+    "856",
+    "6111"
+  ],
+  "display_name": {
+    "en": "Tax Return Filing Assistant",
+    "he": "מסייע להכנת דוחות מס"
+  },
+  "display_description": {
+    "en": "Prepare Israeli tax filing workflows for Forms 1301, 135, 126, 856, and 6111 with field help, document checklists, deadline reminders, validation, troubleshooting, and CLI helpers.",
+    "he": "הכנת תהליכי דיווח מס בישראל לטפסים 1301, 135, 126, 856 ו-6111, כולל עזרה לפי שדות, רשימות מסמכים, תזכורות למועדים, בדיקות תקינות, פתרון תקלות וכלי CLI."
+  },
+  "capabilities": [
+    "form_selection",
+    "field_help",
+    "deadline_planning",
+    "document_checklists",
+    "validation",
+    "troubleshooting",
+    "bilingual_guidance",
+    "offline_cli",
+    "local_profile_ids",
+    "importable_python_module"
+  ],
+  "data_handling": {
+    "stores_personal_data_by_default": false,
+    "requires_official_deadline_verification": true,
+    "submits_to_tax_authority": false
+  }
+}

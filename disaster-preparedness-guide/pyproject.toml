@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "disaster-preparedness-guide"
+version = "2.1.0"
+description = "Offline helper and references for Israeli disaster preparedness planning."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["click>=8.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.21", "mypy>=1.0", "ruff>=0.5"]
+
+[project.scripts]
+disaster-preparedness = "disaster_preparedness_guide.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["disaster_preparedness_guide*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"

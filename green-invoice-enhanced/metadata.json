@@ -1,0 +1,70 @@
+{
+  "version": "1.5.0",
+  "category": "accounting",
+  "tags": {
+    "he": [
+      "חשבונית-ירוקה",
+      "מורנינג",
+      "חשבונית",
+      "חשבונית-מס",
+      "חשבונית-מס-קבלה",
+      "קבלה",
+      "חשבונית-זיכוי",
+      "מע״מ",
+      "מספר-הקצאה",
+      "שע״מ",
+      "ניכוי-במקור",
+      "לקוחות",
+      "פריטים",
+      "הוצאות",
+      "תשלומים",
+      "וובהוק",
+      "webhook",
+      "ישראל",
+      "הנהלת-חשבונות",
+      "סנדבוקס",
+      "בדיקות",
+      "cli"
+    ],
+    "en": [
+      "green-invoice",
+      "morning",
+      "invoice",
+      "tax-invoice",
+      "tax-invoice-receipt",
+      "receipt",
+      "credit-note",
+      "vat",
+      "shaam",
+      "allocation-number",
+      "withholding-tax",
+      "clients",
+      "items",
+      "expenses",
+      "payments",
+      "webhooks",
+      "israel",
+      "accounting",
+      "sandbox",
+      "troubleshooting",
+      "cli",
+      "pytest",
+      "async"
+    ]
+  },
+  "display_name": {
+    "he": "חשבונית ירוקה (Morning)",
+    "en": "Green Invoice (Morning)"
+  },
+  "display_description": {
+    "he": "אינטגרציה טכנית עם API של חשבונית ירוקה (Morning) להפקת מסמכים חשבונאיים בישראל, ניהול לקוחות, פריטי קטלוג, הוצאות, תשלומים ו-וובהוקים. כולל מדריכי תקלות, תרחישי סביבת בדיקות, רשימת מעבר, CLI, לקוח Python סינכרוני ואסינכרוני, מטא-דאטה להתקנה, דוגמאות ובדיקות pytest.",
+    "en": "Technical integration reference for the Green Invoice (Morning) API covering Israeli invoices, receipts, credit notes, clients, catalog items, expenses, payments, webhooks, sandbox scenarios, troubleshooting, migration, a sync/async Python client, CLI, editable installation metadata, examples, verification notes, and pytest coverage."
+  },
+  "supported_agents": [
+    "coding-agent",
+    "chat-agent",
+    "automation-agent",
+    "terminal-agent"
+  ],
+  "license": "MIT"
+}

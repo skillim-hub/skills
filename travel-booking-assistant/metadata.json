@@ -1,0 +1,54 @@
+{
+  "name": "Travel-Booking Assistant",
+  "slug": "travel-booking-assistant",
+  "version": "2.2.0",
+  "description": "Neutral travel booking assistant for Israeli domestic travel, Eilat flights, Israel Rail, hotels, outbound international itineraries, ₪ cost summaries, currency handling, invoice prompts, and supplier troubleshooting.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "bank-of-israel-rates",
+    "booking",
+    "cli",
+    "consumers",
+    "currency-conversion",
+    "date-localization",
+    "eilat",
+    "expense-documentation",
+    "flights",
+    "freelancers",
+    "hebrew",
+    "hotels",
+    "ils",
+    "international-travel",
+    "israel",
+    "israel-invoices-2026",
+    "israel-rail",
+    "israeli-small-business",
+    "production",
+    "python-package",
+    "ramon-airport",
+    "sandbox",
+    "supplier-support",
+    "travel",
+    "troubleshooting",
+    "vat-invoice",
+    "web-validated"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "scripts/travel-booking-assistant-cli.py",
+    "module": "travel_booking_assistant",
+    "client": "travel_booking_assistant/client.py"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md"
+  ],
+  "license": "MIT"
+}

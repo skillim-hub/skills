@@ -1,0 +1,38 @@
+{
+  "property": {
+    "block": 30001,
+    "parcel": 12,
+    "subparcel": 4,
+    "address": "Example Street 10, Tel Aviv-Yafo"
+  },
+  "retrieved_at": "2026-06-04T12:00:00Z",
+  "rights": [
+    {
+      "owner_name": "Dana Cohen",
+      "id": "123456782",
+      "right_type": "ownership",
+      "share": "1/2",
+      "deed_date": "2022-02-15",
+      "deed_number": "1234/2022",
+      "encumbrances": [
+        {
+          "type": "mortgage",
+          "beneficiary": "Example Bank Ltd.",
+          "amount_ils": 1200000,
+          "registered_date": "2022-02-15",
+          "notes": "First-ranking mortgage"
+        }
+      ]
+    },
+    {
+      "owner_name": "Amit Levy",
+      "id": "987654321",
+      "right_type": "ownership",
+      "share": "1/2",
+      "deed_date": "15/02/2022",
+      "deed_number": "1235/2022",
+      "encumbrances": []
+    }
+  ],
+  "warnings": []
+}

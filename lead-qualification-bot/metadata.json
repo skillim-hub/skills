@@ -1,0 +1,69 @@
+{
+  "slug": "lead-qualification-bot",
+  "name": "Lead Qualification Bot",
+  "version": "2.1.0",
+  "description": "WhatsApp-first Hebrew lead qualification workflows for Israeli small businesses, freelancers, clinics, and consumer-facing service providers.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "license": "MIT",
+  "tags": [
+    "lead-qualification",
+    "whatsapp",
+    "hebrew",
+    "israel",
+    "small-business",
+    "freelancers",
+    "crm",
+    "consent",
+    "privacy",
+    "sales-operations",
+    "customer-service",
+    "typer",
+    "pytest",
+    "workflow",
+    "automation",
+    "ils",
+    "dd/mm/yyyy",
+    "importable-package",
+    "sandbox",
+    "production"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "cli_module": "lead_qualification_bot.cli:main",
+    "client_module": "lead_qualification_bot.client",
+    "compat_client": "scripts/lead_qualification_bot_client.py"
+  },
+  "requirements": {
+    "python": ">=3.10",
+    "runtime": [
+      "typer>=0.9.0"
+    ],
+    "dev": [
+      "pytest>=7.0.0",
+      "pytest-asyncio>=0.21.0"
+    ]
+  },
+  "localization": {
+    "currency": "ILS",
+    "currency_symbol": "₪",
+    "date_format": "DD/MM/YYYY",
+    "timezone": "Asia/Jerusalem",
+    "primary_channel": "WhatsApp",
+    "primary_language": "Hebrew"
+  },
+  "verification": {
+    "web_validated": true,
+    "access_date": "2026-06-03",
+    "verification_log": "references/verification-log.md",
+    "summary": {
+      "total_checks": 14,
+      "double_confirmed": 13,
+      "corrected_in_pass_2": 1,
+      "final_unconfirmed": 0
+    }
+  }
+}

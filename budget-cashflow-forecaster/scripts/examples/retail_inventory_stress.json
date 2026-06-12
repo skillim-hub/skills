@@ -1,0 +1,52 @@
+{
+  "opening_balance": 22000,
+  "start_month": "2026-01",
+  "months": 4,
+  "cash_in": [
+    {
+      "date": "2026-01-20",
+      "amount": 30000,
+      "description": "Card settlement",
+      "category": "sales",
+      "taxable": true,
+      "gross": true
+    },
+    {
+      "date": "2026-02-20",
+      "amount": 26000,
+      "description": "Card settlement",
+      "category": "sales",
+      "taxable": true,
+      "gross": true
+    }
+  ],
+  "cash_out": [
+    {
+      "date": "2026-01-03",
+      "amount": 28000,
+      "description": "Inventory supplier",
+      "category": "inventory"
+    },
+    {
+      "date": "2026-01-05",
+      "amount": 6500,
+      "description": "Store rent",
+      "category": "rent"
+    },
+    {
+      "date": "2026-02-05",
+      "amount": 6500,
+      "description": "Store rent",
+      "category": "rent"
+    }
+  ],
+  "tax_profile": {
+    "vat_rate": 0.18,
+    "vat_cadence": "monthly",
+    "income_tax_advance_rate": 0.06,
+    "bituach_leumi_rate": 0.18,
+    "reviewed_on": "2026-06-02",
+    "source_note": "Flat Bituach Leumi planning rate uses 2026 full combined self-employed rate as conservative approximation; verify bracketed calculation."
+  },
+  "buffer": 20000
+}

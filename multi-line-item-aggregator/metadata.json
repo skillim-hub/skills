@@ -1,0 +1,51 @@
+{
+  "slug": "multi-line-item-aggregator",
+  "name": "Multi-Line Item Aggregator",
+  "version": "2.2.0",
+  "description": "Aggregate multi-line Israeli invoices with line discounts, invoice discounts, per-line VAT, and fractional agorot handling.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "invoices",
+    "israel",
+    "vat",
+    "maam",
+    "small-business",
+    "freelancers",
+    "consumers",
+    "discounts",
+    "rounding",
+    "agorot",
+    "bookkeeping",
+    "accounting",
+    "cli",
+    "python",
+    "hebrew",
+    "installable-package",
+    "audit-ready",
+    "web-validated",
+    "israel-tax-authority",
+    "invoice-allocation",
+    "vat-2026"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "package": "multi_line_item_aggregator",
+    "cli": "multi_line_item_aggregator.cli",
+    "compat_client": "scripts/multi_line_item_aggregator_client.py"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,26 @@
+from __future__ import annotations
+
+import argparse
+import json
+import os
+
+from employee_onboarding_guide_client import EmployeeProfile, create_record, generate_checklist, generate_employee_message, validate_profile
+
+def parse_env() -> str:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--env", choices=["sandbox", "production"], default=os.getenv("ONBOARDING_ENV", "sandbox"))
+    return parser.parse_args().env
+
+env = parse_env()
+profile = EmployeeProfile(
+    full_name=os.getenv("ONBOARDING_EMPLOYEE_NAME", "Dana Levi"),
+    start_date=os.getenv("ONBOARDING_START_DATE", "01-09-2026"),
+    role=os.getenv("ONBOARDING_ROLE", "Operations Coordinator"),
+    has_other_employer=True,
+    has_active_pension=True,
+    bank_details_received=True,
+    employment_notice_status="drafted",
+)
+response = create_record(profile, environment=env)
+record_id = response["id"]
+print(json.dumps({"environment": env, "id": record_id, "next_step": f"employee-onboarding-guide checklist --id {record_id}"}, ensure_ascii=False, indent=2))

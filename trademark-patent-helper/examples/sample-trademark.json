@@ -1,0 +1,10 @@
+{
+  "kind": "trademark",
+  "applicant_name": "Example Ltd.",
+  "mark_text": "ZAVILO",
+  "mark_type": "word",
+  "classes": [
+    {"class_no": 25, "items": ["clothing", "shirts", "hats"]},
+    {"class_no": 35, "items": ["online retail store services featuring clothing"]}
+  ]
+}

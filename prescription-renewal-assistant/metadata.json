@@ -1,0 +1,54 @@
+{
+  "name": "Prescription Renewal Assistant",
+  "slug": "prescription-renewal-assistant",
+  "version": "2.2.0",
+  "description": "Neutral web-validated workflow assistant for Israeli prescription renewal and pharmacy fulfillment.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "be",
+    "caregiver",
+    "cli",
+    "consumer",
+    "freelancer",
+    "healthcare",
+    "hebrew",
+    "israel",
+    "kupat-cholim",
+    "newpharm",
+    "pharmacy",
+    "prescriptions",
+    "privacy",
+    "pytest",
+    "refills",
+    "small-business",
+    "super-pharm",
+    "typer",
+    "vat-2026",
+    "verification-log",
+    "web-validated",
+    "workflow"
+  ],
+  "license": "MIT",
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "prescription_renewal_assistant.cli:app",
+    "client": "prescription_renewal_assistant.client",
+    "verification_log": "references/verification-log.md"
+  },
+  "requirements": {
+    "python": ">=3.10",
+    "runtime": [
+      "typer>=0.9"
+    ],
+    "development": [
+      "pytest>=7.0",
+      "pytest-asyncio>=0.21",
+      "ruff>=0.4",
+      "mypy>=1.8"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Influencer Collaboration Helper",
+  "slug": "influencer-collaboration",
+  "version": "2.2.0",
+  "description": "Offline-first helper for Israeli influencer discovery, Hebrew outreach, campaign planning, disclosure checks, and performance tracking.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "influencer-marketing",
+    "israel",
+    "hebrew",
+    "small-business",
+    "freelancers",
+    "campaign-tracking",
+    "outreach",
+    "creator-economy",
+    "consumer-protection",
+    "local-marketing",
+    "roas",
+    "lead-generation",
+    "disclosure",
+    "privacy",
+    "tax-workflow",
+    "cli",
+    "pytest",
+    "async-client"
+  ],
+  "entrypoints": {
+    "english_guide": "SKILL.md",
+    "hebrew_guide": "SKILL_HE.md",
+    "client": "scripts/influencer_collaboration_client.py",
+    "cli": "scripts/influencer_collaboration_cli.py"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ],
+  "requirements": {
+    "python": ">=3.10"
+  }
+}

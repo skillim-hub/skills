@@ -1,0 +1,64 @@
+{
+  "version": "1.2.0",
+  "category": "operations",
+  "slug": "lead-router",
+  "display_name": {
+    "en": "Lead Router",
+    "he": "Lead Router"
+  },
+  "display_description": {
+    "en": "Route incoming leads to the appropriate person or department based on language, Israeli region, product interest, urgency, channel, and consent status.",
+    "he": "ניתוב פניות נכנסות לאדם או למחלקה המתאימים לפי שפה, אזור בישראל, עניין במוצר, דחיפות, ערוץ הגעה וסטטוס הסכמה."
+  },
+  "license": "MIT",
+  "tags": [
+    "lead-routing",
+    "crm",
+    "israel",
+    "hebrew",
+    "arabic",
+    "russian",
+    "english",
+    "small-business",
+    "freelancers",
+    "customer-operations",
+    "sales-operations",
+    "whatsapp",
+    "web-forms",
+    "routing-rules",
+    "sla",
+    "privacy",
+    "marketing-consent",
+    "cli",
+    "pytest",
+    "israeli-regions",
+    "language-detection",
+    "lead-qualification",
+    "routing-audit",
+    "web-validated",
+    "israeli-compliance",
+    "official-sources"
+  ],
+  "supported_agents": [
+    "coding-agent",
+    "chat-agent",
+    "automation-agent"
+  ],
+  "languages": [
+    "HE",
+    "EN",
+    "RU",
+    "AR"
+  ],
+  "regions": [
+    "CENTER",
+    "SHARON",
+    "HAIFA",
+    "NORTH",
+    "JERUSALEM",
+    "SOUTH",
+    "EILAT",
+    "WEST_BANK",
+    "UNKNOWN"
+  ]
+}

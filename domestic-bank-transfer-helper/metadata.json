@@ -1,0 +1,57 @@
+{
+  "name": "domestic-bank-transfer-helper",
+  "version": "1.2.0",
+  "category": "finance",
+  "display_name": {
+    "en": "Domestic Bank Transfer Form Helper",
+    "he": "מסייע לטופס העברה בנקאית מקומית"
+  },
+  "display_description": {
+    "en": "Guides users through Israeli domestic bank transfer forms for Zahav and MASAV with field validation, workflow checks, local record staging, and audit-ready output.",
+    "he": "מסייע במילוי טפסי העברה בנקאית מקומית בישראל במס״ב ובזה״ב, כולל בדיקת שדות, בקרות תהליך, רשומות מקומיות ופלט לתיעוד."
+  },
+  "license": "MIT",
+  "entrypoints": {
+    "skill": "SKILL.md",
+    "hebrew_skill": "SKILL_HE.md",
+    "cli": "domestic-bank-transfer-helper",
+    "client_module": "domestic_bank_transfer_helper_client"
+  },
+  "tags": [
+    "israel",
+    "bank-transfer",
+    "domestic-payments",
+    "zahav",
+    "masav",
+    "finance-operations",
+    "small-business",
+    "freelancers",
+    "bookkeeping",
+    "payroll",
+    "accounts-payable",
+    "validation",
+    "hebrew",
+    "cli",
+    "pytest",
+    "audit-trail",
+    "web-validated",
+    "bank-of-israel",
+    "vat-18-2026",
+    "identification-codes"
+  ],
+  "supported_languages": [
+    "en",
+    "he"
+  ],
+  "outputs": [
+    "validation-report",
+    "normalized-payload",
+    "local-review-record",
+    "hebrew-report"
+  ],
+  "safety_notes": [
+    "Does not execute transfers.",
+    "Does not replace bank-specific rules, legal advice, tax advice, accounting advice, or anti-money-laundering review.",
+    "Requires independent recipient-detail confirmation for high-risk payments."
+  ]
+}

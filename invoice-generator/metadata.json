@@ -1,0 +1,36 @@
+{
+  "slug": "invoice-generator",
+  "name": "Invoice Generator",
+  "version": "2.2.0",
+  "description": "Draft and validate Israeli tax invoices, receipts, tax invoice receipts, and credit notes, including allocation-number readiness checks.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "israel",
+    "israeli-tax",
+    "invoice",
+    "tax-invoice",
+    "receipt",
+    "credit-note",
+    "vat",
+    "shaam",
+    "allocation-number",
+    "osek-morshe",
+    "osek-patur",
+    "small-business",
+    "freelancer",
+    "hebrew",
+    "accounting",
+    "web-validated",
+    "israel-invoices",
+    "shaam-api"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "invoice-generator",
+    "python": "invoice_generator"
+  }
+}

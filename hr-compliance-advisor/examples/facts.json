@@ -1,0 +1,9 @@
+{
+  "worker_type": "employee",
+  "sector": "retail",
+  "hourly_rate_ils": 31.0,
+  "weekly_hours": 38,
+  "tenure_months": 10,
+  "has_pension_arrangement": false,
+  "contract_text": "Closing time is unpaid."
+}

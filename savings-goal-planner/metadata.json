@@ -1,0 +1,65 @@
+{
+  "name": "savings-goal-planner",
+  "version": "2.2.0",
+  "category": "finance-planning",
+  "license": "MIT",
+  "display_name": {
+    "en": "Savings Goal Planner",
+    "he": "מתכנן יעד חיסכון"
+  },
+  "display_description": {
+    "en": "Calculate monthly savings needed for major purchases, business reserves, equipment upgrades, and retirement gaps in Israel. Includes inflation adjustment, Israeli vehicle scenarios, persistent CLI workflows, tests, and English/Hebrew guides.",
+    "he": "חישוב חיסכון חודשי נדרש ליעדים גדולים, עתודות עסקיות, ציוד ופערי פרישה בישראל. כולל הצמדה לאינפלציה, תרחישים לפי כלי חיסכון ישראליים, תהליכי שורת פקודה שמורים, בדיקות ומדריכים בעברית ובאנגלית."
+  },
+  "tags": {
+    "en": [
+      "savings",
+      "goal-planning",
+      "israel",
+      "shekel",
+      "inflation",
+      "retirement",
+      "freelancers",
+      "small-business",
+      "pension",
+      "provident-fund",
+      "training-fund",
+      "money-market",
+      "bank-deposit",
+      "cash-flow",
+      "cli",
+      "pytest",
+      "web-validated",
+      "israel-2026",
+      "regulatory-reference"
+    ],
+    "he": [
+      "חיסכון",
+      "יעד-חיסכון",
+      "ישראל",
+      "שקל",
+      "אינפלציה",
+      "פרישה",
+      "עצמאים",
+      "עסקים-קטנים",
+      "פנסיה",
+      "קופת-גמל",
+      "קרן-השתלמות",
+      "קרן-כספית",
+      "פיקדון",
+      "תזרים",
+      "שורת-פקודה",
+      "בדיקות",
+      "אימות-מקוון",
+      "ישראל-2026",
+      "רגולציה"
+    ]
+  },
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "cli": "scripts/savings-goal-planner-cli.py",
+    "client": "scripts/savings_goal_planner_client.py",
+    "package": "savings_goal_planner"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "israeli-e-invoice-compliance",
+  "name": "Israeli E-Invoice Compliance",
+  "version": "3.0.0",
+  "license": "MIT",
+  "category": "accounting",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "israel",
+    "israeli-tax-authority",
+    "vat",
+    "e-invoice",
+    "chashbonit-yisrael",
+    "חשבונית-ישראל",
+    "מספר-הקצאה",
+    "shaam",
+    "b2b",
+    "invoice-validation",
+    "allocation-number",
+    "pcn874",
+    "hebrew"
+  ],
+  "description": "Generate and validate Israeli e-invoice allocation-number payloads for Chashbonit Yisrael, including VAT math, B2B thresholds, official endpoint routing, and error handling.",
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "scripts/israeli_e_invoice_compliance_cli.py",
+    "client": "scripts/israeli_e_invoice_compliance_client.py"
+  }
+}

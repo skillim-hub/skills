@@ -1,0 +1,90 @@
+{
+  "slug": "arnona-payment-reminder",
+  "version": "2.2.0",
+  "category": "finance",
+  "display_name": {
+    "en": "Arnona Payment Reminder",
+    "he": "תזכורות לתשלום ארנונה"
+  },
+  "display_description": {
+    "en": "Generate reminders, payment instructions, validation checks, and receipt workflows for Israeli municipal Arnona payments.",
+    "he": "יצירת תזכורות, הוראות תשלום, בדיקות אימות ותהליכי קבלות לתשלומי ארנונה ברשויות מקומיות בישראל."
+  },
+  "tags": {
+    "en": [
+      "arnona",
+      "audit-ready",
+      "bookkeeping",
+      "cli",
+      "current-balance",
+      "discount-status",
+      "freelancers",
+      "hebrew-localization",
+      "households",
+      "ics-calendar",
+      "israel",
+      "local-authorities",
+      "municipal-tax",
+      "municipalities",
+      "overdue-payments",
+      "payment-reminders",
+      "property-tax",
+      "receipts",
+      "small-business",
+      "standing-order",
+      "web-validated",
+      "municipal-profiles",
+      "source-verification"
+    ],
+    "he": [
+      "ארנונה",
+      "בדיקות איכות",
+      "הוראת קבע",
+      "הנהלת חשבונות",
+      "הנחות בארנונה",
+      "יתרה עדכנית",
+      "לוח שנה",
+      "ממשק שורת פקודה",
+      "מס עירוני",
+      "משקי בית",
+      "עירייה",
+      "עסקים קטנים",
+      "עצמאים",
+      "פיגור בתשלום",
+      "קבלות",
+      "רשות מקומית",
+      "תזכורות תשלום",
+      "אימות מקורות",
+      "פרופילי רשויות"
+    ]
+  },
+  "languages": [
+    "en",
+    "he"
+  ],
+  "capabilities": [
+    "bill_normalization",
+    "due_date_classification",
+    "reminder_scheduling",
+    "payment_instruction_generation",
+    "receipt_tracking",
+    "overdue_workflows",
+    "standing_order_monitoring",
+    "hebrew_localization",
+    "cli_usage",
+    "sync_async_python_client",
+    "web_source_verification",
+    "official_source_audit"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "package": "arnona_payment_reminder",
+    "client": "arnona_payment_reminder/client.py",
+    "client_compat": "scripts/arnona_payment_reminder_client.py",
+    "cli_module": "arnona_payment_reminder/cli.py",
+    "cli_script": "scripts/arnona-payment-reminder-cli.py",
+    "tests": "scripts/test_arnona_payment_reminder_client.py"
+  },
+  "license": "MIT"
+}

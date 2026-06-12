@@ -1,0 +1,39 @@
+{
+  "version": "1.2.0",
+  "category": "localization",
+  "display_name": {
+    "en": "Transliteration Helper",
+    "he": "מסייע תעתיק"
+  },
+  "display_description": {
+    "en": "Transliterates Hebrew personal, freelancer, and customer names into Latin script using passport-aware Israeli conventions, with ambiguity warnings and batch tooling.",
+    "he": "מתעתק שמות בעברית לאותיות לטיניות לפי מוסכמות ישראליות לשימוש לצד דרכונים ומסמכים רשמיים, כולל אזהרות עמימות ועיבוד אצווה."
+  },
+  "supported_agents": [
+    "coding-agent",
+    "chat-agent",
+    "automation-agent"
+  ],
+  "tags": [
+    "hebrew",
+    "transliteration",
+    "israel",
+    "passport",
+    "names",
+    "latin-script",
+    "localization",
+    "small-business",
+    "freelancers",
+    "customer-data",
+    "forms",
+    "csv",
+    "cli",
+    "python",
+    "validation",
+    "batch-processing",
+    "data-quality",
+    "official-sources",
+    "academy-transliteration"
+  ],
+  "license": "MIT"
+}

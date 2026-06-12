@@ -1,0 +1,4 @@
+full_name,phone,email,consent,preferred_channel,tags,rating
+דנה כהן,0501234567,dana@example.co.il,true,whatsapp,appointment-complete,5
+יוסי לוי,0522223344,yossi@example.co.il,true,sms,delivered,5
+נועה רז,,noa@example.co.il,true,email,project-complete,4

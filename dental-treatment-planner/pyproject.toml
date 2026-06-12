@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dental-treatment-planner"
+version = "0.4.0"
+description = "Offline Israeli dental treatment planning and estimate helper"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["dental", "israel", "estimates", "maccabident", "clalit-smile", "healthcare", "cli", "vat-2026", "web-validated"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = ["typer>=0.12"]
+
+[project.scripts]
+dental-treatment-planner = "dental_treatment_planner.cli:app"
+
+[tool.setuptools]
+packages = ["dental_treatment_planner"]
+py-modules = ["dental_treatment_planner_client"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+asyncio_mode = "auto"
+pythonpath = ["."]

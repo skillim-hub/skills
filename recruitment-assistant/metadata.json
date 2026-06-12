@@ -1,0 +1,31 @@
+{
+  "name": "Recruitment Assistant",
+  "slug": "recruitment-assistant",
+  "version": "0.4.0",
+  "description": "Screen Hebrew and English resumes, normalize Israeli-market roles and seniority, validate hiring criteria, and schedule interviews for Israeli small businesses, freelancers, and consumers.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "recruitment",
+    "resume-screening",
+    "hebrew",
+    "english",
+    "israel",
+    "small-business",
+    "freelancers",
+    "interview-scheduling",
+    "seniority-normalization",
+    "candidate-shortlisting",
+    "hiring-compliance",
+    "human-resources",
+    "cli",
+    "python",
+    "source-validation",
+    "israeli-regulation",
+    "privacy-by-design"
+  ],
+  "entrypoint": "SKILL.md",
+  "license": "MIT"
+}

@@ -1,0 +1,73 @@
+{
+  "name": "bituach-leumi-payment-scheduler",
+  "slug": "bituach-leumi-payment-scheduler",
+  "version": "2.2.0",
+  "category": "government-payments",
+  "license": "MIT",
+  "display_name": {
+    "en": "Bituach Leumi Payment Scheduler",
+    "he": "מתזמן תשלומי ביטוח לאומי"
+  },
+  "display_description": {
+    "en": "Schedules Israeli National Insurance payment due dates, reminders, and exports for self-employed workers, employers, small businesses, and consumers. Includes due-date conventions, adjustable Israeli non-business days, CLI helper, tests, and workflow references.",
+    "he": "תזמון מועדי תשלום ותזכורות לביטוח לאומי לעצמאים, מעסיקים, עסקים קטנים וצרכנים. כולל התאמת ימי עסקים בישראל, כלי CLI, בדיקות ונהלי עבודה."
+  },
+  "tags": {
+    "en": [
+      "bituach-leumi",
+      "bookkeeping",
+      "calendar-export",
+      "cash-flow",
+      "cli",
+      "compliance",
+      "csv",
+      "due-dates",
+      "employers",
+      "form-102",
+      "freelancers",
+      "ics",
+      "israel",
+      "national-insurance",
+      "payment-reminders",
+      "reminders",
+      "self-employed",
+      "small-business",
+      "web-validated",
+      "2026-rates"
+    ],
+    "he": [
+      "ביטוח-לאומי",
+      "דמי-ביטוח",
+      "הנהלת-חשבונות",
+      "טופס-102",
+      "ייצוא-יומן",
+      "ישראל",
+      "מועדי-תשלום",
+      "מעסיקים",
+      "ניהול-תזרים",
+      "עסקים-קטנים",
+      "עצמאים",
+      "קבצי-csv",
+      "תזכורות-תשלום",
+      "תזרים-מזומנים",
+      "אימות-מקורות",
+      "שיעורי-2026"
+    ]
+  },
+  "inputs": [
+    "payer type",
+    "coverage month",
+    "income or payroll estimate",
+    "known payment amount",
+    "custom non-business dates",
+    "reminder offsets"
+  ],
+  "outputs": [
+    "monthly due-date schedule",
+    "reminder dates",
+    "payment checklist",
+    "JSON export",
+    "CSV export",
+    "ICS calendar export"
+  ]
+}

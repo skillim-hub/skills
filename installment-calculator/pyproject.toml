@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "installment-calculator"
+version = "1.2.0"
+description = "Israeli installment plan calculator with fees, interest, schedules, and disclosure checks."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["click>=8.1"]
+keywords = ["installments", "israel", "tashlumim", "consumer-credit", "vat", "checkout"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Intended Audience :: Legal Industry",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+
+[project.scripts]
+installment-calculator = "installment_calculator.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["installment_calculator*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["scripts"]
+python_files = ["test_*.py"]

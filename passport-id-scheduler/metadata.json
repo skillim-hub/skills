@@ -1,0 +1,67 @@
+{
+  "name": "passport-id-scheduler",
+  "version": "2.2.0",
+  "category": "government-services",
+  "display_name": {
+    "en": "Passport & ID Appointment Scheduler",
+    "he": "מתאם תורים לדרכון ותעודת זהות"
+  },
+  "display_description": {
+    "en": "Prepare official-channel appointments for Israeli passports, Teudat Zehut identity cards, biometric documents, address updates, and related Population and Immigration Authority services. Includes validation, checklists, ranking of user-provided appointment candidates, reminders, and safe small-business guidance.",
+    "he": "הכנה ותכנון תורים בערוצים רשמיים לדרכונים ישראליים, תעודות זהות, מסמכים ביומטריים, עדכון כתובת ושירותים נלווים של רשות האוכלוסין וההגירה. כולל אימות נתונים, רשימות מסמכים, דירוג תורים שהמשתמש מספק, תזכורות והנחיות בטוחות לעסקים קטנים."
+  },
+  "tags": {
+    "en": [
+      "israel",
+      "passport",
+      "id-card",
+      "teudat-zehut",
+      "biometric",
+      "appointment",
+      "misrad-hapnim",
+      "population-and-immigration-authority",
+      "gov-il",
+      "govisit",
+      "small-business",
+      "freelancer",
+      "family",
+      "urgent-travel",
+      "privacy",
+      "appointment-planning",
+      "identity-documents",
+      "accessibility",
+      "data-minimization"
+    ],
+    "he": [
+      "ישראל",
+      "דרכון",
+      "תעודת-זהות",
+      "תיעוד-ביומטרי",
+      "תור",
+      "משרד-הפנים",
+      "רשות-האוכלוסין",
+      "gov-il",
+      "עסק-קטן",
+      "עצמאי",
+      "משפחה",
+      "נסיעה-דחופה",
+      "פרטיות",
+      "תכנון-תורים",
+      "מסמכי-זהות",
+      "נגישות",
+      "צמצום-מידע",
+      "גוביזיט"
+    ]
+  },
+  "language": [
+    "en",
+    "he"
+  ],
+  "license": "MIT",
+  "entrypoints": {
+    "skill": "SKILL.md",
+    "hebrew_skill": "SKILL_HE.md",
+    "client": "scripts/passport_id_scheduler_client.py",
+    "cli": "scripts/passport_id_scheduler_cli.py"
+  }
+}

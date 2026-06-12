@@ -1,0 +1,51 @@
+{
+  "slug": "real-estate-search",
+  "name": "Real-Estate Search Assistant",
+  "version": "1.3.0",
+  "description": "Build structured Israeli real-estate search plans across Yad2, Madlan, and Komo with neighborhood-aware manual verification, source-specific links, comparison scoring, and Israeli workflow guidance.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "real-estate",
+    "israel",
+    "yad2",
+    "madlan",
+    "komo",
+    "rentals",
+    "home-buying",
+    "commercial-property",
+    "small-business",
+    "freelancers",
+    "neighborhood-search",
+    "consumer-checklist",
+    "hebrew"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "real-estate-search"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ],
+  "requirements": {
+    "python": ">=3.10",
+    "runtime": [
+      "typer",
+      "httpx"
+    ],
+    "dev": [
+      "pytest",
+      "pytest-asyncio"
+    ]
+  }
+}

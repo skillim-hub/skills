@@ -1,0 +1,55 @@
+{
+  "version": "2.2.0",
+  "slug": "foreign-currency-invoicing",
+  "category": "tax-and-finance",
+  "tags": {
+    "he": [
+      "בדיקת-מקורות",
+      "בנק-ישראל",
+      "חשבוניות-ישראל",
+      "חשבונית",
+      "חשבונית-זיכוי",
+      "חשבונית-מס",
+      "מטבע-חוץ",
+      "ממשק-סדרות",
+      "מע\"מ",
+      "עוסק-מורשה",
+      "עוסק-פטור",
+      "עסקים-קטנים",
+      "עצמאים",
+      "קבלה",
+      "שער-יציג",
+      "שקל"
+    ],
+    "en": [
+      "bank-of-israel",
+      "cli",
+      "credit-invoice",
+      "eur",
+      "exchange-rate",
+      "foreign-currency-invoicing",
+      "freelancer",
+      "invoice",
+      "israel-invoices",
+      "israel-vat",
+      "jpy",
+      "python-client",
+      "receipt",
+      "representative-rate",
+      "sdmx",
+      "small-business",
+      "tax-invoice",
+      "usd",
+      "vat",
+      "web-validated"
+    ]
+  },
+  "display_name": {
+    "he": "הפקת חשבוניות במטבע חוץ",
+    "en": "Foreign-Currency Invoicing"
+  },
+  "display_description": {
+    "he": "הפקת חישובי חשבוניות וקבלות במטבע חוץ לעסקים, עצמאים וצרכנים בישראל, עם שער יציג של בנק ישראל וחישובי מע\"מ בשקלים.",
+    "en": "Generate Israeli foreign-currency invoice calculations with Bank of Israel representative exchange rates and explicit NIS VAT treatment."
+  }
+}

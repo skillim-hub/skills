@@ -1,0 +1,72 @@
+{
+  "slug": "hebrew-voice-to-text",
+  "version": "2.2.0",
+  "category": "productivity",
+  "display_name": {
+    "en": "Voice-to-Text in Hebrew",
+    "he": "תמלול קולי בעברית"
+  },
+  "display_description": {
+    "en": "Transcribe Hebrew audio messages and calls into punctuated text with timestamps, speaker labels, exports, privacy checks, and Israeli small-business workflows.",
+    "he": "תמלול הודעות קוליות ושיחות בעברית לטקסט מפוסק עם חותמות זמן, תוויות דוברים, יצוא, בדיקות פרטיות ותהליכי עבודה לעסקים קטנים בישראל."
+  },
+  "tags": {
+    "en": [
+      "hebrew",
+      "voice-to-text",
+      "speech-to-text",
+      "transcription",
+      "whatsapp",
+      "voice-notes",
+      "call-recordings",
+      "speaker-labels",
+      "punctuation",
+      "privacy",
+      "israel",
+      "small-business",
+      "freelancers",
+      "subtitles",
+      "cli",
+      "pytest",
+      "local-jobs",
+      "srt",
+      "vtt"
+    ],
+    "he": [
+      "עברית",
+      "תמלול",
+      "זיהוי דיבור",
+      "הודעות קוליות",
+      "וואטסאפ",
+      "שיחות",
+      "תוויות דוברים",
+      "פיסוק",
+      "פרטיות",
+      "ישראל",
+      "עסקים קטנים",
+      "עצמאים",
+      "כתוביות",
+      "ממשק שורת פקודה",
+      "משימות מקומיות"
+    ]
+  },
+  "entrypoint": "SKILL.md",
+  "localized_entrypoints": {
+    "he": "SKILL_HE.md"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ],
+  "scripts": [
+    "scripts/hebrew_voice_to_text_client.py",
+    "scripts/hebrew-voice-to-text-cli.py"
+  ],
+  "python_package": "hebrew_voice_to_text"
+}

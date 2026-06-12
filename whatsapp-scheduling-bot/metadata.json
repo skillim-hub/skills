@@ -1,0 +1,83 @@
+{
+  "name": "whatsapp-scheduling-bot",
+  "version": "2.2.0",
+  "license": "MIT",
+  "category": "communication",
+  "display_name": {
+    "en": "WhatsApp Scheduling Bot",
+    "he": "בוט תורים ב-WhatsApp"
+  },
+  "display_description": {
+    "en": "Book appointments, confirm visits, handle changes, and send Hebrew WhatsApp reminders for Israeli small businesses, freelancers, and local service providers.",
+    "he": "ניהול תורים, אישורי הזמנה, שינויי מועד ותזכורות WhatsApp בעברית לעסקים קטנים, עצמאים ונותני שירות בישראל."
+  },
+  "tags": {
+    "en": [
+      "anti-spam",
+      "appointments",
+      "booking",
+      "calendar",
+      "cloud-api",
+      "customer-service",
+      "freelancers",
+      "hebrew",
+      "israel",
+      "israeli-phone-numbers",
+      "privacy",
+      "reminders",
+      "rtl",
+      "scheduling",
+      "small-business",
+      "templates",
+      "webhooks",
+      "whatsapp",
+      "whatsapp-business-platform"
+    ],
+    "he": [
+      "Webhook",
+      "וואטסאפ",
+      "וואטסאפ-עסקי",
+      "זימון-תורים",
+      "חוק-הספאם",
+      "יומן",
+      "ישראל",
+      "ממשק-ענן",
+      "מספרים-ישראליים",
+      "עברית",
+      "עסקים-קטנים",
+      "עצמאים",
+      "פרטיות",
+      "קביעת-תור",
+      "שירות-לקוחות",
+      "תבניות",
+      "תורים",
+      "תזכורות"
+    ]
+  },
+  "supported_agents": [
+    "claude-code",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "opencode",
+    "codex",
+    "gemini-cli"
+  ],
+  "entrypoints": {
+    "module": "whatsapp_scheduling_bot",
+    "client": "whatsapp_scheduling_bot.client",
+    "cli": "whatsapp_scheduling_bot.cli:app",
+    "script_cli": "scripts/whatsapp-scheduling-bot-cli.py",
+    "script_client": "scripts/whatsapp_scheduling_bot_client.py"
+  },
+  "locales": [
+    "en",
+    "he-IL"
+  ],
+  "timezone": "Asia/Jerusalem",
+  "validation": {
+    "web_validated_on": "2026-06-03",
+    "graph_api_default": "v25.0",
+    "vat_rate_israel": "18% from 01/01/2025, rechecked 2026-06-03"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "health-insurance-claim-tracker",
+  "version": "1.2.0",
+  "category": "finance-health-admin",
+  "display_name": {
+    "en": "Health-Insurance Claim Tracker",
+    "he": "מעקב תביעות והחזרים בביטוחי בריאות"
+  },
+  "display_description": {
+    "en": "Track Israeli supplementary health-plan and private health-insurance claims, documents, approvals, appeals, reimbursements, and bookkeeping handoffs.",
+    "he": "ניהול תביעות, מסמכים, אישורים, ערעורים, החזרים והתאמות להנהלת חשבונות בביטוחי בריאות בישראל."
+  },
+  "slug": "health-insurance-claim-tracker",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "israel",
+    "health-insurance",
+    "private-health-policy",
+    "supplementary-health-plan",
+    "bituach-briut",
+    "claims",
+    "reimbursements",
+    "medical-expenses",
+    "small-business",
+    "freelancers",
+    "bookkeeping",
+    "privacy",
+    "csv",
+    "cli",
+    "python",
+    "hebrew",
+    "web-validated",
+    "vat",
+    "shaban",
+    "har-habituach",
+    "privacy-protection",
+    "israel-invoice"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "cli": "hict",
+    "python_package": "health_insurance_claim_tracker"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ],
+  "license": "MIT",
+  "minimum_python": "3.10"
+}

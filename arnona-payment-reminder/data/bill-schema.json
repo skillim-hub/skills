@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ArnonaPaymentBill",
+  "type": "object",
+  "required": [
+    "municipality",
+    "account_reference",
+    "bill_number",
+    "taxpayer_name",
+    "property_address",
+    "period_start",
+    "period_end",
+    "issue_date",
+    "due_date",
+    "amount_nis"
+  ],
+  "properties": {
+    "municipality": {
+      "type": "string",
+      "minLength": 1
+    },
+    "account_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bill_number": {
+      "type": "string",
+      "minLength": 1
+    },
+    "taxpayer_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "property_address": {
+      "type": "string",
+      "minLength": 1
+    },
+    "period_start": {
+      "type": "string",
+      "description": "YYYY-MM-DD or DD/MM/YYYY"
+    },
+    "period_end": {
+      "type": "string",
+      "description": "YYYY-MM-DD or DD/MM/YYYY"
+    },
+    "issue_date": {
+      "type": "string",
+      "description": "YYYY-MM-DD or DD/MM/YYYY"
+    },
+    "due_date": {
+      "type": "string",
+      "description": "YYYY-MM-DD or DD/MM/YYYY"
+    },
+    "amount_nis": {
+      "type": [
+        "string",
+        "number"
+      ],
+      "description": "Positive amount in New Israeli Shekels"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "unpaid",
+        "paid"
+      ]
+    },
+    "payer_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "payment_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

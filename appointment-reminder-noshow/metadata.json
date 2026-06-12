@@ -1,0 +1,41 @@
+{
+  "version": "0.3.0",
+  "slug": "appointment-reminder-noshow",
+  "category": "business-operations",
+  "display_name": {
+    "en": "Appointment Reminder & No-Show Tracker",
+    "he": "תזכורות לתורים ומעקב אי-הגעה"
+  },
+  "display_description": {
+    "en": "Reduce appointment no-shows with compliant WhatsApp/SMS reminders, Hebrew messaging, attendance tracking, and re-booking suggestions for Israeli service businesses.",
+    "he": "הפחתת אי-הגעה לתורים באמצעות תזכורות WhatsApp/SMS, הודעות בעברית, מעקב הגעה והצעות לקביעת מועד חדש לעסקים בישראל."
+  },
+  "license": "MIT",
+  "supported_agents": [
+    "coding-agent",
+    "chat-agent",
+    "automation-agent"
+  ],
+  "tags": [
+    "appointments",
+    "reminders",
+    "no-show",
+    "whatsapp",
+    "sms",
+    "hebrew",
+    "israel",
+    "small-business",
+    "freelancers",
+    "privacy",
+    "spam-compliance",
+    "rebooking",
+    "cli",
+    "python"
+  ],
+  "entrypoints": {
+    "skill": "SKILL.md",
+    "skill_he": "SKILL_HE.md",
+    "cli": "scripts/appointment_reminder_noshow_cli.py",
+    "client": "scripts/appointment_reminder_noshow_client.py"
+  }
+}

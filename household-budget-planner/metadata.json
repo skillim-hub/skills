@@ -1,0 +1,96 @@
+{
+  "name": "household-budget-planner",
+  "slug": "household-budget-planner",
+  "version": "2.1.0",
+  "category": "tax-and-finance",
+  "license": "MIT",
+  "display_name": {
+    "en": "Household Budget Planner",
+    "he": "מתכנן תקציב למשק בית"
+  },
+  "display_description": {
+    "en": "Track monthly spending, income, VAT-aware expenses, and savings goals for Israeli households, freelancers, consumers, and small businesses using shekel-specific categories and DD-MM-YYYY dates.",
+    "he": "מעקב חודשי אחר הכנסות, הוצאות, רכיב מע״מ ויעדי חיסכון למשקי בית, עצמאים, צרכנים ועסקים קטנים בישראל, עם קטגוריות שקליות ותאריכים בפורמט DD-MM-YYYY."
+  },
+  "tags": {
+    "en": [
+      "budget",
+      "household",
+      "Israel",
+      "shekel",
+      "ILS",
+      "savings",
+      "cash-flow",
+      "freelancer",
+      "small-business",
+      "VAT",
+      "arnona",
+      "consumer-spending",
+      "monthly-planning",
+      "emergency-fund",
+      "credit-card",
+      "bank-export"
+    ],
+    "he": [
+      "תקציב",
+      "משק-בית",
+      "ישראל",
+      "שקל",
+      "ש״ח",
+      "חיסכון",
+      "תזרים",
+      "עצמאי",
+      "עסק-קטן",
+      "מע״מ",
+      "ארנונה",
+      "הוצאות",
+      "כרטיס-אשראי",
+      "קרן-חירום"
+    ]
+  },
+  "supported_locales": [
+    "en",
+    "he-IL"
+  ],
+  "currency": "ILS",
+  "date_format": "DD-MM-YYYY",
+  "entrypoints": {
+    "package": "household_budget_planner",
+    "client": "scripts/household_budget_planner_client.py",
+    "cli": "scripts/household_budget_planner_cli.py",
+    "console_script": "household-budget-planner"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/migration-checklist.md",
+    "references/test-scenarios.md",
+    "references/troubleshooting.md",
+    "references/verification-log.md",
+    "references/workflow-guide.md"
+  ],
+  "date_formats": {
+    "english": "DD-MM-YYYY",
+    "hebrew": "DD/MM/YYYY",
+    "accepted_by_code": [
+      "DD-MM-YYYY",
+      "DD/MM/YYYY",
+      "YYYY-MM-DD"
+    ]
+  },
+  "verification_access_date": "04-06-2026",
+  "verified_highlights": {
+    "vat_rate": {
+      "rate": 0.18,
+      "valid_from": "01-01-2025",
+      "access_date": "04-06-2026"
+    },
+    "osek_patur_threshold_2026_ils": 122833,
+    "cbs_cpi_endpoints": [
+      "https://api.cbs.gov.il/index/data/price_all?download=false&format=xml&oldformat=true",
+      "https://apis.cbs.gov.il/SDMX/DATA/IMF/ECOFIN_CPI/1"
+    ],
+    "boi_interest_endpoint": "https://www.boi.org.il/PublicApi/GetInterest"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "order_id": "ORD-SANDBOX-0001",
+  "status": "created",
+  "created_at": "2026-06-04T12:00:00Z",
+  "property": {
+    "block": 30001,
+    "parcel": 12,
+    "subparcel": 4
+  },
+  "payment_reference": "PAY-SANDBOX-0001"
+}

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "payment-gateway-integrator"
+version = "2.2.0"
+description = "Neutral Israeli payment gateway orchestration helpers for Cardcom, Tranzila, Pelecard, and Grow, with legacy Meshulam aliases."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+  "click>=8.1"
+]
+keywords = [
+  "payments",
+  "israel",
+  "gateway",
+  "cardcom",
+  "tranzila",
+  "meshulam",
+  "pelecard",
+  "grow",
+  "shva",
+  "installments",
+  "refunds"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-asyncio>=0.23",
+  "click>=8.1"
+]
+
+[project.scripts]
+pgi-payment = "payment_gateway_integrator.cli:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+asyncio_mode = "auto"

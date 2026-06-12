@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recurring-invoicing"
+version = "1.2.0"
+description = "Recurring invoicing helpers for Israeli VAT and SHAAM allocation workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "typer>=0.9",
+]
+keywords = ["israel", "vat", "shaam", "recurring billing", "invoice allocation"]
+
+[project.scripts]
+recurring-invoicing = "recurring_invoicing.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["recurring_invoicing*"]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-asyncio>=0.21",
+  "ruff>=0.4",
+  "mypy>=1.8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+strict = false

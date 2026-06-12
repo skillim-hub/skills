@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crm-integration-agent"
+version = "1.3.0"
+description = "Conversation sync helper for Israeli CRM workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "requests>=2.31",
+    "httpx>=0.24",
+    "typer>=0.9"
+]
+keywords = ["crm", "israel", "hebrew", "whatsapp", "hubspot", "salesforce", "monday"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.scripts]
+crm-integration-agent = "crm_integration_agent.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["crm_integration_agent*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["scripts"]

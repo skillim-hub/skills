@@ -1,0 +1,12 @@
+{
+  "property": {
+    "block": 30001,
+    "parcel": 999999,
+    "subparcel": null
+  },
+  "retrieved_at": "2026-06-04T12:00:00Z",
+  "rights": [],
+  "warnings": [
+    "No registry record found for the supplied identifier."
+  ]
+}

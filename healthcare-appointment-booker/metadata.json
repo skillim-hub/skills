@@ -1,0 +1,56 @@
+{
+  "slug": "healthcare-appointment-booker",
+  "name": "Healthcare Appointment Booker",
+  "version": "2.2.0",
+  "description": "Privacy-preserving Israeli HMO appointment booking workflow with specialist routing, Hebrew localization, CLI, client, references, and tests.",
+  "license": "MIT",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "appointments",
+    "audit-report",
+    "clalit",
+    "cli",
+    "consumers",
+    "freelancers",
+    "healthcare",
+    "hebrew",
+    "hebrew-localization",
+    "importable-python-package",
+    "israel",
+    "kupot-cholim",
+    "leumit",
+    "maccabi",
+    "meuhedet",
+    "official-sources",
+    "patient-rights",
+    "privacy",
+    "small-business",
+    "specialist-routing",
+    "typer-cli",
+    "vat-18",
+    "verification-log",
+    "web-validated",
+    "workflow"
+  ],
+  "entrypoints": {
+    "english_guide": "SKILL.md",
+    "hebrew_guide": "SKILL_HE.md",
+    "client": "healthcare_appointment_booker_client.py",
+    "package": "healthcare_appointment_booker",
+    "cli": "healthcare_appointment_booker.cli"
+  },
+  "capabilities": [
+    "hmo_selection",
+    "specialist_routing",
+    "urgency_escalation",
+    "referral_status_handling",
+    "imaging_and_lab_workflows",
+    "privacy_safe_booking_scripts",
+    "hebrew_localized_templates",
+    "test_scenario_validation"
+  ],
+  "updated": "2026-06-04"
+}

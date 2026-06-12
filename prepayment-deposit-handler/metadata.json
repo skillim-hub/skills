@@ -1,0 +1,51 @@
+{
+  "name": "Prepayment & Deposit Handler",
+  "slug": "prepayment-deposit-handler",
+  "version": "2.1.0",
+  "description": "Classify, document, track, settle, refund, and reconcile deposits and prepayments for Israeli small businesses, freelancers, and consumers.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "israel",
+    "israeli-accounting",
+    "vat",
+    "מע״מ",
+    "מקדמה",
+    "פיקדון",
+    "קבלה",
+    "חשבונית מס",
+    "חשבונית ישראל",
+    "small-business",
+    "freelancer",
+    "consumer",
+    "bookkeeping",
+    "invoice",
+    "receipt",
+    "deposit",
+    "prepayment",
+    "refund",
+    "retention",
+    "cli",
+    "pytest"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "scripts/prepayment_deposit_handler_cli.py",
+    "client": "scripts/prepayment_deposit_handler_client.py"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/migration-checklist.md",
+    "references/test-scenarios.md",
+    "references/troubleshooting.md",
+    "references/verification-log.md",
+    "references/workflow-guide.md"
+  ],
+  "license": "MIT",
+  "updated": "2026-06-02"
+}

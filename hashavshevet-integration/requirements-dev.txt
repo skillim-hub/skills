@@ -1,0 +1,4 @@
+httpx>=0.24
+typer>=0.9
+click>=8.1
+pytest>=7.0

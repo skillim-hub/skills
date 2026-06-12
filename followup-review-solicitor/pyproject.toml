@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "followup-review-solicitor"
+version = "0.4.0"
+description = "Hebrew follow-up and review request helper for Israeli audiences."
+requires-python = ">=3.10"
+dependencies = [
+  "typer>=0.12",
+  "click>=8.1"
+]
+license = {text = "MIT"}
+
+[project.scripts]
+followup-review-solicitor = "followup_review_solicitor.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["followup_review_solicitor*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py", "test-*.py"]
+addopts = "-q"
+asyncio_mode = "auto"

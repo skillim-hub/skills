@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "red-alert-shelter-finder"
+version = "1.3.1"
+description = "Neutral alert and public shelter helper for Israeli emergency-preparedness workflows."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "click>=8.0"
+]
+keywords = ["israel", "alerts", "shelters", "emergency", "hebrew", "cli"]
+
+[project.scripts]
+red-alert-shelter-finder = "red_alert_shelter_finder.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+asyncio_mode = "auto"

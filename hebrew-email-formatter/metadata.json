@@ -1,0 +1,68 @@
+{
+  "version": "2.2.0",
+  "category": "communication",
+  "slug": "hebrew-email-formatter",
+  "display_name": {
+    "he": "מעצב מיילים בעברית",
+    "en": "Hebrew Email Formatter"
+  },
+  "display_description": {
+    "he": "ניסוח, עיצוב ובקרת איכות למיילים מקצועיים בעברית עבור עסקים קטנים, פרילנסרים וצרכנים בישראל. כולל ברכות, רמות רשמיות, ניסוח מותאם מגדר, סכומים בשקלים, תאריכים בפורמט DD/MM/YYYY, חתימות עסקיות והערות בדיקה לנושאי מס, פרטיות וצרכנות.",
+    "en": "Professional Hebrew email composition and formatting for Israeli small businesses, freelancers, and consumers, including greetings, formality levels, gender-aware phrasing, ILS amounts, DD/MM/YYYY dates, business signatures, and review notes for tax, privacy, and consumer-sensitive topics."
+  },
+  "license": "MIT",
+  "tags": {
+    "he": [
+      "אימות-מקורות",
+      "חשבוניות",
+      "חשבוניות-ישראל",
+      "חתימה-עסקית",
+      "טיוטות",
+      "ישראל",
+      "מגדר",
+      "מיילים",
+      "ממשק-שורת-פקודה",
+      "מע״מ",
+      "עברית",
+      "עסקים-קטנים",
+      "פרילנסרים",
+      "צרכנות",
+      "שירות-לקוחות",
+      "שקלים",
+      "תזכורות-תשלום"
+    ],
+    "en": [
+      "cli",
+      "consumer-rights",
+      "customer-service",
+      "drafting",
+      "email",
+      "freelancers",
+      "gender-aware",
+      "hebrew",
+      "ils",
+      "invoices",
+      "israel",
+      "israel-invoices",
+      "payment-reminders",
+      "signatures",
+      "small-business",
+      "vat",
+      "web-validated"
+    ]
+  },
+  "entrypoints": {
+    "skill_en": "SKILL.md",
+    "skill_he": "SKILL_HE.md",
+    "package": "hebrew_email_formatter",
+    "client": "scripts/hebrew_email_formatter_client.py",
+    "cli": "scripts/hebrew-email-formatter-cli.py"
+  },
+  "localization": {
+    "language": "he-IL",
+    "currency": "ILS",
+    "currency_symbol": "₪",
+    "date_format": "DD/MM/YYYY",
+    "timezone": "Asia/Jerusalem"
+  }
+}

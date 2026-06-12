@@ -1,0 +1,80 @@
+{
+  "opening_balance": 35000,
+  "start_month": "2026-01",
+  "months": 6,
+  "cash_in": [
+    {
+      "date": "2026-01-10",
+      "amount": 23600,
+      "description": "Consulting payment including VAT",
+      "category": "revenue",
+      "taxable": true,
+      "gross": true
+    },
+    {
+      "date": "2026-02-10",
+      "amount": 23600,
+      "description": "Consulting payment including VAT",
+      "category": "revenue",
+      "taxable": true,
+      "gross": true
+    },
+    {
+      "date": "2026-03-10",
+      "amount": 23600,
+      "description": "Consulting payment including VAT",
+      "category": "revenue",
+      "taxable": true,
+      "gross": true
+    },
+    {
+      "date": "2026-04-10",
+      "amount": 23600,
+      "description": "Consulting payment including VAT",
+      "category": "revenue",
+      "taxable": true,
+      "gross": true
+    }
+  ],
+  "cash_out": [
+    {
+      "date": "2026-01-01",
+      "amount": 4200,
+      "description": "Office rent",
+      "category": "rent"
+    },
+    {
+      "date": "2026-01-20",
+      "amount": 9000,
+      "description": "Owner draw",
+      "category": "owner_draw"
+    },
+    {
+      "date": "2026-02-01",
+      "amount": 4200,
+      "description": "Office rent",
+      "category": "rent"
+    },
+    {
+      "date": "2026-02-20",
+      "amount": 9000,
+      "description": "Owner draw",
+      "category": "owner_draw"
+    },
+    {
+      "date": "2026-03-01",
+      "amount": 4200,
+      "description": "Office rent",
+      "category": "rent"
+    }
+  ],
+  "tax_profile": {
+    "vat_rate": 0.18,
+    "vat_cadence": "bimonthly",
+    "income_tax_advance_rate": 0.08,
+    "bituach_leumi_rate": 0.18,
+    "reviewed_on": "2026-06-02",
+    "source_note": "Verify before filing Flat Bituach Leumi planning rate uses 2026 full combined self-employed rate as conservative approximation; verify bracketed calculation."
+  },
+  "buffer": 15000
+}

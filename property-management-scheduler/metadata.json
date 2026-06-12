@@ -1,0 +1,51 @@
+{
+  "slug": "property-management-scheduler",
+  "name": "Property-Management Scheduler",
+  "version": "2.2.0",
+  "description": "Coordinates maintenance, rent collection, and tenant communication for Israeli landlords and property managers.",
+  "license": "MIT",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "accounting-prep",
+    "arnona",
+    "bank-of-israel",
+    "cli",
+    "consumers",
+    "freelancers",
+    "hebrew",
+    "israel",
+    "israel-invoices",
+    "landlords",
+    "local-first",
+    "maintenance",
+    "privacy",
+    "property-management",
+    "pytest",
+    "rent-collection",
+    "rental-tax",
+    "scheduling",
+    "small-business",
+    "tenant-communication",
+    "vat"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "cli": "property_management_scheduler.cli:app",
+    "client": "property_management_scheduler.client:PropertyManagementScheduler"
+  },
+  "requirements": {
+    "python": ">=3.10",
+    "runtime": [
+      "typer>=0.9.0"
+    ],
+    "development": [
+      "pytest>=8.0",
+      "pytest-asyncio>=0.23"
+    ]
+  },
+  "last_verified": "2026-06-04"
+}

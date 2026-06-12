@@ -1,0 +1,48 @@
+{
+  "version": "1.2.0",
+  "category": "business",
+  "display_name": {
+    "en": "Terminology Glossary Builder",
+    "he": "בונה מילוני מונחים"
+  },
+  "display_description": {
+    "en": "Creates bilingual English-Hebrew glossaries of industry terms with citations to Israeli authoritative sources for small businesses, freelancers, and consumers.",
+    "he": "יוצר מילוני מונחים דו לשוניים בעברית ובאנגלית עם הפניות למקורות ישראליים מוסמכים עבור עסקים קטנים, עצמאים וצרכנים."
+  },
+  "tags": [
+    "glossary",
+    "terminology",
+    "hebrew",
+    "english",
+    "israel",
+    "small-business",
+    "freelancer",
+    "consumer",
+    "tax",
+    "accounting",
+    "privacy",
+    "accessibility",
+    "retail",
+    "ecommerce",
+    "corporate",
+    "import",
+    "banking",
+    "finance",
+    "citations",
+    "govil",
+    "cli",
+    "pytest",
+    "web-validated",
+    "amendment-13",
+    "finance-ministry",
+    "verification-log"
+  ],
+  "supported_agents": [
+    "coding-agent",
+    "chat-agent",
+    "automation-agent"
+  ],
+  "license": "MIT",
+  "source_registry_version": "2026-06-03-web-validated",
+  "entry_point": "terminology_glossary_builder.cli:main"
+}

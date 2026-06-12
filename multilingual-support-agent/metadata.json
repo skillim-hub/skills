@@ -1,0 +1,44 @@
+{
+  "name": "Multilingual Support Agent",
+  "slug": "multilingual-support-agent",
+  "version": "2.2.0",
+  "description": "Assist Israeli small businesses, freelancers, and consumers with high-coverage customer support in Hebrew, English, Russian, and Arabic.",
+  "languages": [
+    "he",
+    "en",
+    "ru",
+    "ar"
+  ],
+  "locales": [
+    "he-IL",
+    "en-IL",
+    "ru-IL",
+    "ar-IL"
+  ],
+  "tags": [
+    "customer-support",
+    "israel",
+    "hebrew",
+    "arabic",
+    "russian",
+    "english",
+    "small-business",
+    "freelancers",
+    "consumer-rights",
+    "vat",
+    "privacy",
+    "accessibility",
+    "whatsapp",
+    "ecommerce",
+    "service-recovery",
+    "rtl",
+    "localization",
+    "refunds",
+    "invoices",
+    "consumer-services",
+    "appointments",
+    "payments"
+  ],
+  "license": "MIT",
+  "entrypoint": "SKILL.md"
+}

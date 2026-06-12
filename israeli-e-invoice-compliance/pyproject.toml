@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "israeli-e-invoice-compliance"
+version = "3.0.0"
+description = "Validation helpers and API client for Israeli e-invoice allocation compliance."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "httpx>=0.24",
+  "typer>=0.9"
+]
+keywords = ["israel", "vat", "invoice", "e-invoice", "shaam", "allocation-number"]
+
+[project.scripts]
+israeli-e-invoice-compliance = "scripts.israeli_e_invoice_compliance_cli:app"
+
+[tool.setuptools]
+packages = ["scripts"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+pythonpath = ["."]
+addopts = "-q"

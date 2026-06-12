@@ -1,0 +1,40 @@
+{
+  "slug": "free-text-invoice-explanation",
+  "name": "Free-Text Invoice Explanation",
+  "version": "2.1.0",
+  "description": "Generate plain-language Hebrew or English explanations for Israeli invoice line items, VAT treatment, receipts, credit notes, service periods, and reimbursements.",
+  "tags": [
+    "accounting",
+    "allocation-number",
+    "cli",
+    "consumer",
+    "credit-note",
+    "english",
+    "freelancer",
+    "hebrew",
+    "invoice",
+    "invoice-explanation",
+    "israel",
+    "israel-invoice",
+    "maam",
+    "osek-murshe",
+    "osek-patur",
+    "plain-language",
+    "python",
+    "receipt",
+    "small-business",
+    "tax-authority",
+    "vat",
+    "vat-2026",
+    "web-validated"
+  ],
+  "language_support": [
+    "he",
+    "en"
+  ],
+  "license": "MIT",
+  "entry_points": {
+    "python_module": "free_text_invoice_explanation",
+    "cli": "invoice-explain"
+  }
+}

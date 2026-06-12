@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contract-drafting-assistant"
+version = "2.2.0"
+description = "Neutral helper scripts for Israeli contract drafting workflows."
+requires-python = ">=3.10"
+dependencies = [
+  "typer>=0.9"
+]
+license = {text = "MIT"}
+keywords = ["contracts", "israel", "hebrew", "legal-tech", "service-agreement"]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-asyncio>=0.21",
+  "ruff>=0.4"
+]
+
+[project.scripts]
+contract-drafting-assistant = "contract_drafting_assistant_cli:app"
+
+[tool.setuptools]
+package-dir = {"" = "scripts"}
+py-modules = ["contract_drafting_assistant_client", "contract_drafting_assistant_cli"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+pythonpath = ["scripts"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

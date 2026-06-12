@@ -1,0 +1,73 @@
+{
+  "version": "2.2.0",
+  "category": "accounting",
+  "slug": "expense-manager",
+  "display_name": {
+    "en": "Expense Manager",
+    "he": "ניהול הוצאות"
+  },
+  "display_description": {
+    "en": "Classify Israeli expenses, estimate tax/VAT treatment, flag documentation gaps, and export accountant-ready packages.",
+    "he": "סיווג הוצאות ישראליות, הערכת טיפול מס/מע״מ, סימון חוסרי תיעוד וייצוא חבילה לרואה חשבון."
+  },
+  "tags": {
+    "en": [
+      "expense-management",
+      "israeli-accounting",
+      "vat",
+      "osek-patur",
+      "osek-murshe",
+      "company",
+      "freelancer",
+      "small-business",
+      "accountant-export",
+      "bookkeeping",
+      "tax-deductions",
+      "csv-export",
+      "audit-ready",
+      "home-office",
+      "vehicle-expenses",
+      "csv",
+      "json",
+      "cli",
+      "pytest",
+      "accountant-package",
+      "israel-vat"
+    ],
+    "he": [
+      "ניהול-הוצאות",
+      "הנהלת-חשבונות",
+      "מע״מ",
+      "עוסק-פטור",
+      "עוסק-מורשה",
+      "חברה-בעמ",
+      "עצמאים",
+      "עסקים-קטנים",
+      "יצוא-לרואה-חשבון",
+      "הוצאות-מוכרות",
+      "משרד-ביתי",
+      "הוצאות-רכב",
+      "מס-תשומות",
+      "חבילת-רואה-חשבון",
+      "בדיקת-תיעוד",
+      "קובצי-csv",
+      "קובצי-json"
+    ]
+  },
+  "supported_inputs": [
+    "csv",
+    "excel-export",
+    "bank-statement-export",
+    "credit-card-export",
+    "free-text-normalized-to-csv"
+  ],
+  "outputs": [
+    "classified-csv",
+    "summary-json",
+    "import-mapping-json",
+    "sha256-manifest",
+    "zip-package"
+  ],
+  "default_currency": "ILS",
+  "locale": "he-IL"
+}

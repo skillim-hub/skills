@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "insurance-coverage-analyzer"
+version = "2.1.0"
+description = "Local Israeli insurance policy-level coverage analyzer for health, home, and life policies."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["typer>=0.9", "click>=8.1"]
+keywords = ["insurance", "israel", "health-insurance", "home-insurance", "life-insurance", "policy-comparison"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov>=4.0", "pytest-asyncio>=0.23"]
+
+[project.scripts]
+insurance-coverage-analyzer = "insurance_coverage_analyzer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["insurance_coverage_analyzer*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "2.1.0"

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.1",
+  "skill": "pension-contribution-calculator",
+  "generated_at": "2026-06-01T00:00:00Z",
+  "verification_log": "references/verification-log.md",
+  "claims": [
+    {
+      "claim_id": "vat-2026-out-of-scope",
+      "claim": "Israeli VAT is 18% from 2025-01-01 and remains an out-of-scope reference, not an input to contribution calculations.",
+      "source_url": "https://www.gov.il/he/pages/vat-history",
+      "appears_in": ["references/api-reference.md", "references/verification-log.md"]
+    },
+    {
+      "claim_id": "avg-wage-2026",
+      "claim": "Average wage used by the 2026 calculations is 13,769 ILS/month.",
+      "source_url": "https://www.btl.gov.il/Mediniyut/GeneralData/Pages/%D7%A9%D7%9B%D7%A8%20%D7%9E%D7%9E%D7%95%D7%A6%D7%A2.aspx",
+      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/rate-table-2026.md", "scripts/pension_contribution_calculator_client.py"]
+    },
+    {
+      "claim_id": "employee-splits",
+      "claim": "Employee pension split modeled as 6% employee, 6.5% employer, and 6% minimum severance; 8.33% severance is available for full Section 14 scenarios.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%97%D7%95%D7%91%D7%AA_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D",
+      "appears_in": ["SKILL.md", "SKILL_HE.md", "scripts/pension_contribution_calculator_client.py"]
+    },
+    {
+      "claim_id": "comprehensive-pension-cap-2026",
+      "claim": "Comprehensive pension fund monthly deposit ceiling used by the calculator is 5,645.29 ILS/month for 2026.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A7%D7%A8%D7%9F_%D7%A4%D7%A0%D7%A1%D7%99%D7%94_%D7%9E%D7%A7%D7%99%D7%A4%D7%94",
+      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/rate-table-2026.md", "scripts/pension_contribution_calculator_client.py"]
+    },
+    {
+      "claim_id": "hishtalmut-employee-ceiling-2026",
+      "claim": "Employee Keren Hishtalmut salary ceiling used by the calculator is 15,712 ILS/month for 2026.",
+      "source_url": "https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf",
+      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/rate-table-2026.md", "scripts/pension_contribution_calculator_client.py"]
+    },
+    {
+      "claim_id": "self-employed-brackets",
+      "claim": "Self-employed mandatory pension modeled as 4.45% up to half average wage and 12.55% from half to full average wage.",
+      "source_url": "https://www.gov.il/he/pages/independent-must-pension",
+      "appears_in": ["SKILL.md", "SKILL_HE.md", "scripts/pension_contribution_calculator_client.py"]
+    },
+    {
+      "claim_id": "self-employed-hishtalmut-2026",
+      "claim": "Self-employed Keren Hishtalmut deduction ceiling used is 13,203 ILS/year and profit-exempt deposit ceiling used is 20,566 ILS/year for 2026.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A7%D7%A8%D7%9F_%D7%94%D7%A9%D7%AA%D7%9C%D7%9E%D7%95%D7%AA_%D7%9C%D7%A2%D7%95%D7%91%D7%93_%D7%A2%D7%A6%D7%9E%D7%90%D7%99",
+      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/rate-table-2026.md", "scripts/pension_contribution_calculator_client.py"]
+    },
+    {
+      "claim_id": "bituach-menahalim-2023-restriction",
+      "claim": "New Bituach Menahalim policies from 2023-09-01 require current-law eligibility review and are generally restricted to excess above twice average wage after comprehensive pension funding.",
+      "source_url": "https://main.knesset.gov.il/News/PressReleases/pages/press26.06.23a.aspx",
+      "appears_in": ["SKILL.md", "SKILL_HE.md", "scripts/pension_contribution_calculator_client.py", "references/troubleshooting.md"]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "terminology-glossary-builder"
+version = "1.2.0"
+description = "Build English-Hebrew glossaries with Israeli authoritative citations."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "typer>=0.12.0",
+  "rich>=13.7.0"
+]
+
+[project.scripts]
+tgb = "terminology_glossary_builder.cli:main"
+terminology-glossary-builder = "terminology_glossary_builder.cli:main"
+
+[tool.setuptools]
+packages = ["terminology_glossary_builder"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+asyncio_mode = "auto"
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"

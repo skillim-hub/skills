@@ -1,0 +1,46 @@
+{
+  "name": "Corporate-Law Guide",
+  "slug": "corporate-law-guide",
+  "version": "2.2.0",
+  "description": "Neutral bilingual guide for Israeli corporate governance, shareholder agreements, and Companies Authority workflows.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "2026",
+    "annual-fee",
+    "annual-report",
+    "bilingual",
+    "cap-table",
+    "case-id",
+    "companies-law",
+    "companies-registrar",
+    "compliance",
+    "consumers",
+    "corporate-governance",
+    "corporate-law",
+    "directors",
+    "freelancers",
+    "governance",
+    "hebrew",
+    "israel",
+    "privacy-amendment-13",
+    "private-company",
+    "rasham-hachavarot",
+    "shareholder-agreements",
+    "small-business",
+    "vat",
+    "web-validated"
+  ],
+  "license": "MIT",
+  "last_updated": "02/06/2026",
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "scripts/corporate-law-guide-cli.py",
+    "client": "scripts/corporate_law_guide_client.py",
+    "package": "corporate_law_guide",
+    "verification_log": "references/verification-log.md"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Advertising Campaign Planner",
+  "slug": "advertising-campaign-planner",
+  "version": "1.4.0",
+  "license": "MIT",
+  "language": "en",
+  "description": "Plan compliant Israeli advertising campaigns with multilingual targeting, budget allocation, and ROI estimation for small businesses, freelancers, and consumer-facing services.",
+  "locales": [
+    "en-IL",
+    "he-IL",
+    "ar-IL",
+    "ru-IL"
+  ],
+  "tags": [
+    "advertising",
+    "campaign-planning",
+    "israel",
+    "small-business",
+    "freelancers",
+    "hebrew",
+    "arabic",
+    "russian",
+    "roi",
+    "compliance",
+    "consumer-protection",
+    "privacy",
+    "accessibility",
+    "direct-marketing",
+    "ppc",
+    "social-ads",
+    "lead-generation",
+    "ecommerce",
+    "local-services"
+  ],
+  "entrypoint": "SKILL.md",
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ],
+  "scripts": [
+    "scripts/advertising_campaign_planner_client.py",
+    "scripts/advertising-campaign-planner-cli.py"
+  ]
+}

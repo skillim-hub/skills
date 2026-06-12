@@ -1,0 +1,46 @@
+{
+  "name": "Invoice OCR Extractor",
+  "slug": "invoice-ocr-extractor",
+  "version": "2.2.0",
+  "description": "Extract structured expense-entry data from Hebrew and English invoice OCR text for Israeli small businesses, freelancers, and consumers.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "invoice",
+    "ocr",
+    "hebrew",
+    "english",
+    "israel",
+    "vat",
+    "expense-entry",
+    "bookkeeping",
+    "receipt",
+    "tax-invoice",
+    "freelancer",
+    "small-business",
+    "cli",
+    "python",
+    "structured-data",
+    "audit",
+    "privacy",
+    "record-id",
+    "review-workflow",
+    "web-validated",
+    "israel-invoices",
+    "allocation-number",
+    "2026-vat"
+  ],
+  "license": "MIT",
+  "entrypoints": {
+    "skill": "SKILL.md",
+    "skill_he": "SKILL_HE.md",
+    "client": "src/invoice_ocr_extractor/client.py",
+    "cli": "src/invoice_ocr_extractor/cli.py"
+  },
+  "schema_version": "2.2.0",
+  "requires": {
+    "python": ">=3.10"
+  }
+}

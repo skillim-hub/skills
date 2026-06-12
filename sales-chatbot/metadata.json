@@ -1,0 +1,46 @@
+{
+  "slug": "sales-chatbot",
+  "name": "Sales Chatbot",
+  "version": "2.2.0",
+  "description": "Hebrew sales chatbot helper for Israeli small businesses, freelancers, and consumer-facing teams, with ₪ pricing, tashlumim, upsell, cross-sell, consent handling, and service handoff.",
+  "license": "MIT",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "sales",
+    "chatbot",
+    "hebrew",
+    "israel",
+    "small-business",
+    "freelancers",
+    "consumer",
+    "upsell",
+    "cross-sell",
+    "tashlumim",
+    "whatsapp",
+    "ecommerce",
+    "pricing",
+    "payments",
+    "customer-service",
+    "compliance",
+    "compliance-audit",
+    "pytest-asyncio",
+    "israeli-localization",
+    "installable-package",
+    "hebrew-qa",
+    "web-validated",
+    "tax-authority",
+    "bank-of-israel",
+    "whatsapp-cloud-api",
+    "verification-log"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "client": "scripts/sales_chatbot_client.py",
+    "cli": "scripts/sales_chatbot_cli.py",
+    "console": "sales-chatbot"
+  }
+}

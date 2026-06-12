@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stock-options-tax-advisor"
+version = "2.1.0"
+description = "Israeli stock options, RSU, and ESPP tax planning helper"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["click>=8.0"]
+license = { text = "MIT" }
+keywords = ["israel", "tax", "section-102", "stock-options", "rsu", "espp"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.20"]
+
+[project.scripts]
+stock-options-tax-advisor = "stock_options_tax_advisor.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["stock_options_tax_advisor*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+pythonpath = ["."]
+addopts = "-q"

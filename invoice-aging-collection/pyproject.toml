@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invoice-aging-collection"
+version = "2.2.0"
+description = "Invoice aging and Hebrew collection reminder helper for Israeli small businesses, freelancers, and consumers."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "typer>=0.9"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-asyncio>=0.21"
+]
+
+[project.scripts]
+invoice-aging-collection = "invoice_aging_collection_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "scripts"}
+py-modules = ["invoice_aging_collection_client", "invoice_aging_collection_cli"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

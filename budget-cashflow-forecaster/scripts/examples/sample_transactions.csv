@@ -1,0 +1,5 @@
+date,amount,direction,description,category,taxable,gross
+2026-01-10,11800,in,Customer payment,revenue,true,true
+2026-01-15,3000,out,Rent,rent,false,true
+2026-02-10,11800,in,Customer payment,revenue,true,true
+2026-02-15,3000,out,Rent,rent,false,true

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lead-router"
+version = "1.2.0"
+description = "Lead routing helper for Israeli inbound leads by language, region, product interest, urgency, channel, and consent."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["lead-routing", "crm", "israel", "hebrew", "arabic", "russian", "sales-operations", "customer-operations"]
+dependencies = ["typer>=0.9"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23"]
+
+[project.scripts]
+lead-router = "lead_router.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["lead_router*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120

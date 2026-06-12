@@ -1,0 +1,6 @@
+httpx>=0.24
+typer>=0.9
+pytest>=7
+pytest-asyncio>=0.21
+ruff>=0.4
+mypy>=1.8

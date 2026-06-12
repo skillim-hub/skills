@@ -1,0 +1,28 @@
+{
+  "document_type": "tax_invoice",
+  "document_number": "INV-2026-0042",
+  "issue_date": "15/06/2026",
+  "issuer": {
+    "name": "יעל כהן ייעוץ",
+    "tax_id": "123456789",
+    "status": "morshe",
+    "address": "רחוב הרצל 10, תל אביב",
+    "email": "yael@example.co.il"
+  },
+  "customer": {
+    "name": "חברת לקוח בע\"מ",
+    "tax_id": "515555555",
+    "customer_type": "business",
+    "address": "דרך מנחם בגין 99, תל אביב"
+  },
+  "currency": "ILS",
+  "lines": [
+    {
+      "description": "ייעוץ אסטרטגי",
+      "quantity": "40",
+      "unit": "שעה",
+      "unit_price": "450.00"
+    }
+  ],
+  "notes": "תנאי תשלום: שוטף + 30. הצג מספר הקצאה במסמך הסופי כאשר נדרש."
+}

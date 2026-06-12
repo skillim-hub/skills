@@ -1,0 +1,71 @@
+{
+  "version": "2.2.0",
+  "slug": "property-tax-advisor",
+  "name": "Property Tax Advisor",
+  "category": "tax-and-finance",
+  "license": "MIT",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": {
+    "en": [
+      "israel",
+      "property-tax",
+      "arnona",
+      "municipal-tax",
+      "mas-rechush",
+      "purchase-tax",
+      "land-appreciation-tax",
+      "betterment-levy",
+      "small-business",
+      "freelancer",
+      "consumer",
+      "discounts",
+      "appeals",
+      "real-estate-tax",
+      "web-validated"
+    ],
+    "he": [
+      "ישראל",
+      "ארנונה",
+      "מס-רכוש",
+      "מס-רכישה",
+      "מס-שבח",
+      "היטל-השבחה",
+      "מס-עירוני",
+      "עצמאים",
+      "עסקים-קטנים",
+      "צרכנים",
+      "הנחות",
+      "השגה",
+      "ערר",
+      "מיסוי-מקרקעין",
+      "אימות-מקורות"
+    ]
+  },
+  "display_name": {
+    "en": "Property Tax Advisor",
+    "he": "יועץ מסי נכסים"
+  },
+  "display_description": {
+    "en": "Practical bilingual guidance for Israeli Arnona, Mas Rechush, purchase tax, betterment levy, and related property-tax workflows for consumers, freelancers, and small businesses.",
+    "he": "הדרכה דו-לשונית מעשית בנושאי ארנונה, מס רכוש, מס רכישה, היטל השבחה וחיובי נכסים בישראל לצרכנים, עצמאים ועסקים קטנים."
+  },
+  "capabilities": [
+    "appeal-packet-preparation",
+    "arnona-estimation",
+    "betterment-levy-estimation",
+    "bilingual-guidance",
+    "case-workflow-chaining",
+    "cli-helper",
+    "discount-checklists",
+    "installable-python-package",
+    "mas-rechush-compensation-routing",
+    "municipal-tax-triage",
+    "purchase-tax-estimation"
+  ],
+  "requires": {
+    "python": ">=3.10"
+  }
+}

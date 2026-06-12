@@ -1,0 +1,40 @@
+{
+  "slug": "renovation-cost-estimator",
+  "name": "Renovation Cost Estimator",
+  "version": "2.2.0",
+  "description": "Estimate Israeli renovation budgets using per-meter, per-room, trade-level benchmarks, VAT handling, compliance flags, and quote review workflows.",
+  "license": "MIT",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "accessibility",
+    "budgeting",
+    "business-licensing",
+    "cbs-api",
+    "construction",
+    "construction-index",
+    "consumer",
+    "contractor-quotes",
+    "cost-estimation",
+    "fire-safety",
+    "freelancers",
+    "hebrew",
+    "israel",
+    "official-sources",
+    "planning-administration",
+    "renovation",
+    "small-business",
+    "tax-authority",
+    "vat",
+    "web-validated"
+  ],
+  "entrypoints": {
+    "skill": "SKILL.md",
+    "hebrew_skill": "SKILL_HE.md",
+    "cli": "renovation_cost_estimator.cli:main",
+    "client": "renovation_cost_estimator.client"
+  },
+  "minimum_python": "3.10"
+}

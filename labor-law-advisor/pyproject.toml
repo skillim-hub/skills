@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "labor-law-advisor"
+version = "2.2.0"
+description = "Neutral Israeli labor-law guidance helper for minimum wage, overtime, severance, parental rights, and collective agreement checks."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["israel", "labor-law", "minimum-wage", "overtime", "severance", "histadrut"]
+dependencies = ["typer>=0.9", "click>=8"]
+
+[project.scripts]
+labor-law-advisor = "labor_law_advisor_cli:main"
+
+[tool.setuptools]
+py-modules = ["labor_law_advisor_client", "labor_law_advisor_cli"]
+
+[tool.setuptools.package-dir]
+"" = "scripts"
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+pythonpath = ["scripts"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120

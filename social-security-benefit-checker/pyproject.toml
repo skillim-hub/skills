@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "social-security-benefit-checker"
+version = "2.2.0"
+description = "Offline-first Israeli National Insurance benefit eligibility checker"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["typer>=0.9"]
+
+[project.scripts]
+social-security-benefit-checker = "social_security_benefit_checker.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.20", "ruff>=0.4", "mypy>=1.0"]
+
+[tool.setuptools.packages.find]
+include = ["social_security_benefit_checker*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+strict = false

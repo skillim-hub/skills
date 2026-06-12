@@ -1,0 +1,34 @@
+# Verification Log
+
+Access date: 2026-06-02
+
+This log records the web validation pass used for version 2.1.0. Snippets are short excerpts from the linked source or search result, kept under 140 characters. The package is a local explanation helper and does not call Israeli government APIs.
+
+| Check | Status | Pass 1 source | Pass 2 source | Package action |
+| --- | --- | --- | --- | --- |
+| Standard VAT rate is 18% from 01/01/2025 and remains current in 2026. | ✓✓ | Israel Tax Authority glossary, `https://www.gov.il/he/pages/taxes-glossary`, snippet: "מס ... בשיעור אחיד של 18" | PwC WWTS VAT rates, `https://taxsummaries.pwc.com/quick-charts/value-added-tax-vat-rates`, snippet: "Israel (Last reviewed 01 January 2026) 18" | Kept default examples at 18%; added explicit 2026 validation wording. |
+| VAT rate increased from 17% to 18% effective 01/01/2025. | ✓✓ | Israel Tax Authority VAT history, `https://www.gov.il/he/pages/vat-history`, snippet: "1.1.25 עלה המע״מ ל-18%" | Knesset press release, `https://main.knesset.gov.il/EN/News/PressReleases/Pages/press12324w.aspx`, snippet: "effective January 1, 2025" | Kept 18% examples; avoided saying the rate is always fixed. |
+| Exempt dealer does not charge VAT or issue tax invoices. | ✓✓ | Tax Authority new dealer guide, `https://www.gov.il/he/pages/vat-to-the-new-dealer`, snippet: "אינך רשאי להוציא חשבוניות מס אלא רק קבלות" | Kol Zchut, `https://www.kolzchut.org.il/he/עוסק_פטור`, snippet: "עוסק פטור אינו חייב בהעברת מע״מ" | Kept exempt-dealer wording and warning. |
+| Exempt dealer cannot deduct input VAT. | ✓✓ | Tax Authority new dealer guide, `https://www.gov.il/he/pages/vat-to-the-new-dealer?chapterIndex=4`, snippet: "אינך רשאי לנכות מס תשומות" | Kol Zchut input VAT page, `https://www.kolzchut.org.il/he/מס_תשומות`, snippet: "עוסק פטור אינו גובה מע״מ ... אינו רשאי לקזז" | Kept customer-deductibility caveat. |
+| Authorized dealer and business tax invoice terminology is current. | ✓✓ | Tax Authority Form 821 page, `https://www.gov.il/he/service/vat-821`, snippet: "בקשה לפתיחת תיק עוסק מורשה (טופס 821)" | Kol Zchut invoice procedure, `https://www.kolzchut.org.il/he/הוצאת_חשבונית_מס,_חשבונית_עסקה_וקבלה`, snippet: "עוסק מורשה חייב להוציא" | Kept `authorized_dealer` mapping to עוסק מורשה. |
+| Exempt dealer online opening service is free. | ✓✓ | Tax Authority service page, `https://www.gov.il/he/service/request-open-exempt-dealer-via-internet`, snippet: "השירות ניתן ללא עלות" | Tax Authority exempt declaration page, `https://www.gov.il/he/service/vat-declarationisexempt`, snippet: "השירות ניתן ללא עלות" | Added no-fee validation in reference table only. |
+| Authorized dealer Form 821 service is free. | ✓✓ | Tax Authority Form 821 page, `https://www.gov.il/he/service/vat-821`, snippet: "השירות ניתן ללא עלות" | Tax Authority service result, `https://www.gov.il/he/service/vat-821`, snippet: "טופס בקשה לפתיחת תיק עוסק מורשה" | Added official form reference. |
+| 2026 exempt dealer and micro-business ceiling is ₪122,833. | ✓✓ | Tax Authority micro-business page, `https://www.gov.il/he/service/request-transfer-to-micro-business-owner`, snippet: "122,833 ₪ לשנת 2026" | Kol Zchut exempt dealer page, `https://www.kolzchut.org.il/he/עוסק_פטור`, snippet: "122,833 ₪ (נכון לשנת 2026)" | Added threshold reference; did not hard-code into calculations. |
+| Israel Invoice allocation-number thresholds for 2026 are ₪10,000 before VAT from 01/01/2026 and ₪5,000 from 01/06/2026. | ✓✓ | Tax Authority request page, `https://www.gov.il/he/service/request-assignment-number-for-tax-invoice`, snippet: "10,000 החל מה-1 בינואר 2026 ו-5,000 ₪" | Tax Authority 2026 changes page, `https://www.gov.il/he/pages/pa301225-2`, snippet: "10,000 ₪ לפני מע״מ ... 5,000 ₪ לפני מע״מ" | Added optional allocation-number caution for high-value B2B invoices. |
+| Allocation-number request and supplier invoice verification services are free. | ✓✓ | Tax Authority allocation request page, `https://www.gov.il/he/service/request-assignment-number-for-tax-invoice`, snippet: "השירות ניתן ללא עלות" | Tax Authority verification page, `https://www.gov.il/he/service/verify-vendor-invoice-information`, snippet: "השירות ניתן ללא עלות" | Added to reference table; no external API call added. |
+| Supplier invoice verification by allocation number is an official online service. | ✓✓ | Tax Authority verification page, `https://www.gov.il/he/service/verify-vendor-invoice-information`, snippet: "לאמת על סמך מספר הקצאה" | Israel Invoices topic page, `https://www.gov.il/he/departments/topics/israel-invoice`, snippet: "אימות פרטי חשבונית הספק" | Added verification workflow note. |
+| Official terminology includes מע״מ, מס תשומות, מע״מ עסקאות, חשבונית מס/קבלה, חשבונית זיכוי. | ✓✓ | Tax Authority glossary, `https://www.gov.il/he/pages/taxes-glossary`, snippet: "מע״מ (מס ערך מוסף)" | Software guidance, `https://www.gov.il/BlobFolder/generalpage/software-houses-registration/he/IncomeTax_software-houses-230619.pdf`, snippet: "חשבונית מס/קבלה ... חשבונית זיכוי" | Kept Hebrew terminology; no transliteration added. |
+| Open business file topic URL in v2 was too broad for production verification. | ✗→✓ | v2 used `https://www.gov.il/he/service/open-business-files`, no specific snippet found for the package claims. | Replaced with specific Tax Authority service pages for exempt dealer and Form 821. | Corrected `references/api-reference.md`. |
+| Legal text repository reference in v2 pointed to a non-official repository. | ✗→✓ | v2 used `https://www.nevo.co.il/`, which is not an official government source. | Knesset National Legislation Database, `https://main.knesset.gov.il/apps/legislation/main/laws/2001068`, snippet: "חוק מס ערך מוסף, התשל״ו-1975" | Replaced with Knesset law database entries. |
+| Exact phrase search for the package purpose statement. | ✗→✓ | Search: "Writes plain-language Hebrew or English explanations of invoice items for clients" Israel 2026 returned no exact official match. | Adobe invoice guidance, `https://www.adobe.com/express/discover/how-to/invoice`, snippet: "Using plain language that the client will understand" | Kept as package purpose, not as an external factual claim. |
+| Stale third-party VAT article claiming 17% in 2026. | ✗→✓ | Keep.co.il freelancing article, `https://keep.co.il/blog/how-to-start-freelancing.html`, snippet: "Currently 17%" | Tax Authority and PwC sources above confirm 18% in 2026. | Ignored stale third-party claim; package remains at 18%. |
+| Webhook event names and external API endpoint hosts. | ✓✓ | Package inspection: no webhook or external API integration exists. | `references/api-reference.md` now states no external host, endpoint, or webhook contract. | Added explicit non-applicability row. |
+
+## Summary
+
+| Metric | Count |
+| --- | ---: |
+| Total checks | 17 |
+| ✓✓ double-confirmed | 12 |
+| ✗→✓ corrected in pass 2 | 5 |
+| Final ✗ | 0 |

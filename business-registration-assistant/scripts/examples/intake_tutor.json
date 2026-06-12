@@ -1,0 +1,13 @@
+{
+  "business": {
+    "activity_description": "Private English tutoring",
+    "expected_annual_turnover_nis": 72000,
+    "expected_monthly_profit_nis": 5000,
+    "current_osek_patur_ceiling_nis": 122833,
+    "planned_start_date": "01/09/2026",
+    "weekly_hours": 12,
+    "client_types": [
+      "private_consumers"
+    ]
+  }
+}

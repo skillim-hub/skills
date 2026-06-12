@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prescription-renewal-assistant"
+version = "2.2.0"
+description = "Privacy-first workflow helper for Israeli prescription renewal and pharmacy fulfillment."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["israel", "prescription", "refill", "kupat cholim", "pharmacy", "privacy"]
+dependencies = ["typer>=0.9"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "ruff>=0.4",
+    "mypy>=1.8"
+]
+
+[project.scripts]
+prescription-renewal-assistant = "prescription_renewal_assistant.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["prescription_renewal_assistant*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+ignore_missing_imports = true

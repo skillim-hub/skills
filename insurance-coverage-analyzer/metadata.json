@@ -1,0 +1,73 @@
+{
+  "name": "insurance-coverage-analyzer",
+  "version": "2.1.0",
+  "category": "finance-insurance",
+  "display_name": {
+    "en": "Insurance Coverage Analyzer",
+    "he": "מנתח כיסויי ביטוח"
+  },
+  "display_description": {
+    "en": "Compare Israeli health, home, and life insurance policies at policy level, including gaps, duplicates, deductibles, exclusions, waiting periods, mortgage assignment, beneficiary issues, and renewal negotiation actions.",
+    "he": "השוואת פוליסות ביטוח בריאות, דירה וחיים בישראל ברמת הפוליסה, כולל פערי כיסוי, כפל ביטוחי, השתתפויות עצמיות, חריגים, תקופות אכשרה, שעבוד לבנק, מוטבים ופעולות לחידוש שנתי."
+  },
+  "tags": {
+    "en": [
+      "consumer-finance",
+      "coverage-analysis",
+      "deductibles",
+      "exclusions",
+      "freelancers",
+      "health-insurance",
+      "hebrew",
+      "home-insurance",
+      "insurance",
+      "israel",
+      "life-insurance",
+      "local-cli",
+      "mortgage",
+      "mortgage-life",
+      "policy-comparison",
+      "policy-diff",
+      "renewal-negotiation",
+      "small-business",
+      "web-validated",
+      "official-sources",
+      "regulatory-validation"
+    ],
+    "he": [
+      "ביטוח",
+      "ביטוח בריאות",
+      "ביטוח דירה",
+      "ביטוח חיים",
+      "ביטוח חיים למשכנתה",
+      "השוואה ברמת פוליסה",
+      "השוואת פוליסות",
+      "השתתפות עצמית",
+      "חידוש שנתי",
+      "חריגים",
+      "ישראל",
+      "כיסויים",
+      "ממשק שורת פקודה",
+      "משכנתה",
+      "עסקים קטנים",
+      "עצמאים",
+      "אימות מקורות רשמיים",
+      "ולידציה רגולטורית"
+    ]
+  },
+  "language": [
+    "en",
+    "he"
+  ],
+  "license": "MIT",
+  "privacy": {
+    "local_first": true,
+    "redact_sensitive_identifiers": true,
+    "no_portal_automation": true
+  },
+  "domains": [
+    "health",
+    "home",
+    "life"
+  ]
+}

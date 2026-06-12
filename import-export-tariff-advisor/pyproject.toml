@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "import-export-tariff-advisor"
+version = "2.2.0"
+description = "Israeli import tariff, purchase tax, VAT, and landed-cost estimation helper."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "typer>=0.9",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "pytest-asyncio>=0.23",
+]
+
+[project.scripts]
+import-export-tariff-advisor = "import_export_tariff_advisor.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["import_export_tariff_advisor*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+asyncio_mode = "auto"

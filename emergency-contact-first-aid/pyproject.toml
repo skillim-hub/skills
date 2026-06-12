@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emergency-contact-first-aid"
+version = "2.2.0"
+description = "Local emergency contact and first-aid profile toolkit for Israel"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-asyncio>=0.23",
+  "typer>=0.12",
+  "jsonschema>=4.0"
+]
+
+[project.scripts]
+emergency-contact-first-aid = "emergency_contact_first_aid.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+pythonpath = ["src"]

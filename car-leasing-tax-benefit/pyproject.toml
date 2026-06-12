@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "car-leasing-tax-benefit"
+version = "2.2.0"
+description = "Israeli Shovi Rechev company car imputed tax-benefit calculator"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["israel", "tax", "payroll", "company-car", "shovi-rechev"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.23", "ruff>=0.5"]
+
+[project.scripts]
+car-leasing-tax-benefit = "car_leasing_tax_benefit.cli:main"
+
+[tool.setuptools]
+packages = ["car_leasing_tax_benefit"]
+
+[tool.setuptools.package-data]
+car_leasing_tax_benefit = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"

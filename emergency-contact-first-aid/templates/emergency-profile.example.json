@@ -1,0 +1,56 @@
+{
+  "id": "example-dizengoff-front-desk",
+  "environment": "sandbox",
+  "profile_name": "Dizengoff Studio - Front Desk",
+  "last_reviewed": "04-06-2026",
+  "site": {
+    "address_line": "Dizengoff 100, entrance B, floor 2",
+    "locality": "Tel Aviv-Yafo",
+    "access_notes": "Intercom 22; AED near pharmacy downstairs",
+    "aed_location": "Ground floor pharmacy",
+    "first_aid_kit_location": "Reception cabinet"
+  },
+  "emergency_services": {
+    "medical": "101",
+    "police": "100",
+    "fire_rescue": "102",
+    "electric": "103",
+    "home_front": "104",
+    "municipal": "106",
+    "united_hatzalah": "1221",
+    "mda_sms_whatsapp": "052-7000-101"
+  },
+  "contacts": [
+    {
+      "name": "Dana Cohen",
+      "role": "Owner",
+      "relationship": "business owner",
+      "phone": "050-123-4567",
+      "priority": 1,
+      "can_receive_medical_info": true
+    },
+    {
+      "name": "Avi Levi",
+      "role": "Building maintenance",
+      "relationship": "site access",
+      "phone": "052-222-3333",
+      "priority": 2,
+      "can_receive_medical_info": false
+    }
+  ],
+  "medical_notes": {
+    "known_allergies": [
+      "latex"
+    ],
+    "regular_medications": [],
+    "conditions_relevant_to_emergency": [],
+    "mobility_needs": [
+      "stairs difficult"
+    ]
+  },
+  "consent": {
+    "basis": "explicit consent",
+    "granted_on": "01-06-2026",
+    "review_due": "01-09-2026"
+  }
+}

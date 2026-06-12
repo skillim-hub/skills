@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "customer-feedback-collector"
+version = "1.3.0"
+description = "Hebrew customer feedback, testimonial, and review collection workflows for Israeli businesses."
+requires-python = ">=3.10"
+dependencies = [
+  "typer>=0.9",
+  "click>=8.1",
+  "requests>=2.31",
+  "httpx>=0.24"
+]
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.scripts]
+customer-feedback-collector = "customer_feedback_collector.cli:APP"
+
+[tool.setuptools.packages.find]
+include = ["customer_feedback_collector*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+asyncio_mode = "auto"
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.mypy]
+python_version = "3.10"
+warn_unused_ignores = true
+warn_return_any = true
+disallow_untyped_defs = true
+ignore_missing_imports = true

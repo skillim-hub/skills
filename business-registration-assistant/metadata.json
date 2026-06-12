@@ -1,0 +1,52 @@
+{
+  "name": "Business Registration Assistant",
+  "slug": "business-registration-assistant",
+  "version": "2.2.0",
+  "description": "Neutral preparation assistant for Israeli self-employed registration as osek patur or osek murshe, with documents, workflows, CLI helpers, and tests.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "2026-verified-values",
+    "async-client",
+    "audit-clean",
+    "bituach-leumi",
+    "bookkeeping",
+    "case-workflow",
+    "checklists",
+    "cli",
+    "compliance",
+    "freelancer",
+    "hebrew",
+    "hebrew-localization",
+    "income-tax",
+    "installable-python-package",
+    "israel",
+    "osek-murshe",
+    "osek-patur",
+    "registration",
+    "self-employment",
+    "small-business",
+    "tax-authority",
+    "vat",
+    "verification-log",
+    "web-validated"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "package": "business_registration_assistant",
+    "cli": "scripts/business-registration-assistant-cli.py",
+    "client": "scripts/business_registration_assistant_client.py"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/document-workflows.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,23 @@
+[project]
+name = "freelancer-tax-calculator"
+version = "2.2.0"
+description = "Israeli freelancer tax estimation helper for VAT, income-tax advances, and National Insurance."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "click>=8.1"
+]
+
+[project.scripts]
+freelancer-tax-calculator = "freelancer_tax_calculator.cli:main"
+
+[tool.setuptools]
+packages = ["freelancer_tax_calculator"]
+py-modules = ["freelancer_tax_calculator_client"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+pythonpath = ["."]

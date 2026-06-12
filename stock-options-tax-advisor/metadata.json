@@ -1,0 +1,29 @@
+{
+  "name": "Stock Options and Equity Tax Advisor",
+  "slug": "stock-options-tax-advisor",
+  "version": "2.2.0",
+  "description": "Israeli stock options, RSU, and ESPP tax planning helper with Section 102 capital-track modeling.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "license": "MIT",
+  "tags": [
+    "israel",
+    "tax",
+    "section-102",
+    "capital-gains",
+    "employee-equity",
+    "stock-options",
+    "rsu",
+    "espp",
+    "freelancer",
+    "small-business",
+    "consumer",
+    "national-insurance",
+    "payroll",
+    "withholding",
+    "hebrew",
+    "web-validated"
+  ]
+}

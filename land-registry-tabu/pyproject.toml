@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "land-registry-tabu"
+version = "2.2.0"
+description = "Neutral Israeli Tabu land registry lookup helper, CLI, and typed client"
+requires-python = ">=3.10"
+dependencies = ["click>=8.0"]
+license = { text = "MIT" }
+
+[project.scripts]
+land-registry-tabu = "land_registry_tabu.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
+testpaths = ["scripts"]
+pythonpath = ["src"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]

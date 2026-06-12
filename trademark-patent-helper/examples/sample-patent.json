@@ -1,0 +1,11 @@
+{
+  "kind": "patent",
+  "title": "Pressure-controlled irrigation valve",
+  "applicant_name": "Example AgriTech Ltd.",
+  "inventors": ["Dana Cohen", "Yossi Levi"],
+  "technical_field": "Irrigation control",
+  "problem": "Pressure spikes waste water and damage drip lines.",
+  "solution": "A valve assembly includes a housing, inlet, outlet, downstream pressure sensor, controllable restrictor, and controller that adjusts the restrictor according to a selected irrigation-zone pressure threshold.",
+  "novel_features": ["zone-specific pressure threshold table", "automatic downstream-pressure restrictor control"],
+  "public_disclosures": []
+}

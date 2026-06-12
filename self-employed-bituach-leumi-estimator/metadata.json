@@ -1,0 +1,18 @@
+{
+  "name": "self-employed-bituach-leumi-estimator",
+  "version": "0.3.0",
+  "display_name": "Self-Employed Bituach Leumi Estimator — Enhanced",
+  "description": "Web-validated 2026 estimator for Israeli self-employed National Insurance and health-insurance contributions, with VAT and Israel Invoices reference data.",
+  "locale": [
+    "en",
+    "he-IL"
+  ],
+  "last_web_validated": "2026-06-01",
+  "regulatory_year": 2026,
+  "data_source_policy": "Do not change statutory rates or thresholds unless re-validated against official Israeli sources.",
+  "entry_points": {
+    "python_module": "scripts.bituach_leumi_estimator",
+    "cli": "python -m scripts.cli"
+  },
+  "public_surface_expected_minimum": 10
+}

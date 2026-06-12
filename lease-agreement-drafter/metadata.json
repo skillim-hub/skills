@@ -1,0 +1,38 @@
+{
+  "slug": "lease-agreement-drafter",
+  "name": "Lease Agreement Drafter",
+  "version": "1.3.0",
+  "description": "Drafts Hebrew and English apartment and office lease agreement drafts for Israeli small businesses, freelancers, consumers, landlords, and tenants.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "jurisdiction": "Israel",
+  "tags": [
+    "apartment",
+    "arnona",
+    "business-licensing",
+    "consumer",
+    "contract-drafting",
+    "fair-rent-amendment",
+    "fair-rent-law",
+    "freelancer",
+    "hebrew",
+    "israel",
+    "israel-tax-authority",
+    "lease",
+    "legal-operations",
+    "municipal-tax",
+    "office",
+    "rental-agreement",
+    "small-business",
+    "vat",
+    "verified-2026"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "lease-agreement-drafter"
+  },
+  "license": "MIT"
+}

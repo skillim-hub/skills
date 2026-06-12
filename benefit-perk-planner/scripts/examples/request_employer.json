@@ -1,0 +1,10 @@
+{
+  "entity_type": "employer",
+  "employee_count": 12,
+  "monthly_budget_ils": 15000,
+  "goals": ["retention", "equity"],
+  "work_model": "hybrid",
+  "existing_benefits": ["mandatory pension"],
+  "location": "Tel Aviv",
+  "wants_keren_hishtalmut": true
+}

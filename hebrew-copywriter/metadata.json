@@ -1,0 +1,61 @@
+{
+  "slug": "hebrew-copywriter",
+  "version": "2.2.0",
+  "category": "localization",
+  "display_name": {
+    "he": "קופירייטר עברי",
+    "en": "Hebrew Copywriter"
+  },
+  "display_description": {
+    "he": "כתיבת קופי שיווקי בעברית טבעית לקהל ישראלי: דפי נחיתה, הודעות WhatsApp, SMS, מודעות, דפי מוצר, דואר אלקטרוני ופרסומים. כולל משלב, לשון מגדרית, ₪, תאריכים בפורמט DD/MM/YYYY, מע\"מ, פרטיות, דיוור וניסוח זהיר לתחומים רגישים ותיעוד אימות מקורות בשני מעברים.",
+    "en": "Write idiomatic Hebrew marketing copy for Israeli audiences, including landing pages, WhatsApp, SMS, ads, product pages, emails, and social posts. Covers register, gendered language, ₪, DD/MM/YYYY dates, VAT, privacy, direct marketing, and safer wording for sensitive sectors, with a two-pass web verification log."
+  },
+  "tags": {
+    "he": [
+      "עברית",
+      "קופירייטינג",
+      "שיווק",
+      "עסקים-קטנים",
+      "עצמאים",
+      "ישראל",
+      "וואטסאפ",
+      "מסרונים",
+      "דפי-נחיתה",
+      "מודעות",
+      "מסחר-מקוון",
+      "מע״מ",
+      "פרטיות",
+      "נגישות",
+      "הגנת-הצרכן"
+    ],
+    "en": [
+      "hebrew",
+      "copywriting",
+      "marketing",
+      "small-business",
+      "freelancers",
+      "israel",
+      "whatsapp",
+      "sms",
+      "landing-pages",
+      "ads",
+      "מסחר מקוון",
+      "vat",
+      "privacy",
+      "accessibility",
+      "consumer-protection",
+      "localization"
+    ]
+  },
+  "supported_agents": [
+    "chat",
+    "code",
+    "local-cli"
+  ],
+  "entrypoints": {
+    "skill": "SKILL.md",
+    "skill_he": "SKILL_HE.md",
+    "client": "scripts/hebrew_copywriter_client.py",
+    "cli": "scripts/hebrew-copywriter-cli.py"
+  }
+}

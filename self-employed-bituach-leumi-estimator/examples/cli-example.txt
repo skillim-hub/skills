@@ -1,0 +1,1 @@
+python -m scripts.cli --monthly-income 12000 --months 3 --year 2026

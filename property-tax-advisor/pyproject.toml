@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "property-tax-advisor"
+version = "2.2.0"
+description = "Typed helper and CLI for Israeli property-tax triage examples."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "click>=8.1"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-asyncio>=0.23"
+]
+
+[project.scripts]
+property-tax-advisor = "property_tax_advisor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["property_tax_advisor*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

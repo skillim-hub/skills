@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rtl-ui-design-advisor"
+version = "2.2.0"
+description = "RTL UI audit and implementation helper for Hebrew and Arabic interfaces."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["click>=8.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.23"]
+
+[project.scripts]
+rtl-ui-design-advisor = "rtl_ui_design_advisor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+pythonpath = ["src"]
+addopts = "-q --color=no"

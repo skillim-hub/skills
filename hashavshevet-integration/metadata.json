@@ -1,0 +1,67 @@
+{
+  "slug": "hashavshevet-integration",
+  "name": "Hashavshevet Integration",
+  "version": "3.0.0",
+  "license": "MIT",
+  "category": "accounting",
+  "languages": [
+    "en",
+    "he"
+  ],
+  "tags": {
+    "en": [
+      "hashavshevet",
+      "wizcloud",
+      "israel",
+      "accounting",
+      "vat",
+      "shaam",
+      "israel-invoices",
+      "allocation-number",
+      "openformat",
+      "bkmv",
+      "btkn",
+      "journal-entries",
+      "customer-sync",
+      "supplier-sync",
+      "multi-company",
+      "hebrew-encoding",
+      "windows-1255",
+      "csv",
+      "json",
+      "api-integration"
+    ],
+    "he": [
+      "חשבשבת",
+      "חשבשבת-בענן",
+      "ישראל",
+      "הנהלת-חשבונות",
+      "מע״מ",
+      "שעם",
+      "חשבוניות-ישראל",
+      "מספר-הקצאה",
+      "קובץ-אחיד",
+      "פקודות-יומן",
+      "סנכרון-לקוחות",
+      "סנכרון-ספקים",
+      "רב-חברתי",
+      "קידוד-עברית"
+    ]
+  },
+  "display_name": {
+    "en": "Hashavshevet Integration",
+    "he": "אינטגרציית חשבשבת"
+  },
+  "display_description": {
+    "en": "Integrate Hashavshevet data through official exports, API-oriented sync, Hebrew encoding conversion, VAT and allocation-number validation, BTKN staging files, and multi-company workflows.",
+    "he": "אינטגרציית נתוני חשבשבת באמצעות יצוא רשמי, סנכרון API, המרת קידוד עברית, בדיקות מע״מ ומספר הקצאה, קבצי BTKN לסביבת ביניים ותהליכים רב-חברתיים."
+  },
+  "entrypoints": {
+    "docs": [
+      "SKILL.md",
+      "SKILL_HE.md"
+    ],
+    "cli": "scripts/hashavshevet_integration_cli.py",
+    "client": "scripts/hashavshevet_integration_client.py"
+  }
+}

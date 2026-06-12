@@ -1,0 +1,54 @@
+{
+  "name": "credit-card-receipt-generator",
+  "version": "3.0.0",
+  "category": "tax-and-finance",
+  "license": "MIT",
+  "display_name": {
+    "en": "Credit-Card Receipt Generator",
+    "he": "מחולל קבלות לתשלומי אשראי"
+  },
+  "display_description": {
+    "en": "Generate reconciliation-grade receipt drafts for Israeli card payments from Cardcom, Tranzila, Grow/Meshulam, and Pelecard payloads, including VAT presentation, safety validation, and bookkeeping handoff fields.",
+    "he": "הפקת טיוטות קבלה ותיעוד התאמה לתשלומי אשראי בישראל מנתוני Cardcom, Tranzila, Grow/Meshulam ו-Pelecard, כולל הצגת מע\"מ, בדיקות בטיחות ושדות למסירה להנהלת חשבונות."
+  },
+  "tags": {
+    "en": [
+      "israel",
+      "credit-card",
+      "receipt",
+      "vat",
+      "cardcom",
+      "tranzila",
+      "meshulam",
+      "grow",
+      "pelecard",
+      "bookkeeping",
+      "payment-reconciliation",
+      "slikat-ashrai"
+    ],
+    "he": [
+      "ישראל",
+      "אשראי",
+      "קבלה",
+      "מע\"מ",
+      "קארדקום",
+      "טרנזילה",
+      "משולם",
+      "גרואו",
+      "פלאקארד",
+      "הנהלת-חשבונות",
+      "התאמות",
+      "סליקת-אשראי"
+    ]
+  },
+  "supported_gateways": [
+    "cardcom",
+    "tranzila",
+    "grow",
+    "meshulam",
+    "pelecard"
+  ],
+  "default_currency": "ILS",
+  "default_vat_rate": "0.18",
+  "updated_at": "2026-06-04"
+}

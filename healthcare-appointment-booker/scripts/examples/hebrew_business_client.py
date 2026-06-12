@@ -1,0 +1,41 @@
+from __future__ import annotations
+
+import argparse
+import json
+import os
+
+from healthcare_appointment_booker import HealthcareAppointmentBookerClient, build_request
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--env", choices=["sandbox", "production"], default=os.getenv("HAB_ENV", "sandbox"))
+    return parser.parse_args()
+
+
+def main() -> None:
+    args = parse_args()
+    request = build_request(
+        hmo=os.getenv("HAB_HMO", "כללית"),
+        service=os.getenv("HAB_SERVICE", "תור לרופא משפחה עבור אישור מחלה"),
+        city=os.getenv("HAB_CITY", "פתח תקווה"),
+        date_from=os.getenv("HAB_DATE_FROM", "01/07/2026"),
+        date_to=os.getenv("HAB_DATE_TO", "10/07/2026"),
+        age_group=os.getenv("HAB_AGE_GROUP", "adult"),
+        urgency=os.getenv("HAB_URGENCY", "soon"),
+        referral_status=os.getenv("HAB_REFERRAL_STATUS", "not_applicable"),
+        language=os.getenv("HAB_LANGUAGE", "he"),
+        accessibility=tuple(filter(None, os.getenv("HAB_ACCESSIBILITY", "").split(","))),
+        notes=os.getenv("HAB_NOTES", ""),
+    )
+    plan = HealthcareAppointmentBookerClient().plan(request)
+    payload = {
+        "environment": args.env,
+        "manual_official_channel_required": True,
+        "plan": plan.to_dict(),
+    }
+    print(json.dumps(payload, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    main()

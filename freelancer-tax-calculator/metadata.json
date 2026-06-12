@@ -1,0 +1,59 @@
+{
+  "name": "freelancer-tax-calculator",
+  "version": "2.2.0",
+  "category": "tax-and-finance",
+  "license": "MIT",
+  "display_name": {
+    "en": "Freelancer Tax Calculator",
+    "he": "מחשבון מס לעצמאים"
+  },
+  "display_description": {
+    "en": "Estimate Israeli VAT, income-tax advances, National Insurance and health-insurance reserves, osek patur ceiling risk, and small-business normative-expense scenarios using web-validated 2026 defaults.",
+    "he": "אומדן מע״מ, מקדמות מס הכנסה, דמי ביטוח לאומי ודמי ביטוח בריאות, מעקב תקרת עוסק פטור ותרחישי הוצאה נורמטיבית עם ברירות מחדל שאומתו מול מקורות רשמיים לשנת 2026."
+  },
+  "tags": {
+    "en": [
+      "israel",
+      "tax",
+      "vat",
+      "national-insurance",
+      "health-insurance",
+      "income-tax-advances",
+      "freelancer",
+      "small-business",
+      "osek-patur",
+      "osek-murshe",
+      "micro-business",
+      "cash-flow",
+      "accounting",
+      "cli",
+      "pytest"
+    ],
+    "he": [
+      "ישראל",
+      "מס",
+      "מע״מ",
+      "ביטוח-לאומי",
+      "דמי-בריאות",
+      "מקדמות-מס-הכנסה",
+      "עצמאי",
+      "עסק-קטן",
+      "עוסק-פטור",
+      "עוסק-מורשה",
+      "עסק-זעיר",
+      "תזרים",
+      "הנהלת-חשבונות"
+    ]
+  },
+  "supported_languages": [
+    "en",
+    "he"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "cli": "scripts/freelancer-tax-calculator-cli.py",
+    "client_module": "freelancer_tax_calculator",
+    "client_script": "scripts/freelancer_tax_calculator_client.py"
+  }
+}

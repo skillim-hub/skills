@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "customer-service-chat-agent-skill"
+version = "2.1.0"
+description = "Hebrew-first customer-service chat agent skill for Israeli businesses."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = [
+    "typer>=0.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "mypy>=1.0",
+    "ruff>=0.4",
+]
+
+[project.scripts]
+customer-service-chat-agent = "customer_service_chat_agent.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["customer_service_chat_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 140
+target-version = "py39"

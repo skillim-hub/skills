@@ -1,0 +1,22 @@
+{
+  "name": "withholding-tax-compliance",
+  "version": "0.3.0",
+  "language": [
+    "en",
+    "he"
+  ],
+  "jurisdiction": "Israel",
+  "tax_year_validated": 2026,
+  "last_web_validation_date": "2026-06-01",
+  "description": "Conservative Israeli supplier withholding-tax compliance skill for certificate-based calculations and Form 856 staging workflows.",
+  "entrypoints": {
+    "python_module": "scripts/withholding_tax_compliance.py",
+    "cli": "scripts/generate_856.py"
+  },
+  "compliance_posture": {
+    "auto_filing": false,
+    "hardcoded_supplier_category_rates": false,
+    "requires_supplier_certificate_snapshot": true,
+    "requires_official_simulator_before_submission": true
+  }
+}

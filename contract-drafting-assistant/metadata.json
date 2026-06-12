@@ -1,0 +1,71 @@
+{
+  "name": "contract-drafting-assistant",
+  "version": "2.2.0",
+  "license": "MIT",
+  "category": "legal-tech",
+  "display_name": {
+    "he": "מסייע ניסוח הסכמים בישראל",
+    "en": "Contract Drafting Assistant"
+  },
+  "display_description": {
+    "he": "מנסח טיוטות הסכמים ישראליים בעברית ובאנגלית לעסקים קטנים, עצמאים וצרכנים, כולל הסכמי שירותים, פרילנס, סודיות, מכר, אספקה ותנאי שירות צרכניים. כולל בדיקות סיכון שאומתו מול מקורות עדכניים לגבי מע״מ, פרטיות, קניין רוחני, הגבלת אחריות, ביטול עסקה וסיווג עובד.",
+    "en": "Drafts Israeli Hebrew and English contract drafts for small businesses, freelancers, and consumers, including service agreements, freelance agreements, NDAs, sale/supply terms, and consumer service terms. Includes live-validated VAT, privacy, IP, liability, cancellation, and worker-classification risk checks for review workflows."
+  },
+  "tags": {
+    "he": [
+      "הסכמים",
+      "חוזים",
+      "הסכם-שירותים",
+      "פרילנס",
+      "עצמאים",
+      "עסקים-קטנים",
+      "הגנת-הצרכן",
+      "מע״מ",
+      "חשבונית-מס",
+      "קניין-רוחני",
+      "סודיות",
+      "פרטיות",
+      "ישראל",
+      "risk-scanner",
+      "consumer-contracts",
+      "freelance-agreements",
+      "small-business",
+      "privacy",
+      "vat",
+      "hebrew-contracts"
+    ],
+    "en": [
+      "contracts",
+      "contract-drafting",
+      "service-agreement",
+      "freelance",
+      "small-business",
+      "consumer-contracts",
+      "israel",
+      "hebrew",
+      "vat",
+      "tax-invoice",
+      "intellectual-property",
+      "confidentiality",
+      "privacy",
+      "nda",
+      "supply-agreement",
+      "risk-scanner",
+      "freelance-agreements",
+      "hebrew-contracts"
+    ]
+  },
+  "languages": [
+    "en",
+    "he"
+  ],
+  "tools": {
+    "scripts": [
+      "scripts/contract_drafting_assistant_client.py",
+      "scripts/contract_drafting_assistant_cli.py"
+    ],
+    "tests": "scripts/test_contract_drafting_assistant_client.py",
+    "examples": "scripts/examples"
+  },
+  "updated_at": "2026-06-02"
+}

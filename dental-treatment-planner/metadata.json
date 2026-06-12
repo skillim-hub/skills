@@ -1,0 +1,51 @@
+{
+  "version": "0.4.0",
+  "category": "business",
+  "slug": "dental-treatment-planner",
+  "name": "dental-treatment-planner",
+  "display_name": {
+    "en": "Dental Treatment Planner",
+    "he": "מתכנן טיפולי שיניים"
+  },
+  "display_description": {
+    "en": "Plans dental treatments, visit sequencing, and Israeli-context cost estimates for private dentists and HMO-affiliated dental clinics.",
+    "he": "מתכנן טיפולי שיניים, סדר ביקורים ואומדני עלות בהקשר ישראלי מול רופאים פרטיים ומרפאות שיניים של קופות החולים."
+  },
+  "license": "MIT",
+  "tags": [
+    "cash-flow",
+    "clalit-smile",
+    "cli",
+    "consumer-health",
+    "consumer-planning",
+    "cost-estimate",
+    "cost-estimation",
+    "dental",
+    "dentistry",
+    "freelancers",
+    "healthcare",
+    "hebrew",
+    "israel",
+    "israeli-vat",
+    "maccabident",
+    "offline-first",
+    "private-dentists",
+    "pytest",
+    "small-business",
+    "vat-2026",
+    "verification-log",
+    "web-validated"
+  ],
+  "supported_agents": [
+    "coding-agent",
+    "chat-agent",
+    "automation-agent"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "client": "scripts/dental_treatment_planner_client.py",
+    "cli": "scripts/dental-treatment-planner-cli.py"
+  },
+  "summary": "Plan Israeli dental-treatment sequences, cost estimates, coverage assumptions, provider comparisons, and visit schedules using an offline typed Python client and CLI."
+}

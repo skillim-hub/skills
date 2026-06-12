@@ -1,0 +1,31 @@
+{
+  "document_type": "receipt",
+  "document_number": "REC-2026-0011",
+  "issue_date": "12/03/2026",
+  "issuer": {
+    "name": "דני לוי תיקונים",
+    "tax_id": "012345674",
+    "status": "patur"
+  },
+  "customer": {
+    "name": "לקוח פרטי",
+    "customer_type": "consumer"
+  },
+  "currency": "ILS",
+  "lines": [
+    {
+      "description": "תיקון בבית לקוח",
+      "quantity": "1",
+      "unit": "ביקור",
+      "unit_price": "850.00"
+    }
+  ],
+  "payments": [
+    {
+      "method": "bit",
+      "amount": "850.00",
+      "reference": "BIT-7781",
+      "paid_at": "12/03/2026"
+    }
+  ]
+}

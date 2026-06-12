@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "credit-card-receipt-generator"
+version = "3.0.0"
+description = "Generate reconciliation-grade receipt drafts for Israeli credit-card gateway payloads."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "click>=8.1"
+]
+
+[project.scripts]
+credit-card-receipt-generator = "credit_card_receipt_generator_cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.setuptools]
+py-modules = ["credit_card_receipt_generator_client", "credit_card_receipt_generator_cli"]
+
+[tool.setuptools.package-dir]
+"" = "scripts"

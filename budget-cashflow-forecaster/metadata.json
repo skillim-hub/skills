@@ -1,0 +1,60 @@
+{
+  "name": "Budget & Cash-Flow Forecaster",
+  "slug": "budget-cashflow-forecaster",
+  "version": "2.2.0",
+  "description": "Forecast cash flow for Israeli small businesses, freelancers, households, and consumers using revenue, expenses, VAT, Bituach Leumi, income-tax advances, buffers, and scenarios.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "budgeting",
+    "cash-flow",
+    "forecasting",
+    "israel",
+    "vat",
+    "מע״מ",
+    "bituach-leumi",
+    "ביטוח לאומי",
+    "income-tax-advances",
+    "מקדמות מס הכנסה",
+    "small-business",
+    "freelancers",
+    "household-budget",
+    "cli",
+    "pytest",
+    "scenario-analysis"
+  ],
+  "entrypoints": {
+    "guide_en": "SKILL.md",
+    "guide_he": "SKILL_HE.md",
+    "cli": "budget_cashflow_forecaster.cli:cli",
+    "client": "budget_cashflow_forecaster.client"
+  },
+  "requirements": {
+    "python": ">=3.10",
+    "runtime": [
+      "click>=8.1.0"
+    ],
+    "development": [
+      "pytest>=7.0",
+      "pytest-asyncio>=0.21"
+    ]
+  },
+  "capabilities": [
+    "monthly cash-flow projection",
+    "VAT reserve and deadline modeling",
+    "Bituach Leumi reserve modeling",
+    "income-tax advance reserve modeling",
+    "CSV import/export",
+    "scenario comparison",
+    "typed sync and async helper",
+    "Click CLI",
+    "installable Python package",
+    "saved forecast ids",
+    "sandbox and production modes",
+    "web-validated Israeli regulatory references",
+    "verification log with double-confirmation status"
+  ],
+  "disclaimer": "Informational forecasting aid only. Verify rates, classifications, reporting cadence, and deadlines with official authorities or a licensed Israeli accountant before filing or paying."
+}

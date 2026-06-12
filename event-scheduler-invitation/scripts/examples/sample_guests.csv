@@ -1,0 +1,6 @@
+name,phone,party_size_invited,party_size_confirmed,status,group,children_count,dietary,accessibility,needs_transport,language,notes
+דנה לוי,050-123-4567,2,2,כן,כלה,0,טבעוני,,כן,he,
+יוסי כהן,+972-52-765-4321,4,3,מגיעים,חתן,1,,כיסא גלגלים,לא,he,
+משפחת אברהם,03-555-1212,5,0,אין תשובה,משפחה,2,,,כן,he,
+נועה רז,054-111-2222,1,1,אולי,עבודה,0,ללא גלוטן,,לא,he,
+עמית גל,052-333-4444,2,0,לא מגיעים,חברים,0,,,לא,he,

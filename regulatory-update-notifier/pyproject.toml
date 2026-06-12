@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regulatory-update-notifier"
+version = "2.2.0"
+description = "Monitor and summarize Israeli legal and regulatory updates for small businesses, freelancers, and consumers."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "httpx>=0.24",
+  "typer>=0.9",
+  "PyYAML>=6.0"
+]
+
+[project.scripts]
+regulatory-update-notifier = "regulatory_update_notifier.cli:main"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-asyncio>=0.21",
+  "ruff>=0.4",
+  "mypy>=1.8"
+]
+
+[tool.setuptools]
+packages = ["regulatory_update_notifier"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"

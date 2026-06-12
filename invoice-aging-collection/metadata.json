@@ -1,0 +1,49 @@
+{
+  "version": "2.2.0",
+  "category": "tax-and-finance",
+  "slug": "invoice-aging-collection",
+  "display_name": {
+    "en": "Invoice Aging & Collection Reminders",
+    "he": "גיול חשבוניות ותזכורות גבייה"
+  },
+  "display_description": {
+    "en": "Track unpaid invoices for Israeli small businesses, freelancers, and consumers. Calculate aging from due dates, prepare Hebrew WhatsApp and email collection reminders, handle disputes and partial payments, and guide escalation to demand letters or claim preparation with human review.",
+    "he": "מעקב אחר חשבוניות שלא שולמו בישראל, חישוב גיול ממועד הפירעון, הכנת תזכורות גבייה בעברית לוואטסאפ ולדוא״ל, טיפול במחלוקות ותשלומים חלקיים, והכוונה להסלמה מבוקרת למכתב דרישה או הכנת תביעה."
+  },
+  "tags": {
+    "en": [
+      "invoice-aging",
+      "collections",
+      "payment-reminders",
+      "overdue-invoices",
+      "hebrew-templates",
+      "whatsapp",
+      "email",
+      "israel",
+      "small-business",
+      "freelancer",
+      "consumer",
+      "demand-letter",
+      "small-claims",
+      "partial-payments",
+      "dispute-handling"
+    ],
+    "he": [
+      "גיול-חשבוניות",
+      "גבייה",
+      "תזכורות-תשלום",
+      "חשבוניות-באיחור",
+      "תבניות-בעברית",
+      "וואטסאפ",
+      "דוא״ל",
+      "ישראל",
+      "עסק-קטן",
+      "עצמאי",
+      "צרכן",
+      "מכתב-דרישה",
+      "תביעות-קטנות",
+      "תשלומים-חלקיים",
+      "מחלוקת-חשבונית"
+    ]
+  }
+}

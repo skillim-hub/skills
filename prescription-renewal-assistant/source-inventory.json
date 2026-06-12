@@ -1,0 +1,13 @@
+{
+  "v2_zip_reopened": true,
+  "correction_pass": "2.2.0",
+  "web_validation_access_date": "2026-06-04",
+  "web_checks": {
+    "total": 15,
+    "double": 13,
+    "corrected": 1,
+    "final_fail": 1
+  },
+  "tests_passed": true,
+  "compileall_passed": true
+}

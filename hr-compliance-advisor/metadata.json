@@ -1,0 +1,71 @@
+{
+  "name": "hr-compliance-advisor",
+  "version": "2.2.0",
+  "category": "legal-tech",
+  "license": "MIT",
+  "display_name": {
+    "en": "HR Compliance Advisor",
+    "he": "יועץ תאימות משאבי אנוש"
+  },
+  "display_description": {
+    "en": "Israeli HR compliance triage for small businesses, freelancers, employees, and consumers. Reviews wage, overtime, pension, severance, notice, parental rights, contractor status, and expansion-order risks.",
+    "he": "בדיקת תאימות דיני עבודה בישראל לעסקים קטנים, עצמאים, עובדים וצרכנים. מכסה שכר, שעות נוספות, פנסיה, פיצויים, הודעה מוקדמת, זכויות הורות, פרילנסרים וצווי הרחבה."
+  },
+  "tags": {
+    "en": [
+      "contractor-status",
+      "employment-rights",
+      "expansion-orders",
+      "freelancers",
+      "hr-compliance",
+      "israel",
+      "israel-2026",
+      "labor-law",
+      "minimum-wage",
+      "overtime",
+      "parental-rights",
+      "payroll",
+      "pension",
+      "severance",
+      "small-business",
+      "vat",
+      "web-validated"
+    ],
+    "he": [
+      "אימות-מקורות",
+      "דיני-עבודה",
+      "זכויות-הורות",
+      "זכויות-עובדים",
+      "ישראל",
+      "ישראל-2026",
+      "מע\"מ",
+      "משאבי-אנוש",
+      "עסקים-קטנים",
+      "פיצויי-פיטורים",
+      "פנסיה",
+      "פרילנסרים",
+      "צווי-הרחבה",
+      "שכר",
+      "שכר-מינימום",
+      "שעות-נוספות"
+    ]
+  },
+  "default_locale": "en",
+  "locales": [
+    "en",
+    "he"
+  ],
+  "risk_levels": [
+    "low",
+    "medium",
+    "high",
+    "critical"
+  ],
+  "entrypoints": {
+    "skill": "SKILL.md",
+    "skill_hebrew": "SKILL_HE.md",
+    "client": "scripts/hr_compliance_advisor_client.py",
+    "cli": "scripts/hr-compliance-advisor-cli.py",
+    "python_package": "hr_compliance_advisor"
+  }
+}

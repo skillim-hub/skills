@@ -1,0 +1,80 @@
+{
+  "version": "2.2.0",
+  "category": "government-data",
+  "license": "MIT",
+  "tags": {
+    "en": [
+      "api-client",
+      "async",
+      "ckan",
+      "ckan-action-api",
+      "cli",
+      "consumers",
+      "csv",
+      "data.gov.il",
+      "datastore",
+      "education",
+      "freelancers",
+      "government-data",
+      "health",
+      "hebrew",
+      "israel",
+      "official-sources",
+      "open-data",
+      "public-transport",
+      "small-business",
+      "statistics",
+      "verification-log",
+      "web-validated"
+    ],
+    "he": [
+      "בדיקת מקורות",
+      "בריאות",
+      "חינוך",
+      "יומן אימות",
+      "ייצוא CSV",
+      "ישראל",
+      "מידע פתוח",
+      "ממשק CKAN",
+      "מקורות רשמיים",
+      "נתונים ממשלתיים",
+      "סטטיסטיקה",
+      "עברית",
+      "עסקים קטנים",
+      "עצמאים",
+      "צרכנים",
+      "שורת פקודה",
+      "תחבורה ציבורית"
+    ]
+  },
+  "display_name": {
+    "en": "Data.gov.il Explorer",
+    "he": "סייר data.gov.il"
+  },
+  "display_description": {
+    "en": "Retrieve, inspect, query, export, and analyze public Israeli open-government datasets from data.gov.il through the CKAN API.",
+    "he": "איתור, בדיקה, שאילתה, ייצוא וניתוח של מאגרי מידע ממשלתיים פתוחים מ-data.gov.il באמצעות ממשק CKAN."
+  },
+  "entrypoints": {
+    "client": "scripts/datagovil_explorer_client.py",
+    "cli": "scripts/datagovil_explorer_cli.py",
+    "package": "datagovil_explorer",
+    "tests": "scripts/test_datagovil_explorer_client.py"
+  },
+  "capabilities": [
+    "async-client",
+    "click-cli",
+    "csv-export",
+    "dataset-inspection",
+    "dataset-search",
+    "datastore-query",
+    "environment-selection",
+    "hebrew-encoding-guidance",
+    "official-source-cross-checks",
+    "pagination",
+    "resource-inspection",
+    "sync-client",
+    "test-suite",
+    "web-validated-reference-log"
+  ]
+}

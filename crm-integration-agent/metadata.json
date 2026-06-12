@@ -1,0 +1,55 @@
+{
+  "name": "CRM Integration Agent",
+  "slug": "crm-integration-agent",
+  "version": "1.3.0",
+  "description": "Syncs WhatsApp, email, and SMS conversations with Monday, HubSpot, and Salesforce for Israeli businesses using live-validated API paths, normalized contacts, consent checks, redaction, and audit logs.",
+  "license": "MIT",
+  "languages": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "crm",
+    "israel",
+    "hebrew",
+    "whatsapp",
+    "email",
+    "sms",
+    "monday",
+    "hubspot",
+    "salesforce",
+    "small-business",
+    "freelancers",
+    "customer-service",
+    "lead-management",
+    "privacy",
+    "consent",
+    "audit-log",
+    "data-migration",
+    "automation",
+    "typer",
+    "pytest"
+  ],
+  "entrypoints": {
+    "english": "SKILL.md",
+    "hebrew": "SKILL_HE.md",
+    "cli": "crm_integration_agent.cli:main",
+    "python": "crm_integration_agent"
+  },
+  "requirements": [
+    "python>=3.10",
+    "requests",
+    "httpx",
+    "typer"
+  ],
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/branding-audit.md",
+    "references/hebrew-qa-log.md",
+    "references/verification-log.md"
+  ]
+}

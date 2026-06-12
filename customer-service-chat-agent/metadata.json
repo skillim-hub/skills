@@ -1,0 +1,62 @@
+{
+  "slug": "customer-service-chat-agent",
+  "name": "Customer-Service Chat Agent",
+  "version": "2.2.0",
+  "description": "Hebrew-first customer-service chat agent skill for Israeli small businesses, freelancers, and consumer-facing teams, with FAQ answering, structured triage, and human handoff for edge cases.",
+  "language": [
+    "en",
+    "he"
+  ],
+  "locale": [
+    "he-IL",
+    "en"
+  ],
+  "tags": [
+    "accessibility",
+    "audit",
+    "automation",
+    "chat-agent",
+    "customer-service",
+    "dd-mm-yyyy-replaced",
+    "dd-slash-mm-slash-yyyy",
+    "delivery",
+    "ecommerce",
+    "faq",
+    "freelancers",
+    "handoff",
+    "hebrew",
+    "hebrew-qa",
+    "invoices",
+    "israel",
+    "official-sources",
+    "payments",
+    "privacy",
+    "python-package",
+    "refunds",
+    "rtl",
+    "small-business",
+    "support",
+    "typer-cli",
+    "vat-18",
+    "verification-log",
+    "web-validated",
+    "whatsapp",
+    "whatsapp-business-platform"
+  ],
+  "license": "MIT",
+  "entrypoints": {
+    "guide": "SKILL.md",
+    "hebrew_guide": "SKILL_HE.md",
+    "package": "customer_service_chat_agent",
+    "client_script": "scripts/customer_service_chat_agent_client.py",
+    "cli": "scripts/customer_service_chat_agent_cli.py"
+  },
+  "references": [
+    "references/api-reference.md",
+    "references/workflow-guide.md",
+    "references/troubleshooting.md",
+    "references/test-scenarios.md",
+    "references/migration-checklist.md",
+    "references/verification-log.md"
+  ]
+}

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "healthcare-appointment-booker"
+version = "2.1.0"
+description = "Privacy-preserving Israeli HMO appointment booking workflow helper"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "typer>=0.9",
+    "click>=8.1"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-asyncio>=0.21",
+    "ruff>=0.1"
+]
+
+[project.scripts]
+healthcare-appointment-booker = "healthcare_appointment_booker.cli:app"
+
+[tool.setuptools]
+py-modules = ["healthcare_appointment_booker_client"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["healthcare_appointment_booker*"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

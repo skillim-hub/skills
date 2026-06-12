@@ -1,0 +1,38 @@
+{
+  "name": "real-estate-capital-gains-tax",
+  "version": "0.3.0",
+  "category": "finance",
+  "license": "MIT",
+  "display_name": {
+    "en": "Real Estate Capital-Gains Tax Assistant",
+    "he": "מסייע לחישוב מס שבח במקרקעין"
+  },
+  "display_description": {
+    "en": "Estimate Israeli Mas Shevach on property sales using gain, CPI indexation, linear allocation, deductions, depreciation, and exemption checks.",
+    "he": "אומדן מס שבח במכירת מקרקעין בישראל, כולל שבח ריאלי, הצמדה למדד, חישוב ליניארי, ניכויים, פחת ובדיקות פטור."
+  },
+  "tags": [
+    "israel",
+    "tax",
+    "real-estate",
+    "mas-shevach",
+    "capital-gains",
+    "cpi-indexation",
+    "linear-relief",
+    "residential-apartment",
+    "small-business",
+    "freelancers",
+    "hebrew",
+    "cli",
+    "pytest",
+    "case-workflow",
+    "web-validated",
+    "israel-tax-authority",
+    "cbs-api"
+  ],
+  "supported_agents": [
+    "coding-agent",
+    "chat-agent",
+    "automation-agent"
+  ]
+}
